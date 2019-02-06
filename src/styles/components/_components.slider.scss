@@ -1,0 +1,19 @@
+.top-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+
+  .slick-prev, slick-next {
+    display: none !important;
+  }
+}
+.top-slider-box {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: flex;
+}

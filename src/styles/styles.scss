@@ -1,0 +1,45 @@
+
+// tools
+ @import "mixins/tools.mixins.scss";
+// @import "tools/tools.functions.scss";
+//@import 'tools/tools.wrappers';
+//@import 'tools/tools.animations';
+
+// settings
+//@import "settings/settings.backgrounds";
+//@import "settings/settings.colors";
+//@import "settings/settings.fonts";
+@import "settings/settings.globals";
+
+// generic
+@import "generic/generic.fonts";
+@import "generic/vars";
+
+// elements
+@import "elements/elements.body";
+@import "elements/elements.link";
+//@import "elements/elements.html";
+//@import "elements/elements.headline";
+//@import "elements/elements.lists";
+//@import "elements/elements.blockquote";
+//@import "elements/elements.table";
+
+
+// objects
+//@import "objects/objects.slick";
+//@import "objects/objects.dragula";
+//@import "objects/objects.fontawesome";
+
+// components
+@import "components/components.body";
+@import "components/components.header";
+@import "components/components.footer";
+@import 'components/components.slider';
+//@import "components/components.team";
+@import "components/components.text";
+@import "components/components.contents";
+
+// utilities
+//@import "utilities/utilities";
+
+

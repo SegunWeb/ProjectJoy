@@ -1,0 +1,101 @@
+.header-top {
+  background-color: transparent;
+  position: relative;
+  z-index: 999;
+
+  &__logo {
+    background-color: $w;
+    border-radius: 0 0 .5rem .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem 0 1rem 0;
+
+    img {
+      width: 4.7rem;
+      height: 2.7rem;
+    }
+  }
+
+  &__link {
+    font-size: $menuLinksFont;
+  }
+
+  &__auth {
+    font-size: $menuLittleFont;
+    background-color: transparent;
+    cursor: pointer;
+    align-items: center;
+
+    &:before {
+      content: '\f007';
+      font-size: 1rem;
+      padding-right: .4rem;
+      @extend .fontAwesomeFree
+    }
+  }
+
+  &__lang {
+    background-color: transparent;
+    font-size: $menuLittleFont;
+
+    &:before {
+      content: '\f425';
+      font-size: 1rem;
+      padding-right: .4rem;
+      @extend .fontAwesomeBrands
+
+    }
+
+    button {
+      background-color: transparent;
+      cursor: pointer;
+    }
+  }
+  &__social {
+
+    a {
+      padding: 0 .4rem;
+
+      &:before {
+        @extend .fontAwesomeBrands
+      }
+    }
+
+    &--fb {
+
+      &:before {
+        content: "\f082";
+      }
+    }
+    &--yt {
+
+      &:before {
+        content: "\f431";
+      }
+    }
+    &--inst {
+
+      &:before {
+        content: "\f16d";
+
+      }
+    }
+  }
+}
+.header-lang {
+  min-width: 3rem;
+  &__item {
+    padding: 5px;
+    font-size: $menuLittleFont;
+
+    &:hover {
+      background-color: $blue-light;
+      color: $w;
+    }
+
+  }
+}
+#Capa_1:hover {
+  fill: red;
+}
