@@ -34,6 +34,7 @@ const production = !!argv.production;
 
 const paths = {
 	src: {
+		fonts: ["./src/fonts/*"],
 		pug: [
 			"./src/pug/*.pug",
             "./src/pug/**/*.pug"
@@ -55,6 +56,7 @@ const paths = {
 		server_config: "./src/.htaccess"
 	},
 	build: {
+		fonts: ["./dist/fonts/"],
 		clean: ["./dist/*", "./dist/.*"],
 		general: "./dist/",
 		styles: "./dist/styles",
@@ -78,6 +80,7 @@ export const server = () => {
 };
 
 export const watchCode = () => {
+    watch(paths.src.fonts, folderFonts);
 	watch(paths.src.pug, pugToHTML);
 	watch(paths.src.styles, styles);
     watch(paths.src.styles_libs, styles_libs);
@@ -98,6 +101,9 @@ export const serverConfig = () => src(paths.src.server_config)
 	.pipe(debug({
 		"title": "Server config"
 	}));
+export const folderFonts = () => src(paths.src.fonts)
+    .pipe(dest(paths.build.fonts))
+    .on("end", browsersync.reload);
 
 export const pugToHTML = () => src(paths.src.pug)
 	.pipe(pug({pretty: true}))
@@ -278,9 +284,9 @@ export const favs = () => src(paths.src.favicons)
 		"title": "Favicons"
 	}));
 
-export const development = series(cleanFiles, sprites, svg2png, parallel(pugToHTML, styles, styles_libs, scripts, scripts_libs, images, favs),
+export const development = series(cleanFiles, sprites, svg2png, parallel(folderFonts, pugToHTML, styles, styles_libs, scripts, scripts_libs, images, favs),
 	parallel(watchCode, server));
 
-export const prod = series(cleanFiles, sprites, svg2png, serverConfig, pugToHTML, styles, styles_libs, scripts, scripts_libs, images, favs);
+export const prod = series(cleanFiles, sprites, svg2png, serverConfig, folderFonts, pugToHTML, styles, styles_libs, scripts, scripts_libs, images, favs);
 
 export default development;

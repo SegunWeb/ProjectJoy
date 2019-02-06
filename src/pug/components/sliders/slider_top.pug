@@ -8,7 +8,8 @@ mixin top-slider(link_bg, title_text, desc_text, link_circle)
                 div
                 include ../../elements/buttons/button_try-free
                 include ../../elements/buttons/button_example
-            img.top-slider-box__img(src=link_circle)
+            div.top-slider-box__img
+                img(src=link_circle)
 div.top-slider
     <!----top-slider-block---->
     +top-slider(

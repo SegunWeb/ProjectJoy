@@ -11,9 +11,25 @@
 }
 .top-slider-box {
   position: absolute;
-  top: 10%;
+  top: 28%;
   left: 0;
   right: 0;
   margin: 0 auto;
   display: flex;
+  justify-content: space-between;
+
+  &__img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    img {
+      width: 95%;
+      margin-top: -17%;
+    }
+
+  }
+  &__content {
+    max-width: 35rem;
+  }
 }
