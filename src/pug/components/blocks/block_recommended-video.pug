@@ -1,0 +1,17 @@
+div.recommended
+    div.container
+        div.row
+            h2.col-12.text-center.title-text__md.title-text__md--blue Видеопоздравление к вашему празднику
+            mixin recommendet-box(name_video, price, new_price)
+                div.col-4
+                    include ../../elements/video/video_xs
+                    p.desc-text.desc-text--black= name_video
+                    div.col-12.d-flex.justify-content-between
+                        p= price
+                        p= new_price
+                        include ../../elements/buttons/button_more
+
+            div.col-12.d-flex.justify-content-between.recommended-content
+                +recommendet-box('Для дня рождения', '320', '210')
+                +recommendet-box('Для дня рождения', '320', '210')
+                +recommendet-box('Для дня рождения', '320', '210')

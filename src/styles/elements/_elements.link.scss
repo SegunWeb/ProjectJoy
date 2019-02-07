@@ -2,4 +2,9 @@ a {
   text-decoration: none;
   cursor: pointer;
   color: $w;
+
+  &:hover {
+    text-decoration: initial;
+    color: $blue-light;
+  }
 }

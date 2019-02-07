@@ -1,10 +1,55 @@
+// ---- buttons text -----
 .btn-text {
   color: $w;
   text-transform: uppercase;
+  font-size: $mdFont;
+  font-family: $RubikMedium;
+
+  &--blue {
+    color: $blue;
+  }
+
+  &--sm {
+    font-size: $smFont;
+  }
 }
+
+// ----- elements -----
+.title-text {
+  color: $w;
+
+  &__lg {
+    font-size: $titleLgFont;
+
+  }
+
+  &__md {
+    font-size: $titleMdFont;
+    text-transform: uppercase;
+
+    &--blue {
+      color: $blue;
+
+    }
+  }
+
+  &__sm {
+
+
+  }
+}
+
+
+// ----- common text -----
 .white-text {
   color: $w;
 }
+
 .desc-text {
   font-size: $mdFont;
+  font-family: $RubikRegular;
+
+  &--black {
+    color: $b;
+  }
 }

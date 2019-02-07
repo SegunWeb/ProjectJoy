@@ -42,7 +42,7 @@
   font: #{$w} $s $f;
 }
 //end
-@mixin clearfix{
+@mixin clearfix(){
   :after{
     content: "";
     display: table;
@@ -51,26 +51,30 @@
 }
 //end
 @mixin mq($point) {
-  @if $point == 480 {
-    @media (min-width: 480px) { @content; }
+  @if $point == xs {
+    @media (min-width: 576px) {
+      @content;
+    }
   }
-  @if $point == 576 {
-    @media (min-width: 576px) { @content; }
+  @if $point == sm {
+    @media (min-width: 768px) {
+      @content;
+    }
   }
-  @if $point == 767 {
-    @media (min-width: 767px) { @content; }
+  @if $point == md {
+    @media (min-width: 992px) {
+      @content;
+    }
   }
-  @if $point == 991 {
-    @media (min-width: 991px) { @content; }
+  @if $point == lg {
+    @media (min-width: 1200px) {
+      @content;
+    }
   }
-  @if $point == 1024 {
-    @media (min-width: 1024px) { @content; }
-  }
-  @if $point == 1279 {
-    @media (min-width: 1279px) { @content; }
-  }
-  @if $point == 1700 {
-    @media (min-width: 1700px) { @content; }
+  @if $point == xl {
+    @media (min-width: 1580px) {
+      @content;
+    }
   }
 }
 //---- extends ----

@@ -18,7 +18,7 @@
 // elements
 @import "elements/elements.body";
 @import "elements/elements.link";
-//@import "elements/elements.html";
+@import "elements/elements.block";
 //@import "elements/elements.headline";
 //@import "elements/elements.lists";
 //@import "elements/elements.blockquote";
@@ -35,7 +35,7 @@
 @import "components/components.header";
 @import "components/components.footer";
 @import 'components/components.slider';
-//@import "components/components.team";
+@import "components/components.video";
 @import "components/components.text";
 @import "components/components.contents";
 

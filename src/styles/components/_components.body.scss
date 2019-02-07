@@ -1,0 +1,29 @@
+// ---- how we do it ---
+.how-info {
+  margin: 4rem auto;
+
+  &__box {
+    position: relative;
+    z-index: 999;
+  }
+
+  &__content {
+    margin: 2rem auto;
+    div {
+      a {
+        margin: 1.5rem 0;
+      }
+
+    }
+
+  }
+}
+.how-info-box {
+  &__img {
+    position: absolute;
+    left: 7%;
+    top: 10%;
+  }
+}
+
+// ---- recommended video ---

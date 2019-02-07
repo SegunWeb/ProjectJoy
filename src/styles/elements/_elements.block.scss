@@ -1,0 +1,54 @@
+// ------ buttons ------
+.btn {
+  border-radius: 2.5rem;
+  padding: .6rem 1rem .5rem 1rem;
+  margin: 0 .5em;
+
+
+  &__free {
+    background-color: $blue;
+
+    &:hover {
+      background-color: $blue-light;
+      color: $w;
+    }
+
+    &--red {
+      background-color: $red;
+
+      &:hover {
+        background-color: $blue;
+      }
+    }
+  }
+
+  &__example {
+    background-color: $w;
+
+    &:hover {
+      background-color: $blue-light;
+      color: $w;
+    }
+  }
+
+  &__all {
+    border-radius: 1px solid $blue;
+
+    &:hover {
+      background-color: $blue;
+      color: $w;
+    }
+  }
+
+  &__create {
+    background-color: $red;
+    padding: .6rem 2rem .5rem 2rem;
+
+
+    &:hover {
+      background-color: $blue-light;
+      color: $w;
+    }
+  }
+
+}
