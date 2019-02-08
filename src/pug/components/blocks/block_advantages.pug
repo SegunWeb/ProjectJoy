@@ -1,0 +1,34 @@
+div.advantages.padding-y
+    div.container
+        div.row
+            <!----title-name----->
+            h2.col-12.title-text__md.title-text__md--white Наши преимущества
+            mixin advantages-box(src, title, desc)
+                <!----content-block----->
+                div.advantages-wrap.col-5.justify-content-center
+                    div.advantages-wrap__content.d-flex
+                        img(src=src).advantages-wrap__img
+                        p.align-self-center= title
+                    p.desc-text= desc
+            div.col-12.advantages-box.d-flex.justify-content-center.flex-wrap
+                +advantages-box(
+                    'img/common/circle-chl.png',
+                    'Одно из самых важных наших преимуществ',
+                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+                )
+                +advantages-box(
+                'img/common/circle-chl.png',
+                'Одно из самых важных наших преимуществ',
+                'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+                )
+            div.col-12.advantages-box.d-flex.justify-content-center.flex-wrap
+                +advantages-box(
+                'img/common/circle-chl.png',
+                'Одно из самых важных наших преимуществ',
+                'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+                )
+                +advantages-box(
+                'img/common/circle-chl.png',
+                'Одно из самых важных наших преимуществ',
+                'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+                )

@@ -12,6 +12,9 @@
   &--sm {
     font-size: $smFont;
   }
+  &--md {
+    font-size: $mdFont;
+  }
 }
 
 // ----- elements -----
@@ -22,20 +25,62 @@
     font-size: $titleLgFont;
 
   }
-
   &__md {
     font-size: $titleMdFont;
     text-transform: uppercase;
+    color: $blue;
+    text-align: center;
+    padding: 2rem 0;
 
-    &--blue {
-      color: $blue;
+    &--white {
+      color: $w;
+    }
+  }
+  &__sm {
 
+  }
+}
+
+// ----- text title-video ----
+.title-video-text {
+  color: $b;
+  font-family: $RubikBold;
+  margin: 1rem 0;
+
+  &__price {
+    position: relative;
+    color: $blue;
+    text-transform: uppercase;
+
+    &--red {
+      color: $red;
+    }
+
+    &--discount {
+      &:before {
+        content: '';
+        position: absolute;
+        @extend .elemCentre;
+        width: 100%;
+        height: 2px;
+        background-color: $red;
+
+      }
+    }
+  }
+  &__currency {
+    color: $blue;
+    padding: 0 .25rem;
+    font-size: $smFont;
+
+    &--red {
+      color: $red;
     }
   }
 
-  &__sm {
-
-
+  &__testimonials {
+    font-size: $lgFont;
+    color: $blue;
   }
 }
 
@@ -49,7 +94,25 @@
   font-size: $mdFont;
   font-family: $RubikRegular;
 
+  &__name {
+    font-style: italic;
+    color: $b;
+    font-size: $baseFont;
+    padding-right: .5rem;
+  }
+  &__city {
+    color: $blue;
+    font-style: italic;
+    font-size: $baseFont;
+  }
+
   &--black {
     color: $b;
   }
+
+  &--down {
+    margin-bottom: 2rem;
+  }
 }
+
+

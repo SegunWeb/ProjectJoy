@@ -1,6 +1,6 @@
 // ---- how we do it ---
 .how-info {
-  margin: 4rem auto;
+  padding: 4rem auto;
 
   &__box {
     position: relative;
@@ -27,3 +27,48 @@
 }
 
 // ---- recommended video ---
+.recommended {
+  background-color: #f0f0f0;
+}
+
+.recommended-content {
+  margin: 1rem auto;
+
+}
+.recommended-price {
+  padding: 0;
+  align-items: center;
+}
+
+// ---- advantages block ---
+.advantages {
+  background-color: $blue;
+}
+
+.advantages-wrap {
+  margin-bottom: 3rem;
+
+  &__content {
+    margin-bottom: 1rem;
+  }
+
+  &__img {
+    max-width: 4.5rem;
+    max-height: 4.5rem;
+    margin-right: 1rem;
+  }
+}
+// ----- testimonials video ----
+.video-testimonials {
+  background-color: #f0f0f0;
+}
+
+// ----- testimonials block -----
+.testimonials {
+  &__avatar {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5rem;
+    margin-right: 1rem;
+  }
+}

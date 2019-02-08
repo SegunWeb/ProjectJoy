@@ -3,8 +3,7 @@
   border-radius: 2.5rem;
   padding: .6rem 1rem .5rem 1rem;
   margin: 0 .5em;
-
-
+  //----------
   &__free {
     background-color: $blue;
 
@@ -15,13 +14,15 @@
 
     &--red {
       background-color: $red;
+      margin: 0 auto;
+      padding: .6rem 2rem .5rem 2rem;
 
       &:hover {
-        background-color: $blue;
+        background-color: $blue-light;
       }
     }
   }
-
+  //----------
   &__example {
     background-color: $w;
 
@@ -30,23 +31,40 @@
       color: $w;
     }
   }
-
+  //----------
   &__all {
-    border-radius: 1px solid $blue;
+    color: $w;
+    padding: .24rem 1rem .1rem 1rem;
+    margin: 0 auto;
+    background-color: $blue-light;
 
     &:hover {
       background-color: $blue;
       color: $w;
+
     }
   }
-
+  //----------
   &__create {
     background-color: $red;
     padding: .6rem 2rem .5rem 2rem;
-
+    color: $w;
 
     &:hover {
       background-color: $blue-light;
+      color: $w;
+    }
+  }
+  //----------
+  &__more {
+    background-color: $w;
+    border: 2px solid $blue;
+    padding: .24rem 1rem .1rem 1rem;
+
+
+    &:hover {
+      background-color: $red;
+      border: 2px solid $red;
       color: $w;
     }
   }

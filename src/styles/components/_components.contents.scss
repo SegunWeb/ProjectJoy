@@ -1,0 +1,82 @@
+// ---- common -----
+.padding-y {
+  padding: 2rem 0;
+}
+
+// ----- logo -----
+.logo {
+  width: 4.7rem;
+  height: 2.7rem;
+}
+
+// ----- menu ------
+
+.menu {
+  font-family: $RubikMedium;
+  display: flex;
+  align-items: center;
+
+  &__auth {
+
+  }
+
+  &__link {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: $menuLinksFont;
+
+    &:hover {
+      color: $blue-light;
+    }
+  }
+
+  &__contacts {
+    font-family: $RubikRegular;
+    font-size: $menuLinksFont;
+    text-transform: none;
+    border-left: 1px solid $blue-light;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__info {
+    font-family: $RubikRegular;
+    font-size: $menuLinksFont;
+    text-transform: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+// ---- socials ----
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  a {
+    padding: 0 .4rem;
+    &:before {
+      @extend .fontAwesomeBrands
+    }
+  }
+  &__fb {
+    &:before {
+      content: "\f082";
+    }
+  }
+  &__yt {
+    &:before {
+      content: "\f431";
+    }
+  }
+  &__inst {
+    &:before {
+      content: "\f16d";
+    }
+  }
+}
+// ---- lang-menu ----
+.lang-menu {
+
+}

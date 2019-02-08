@@ -8,3 +8,14 @@ $('.top-slider').slick({
     cssEase: 'linear',
     autoPlay: true
 });
+$('.multiple-items').slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    dots: true,
+});
+$('.testimonials-slider').slick({
+    infinite: true,
+    dots: true,
+    autoPlay: true
+});

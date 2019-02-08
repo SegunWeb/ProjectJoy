@@ -1,0 +1,21 @@
+.footer {
+  padding-top: 1.5rem;
+  background-color: $footerBlue;
+  font-family: $RubikMedium;
+
+  &__box {
+    background-color: $blue;
+    padding: .5rem 0;
+    margin-top: 1.5rem;
+
+      p {
+        font-size: $mdFont;
+        display: flex;
+        align-items: center;
+      }
+  }
+}
+.footer-menu {
+  justify-content: space-between;
+  display: flex;
+}

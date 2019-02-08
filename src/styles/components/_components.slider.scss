@@ -1,6 +1,5 @@
 .top-slider {
   position: relative;
-  margin-top: -5rem;
   z-index: 1;
   width: 100%;
 
@@ -26,6 +25,7 @@
         color: transparent;
         margin: .2rem;
         padding: .3rem;
+        border: none;
       }
 
       .slick-active {
@@ -38,7 +38,6 @@
         color: transparent;
       }
   }
-
 
 }
 .top-slider-box {
@@ -69,5 +68,46 @@
     p {
       margin: 1.5rem 0;
     }
+  }
+}
+
+.video-testimonials-wrap {
+  position: relative;
+  z-index: 1;
+}
+
+.testimonials-wrap {
+  position: relative;
+  z-index: 1;
+}
+
+.slick-prev, .slick-next {
+  display: none !important;
+}
+
+.slick-dots {
+  position: absolute;
+  right: 0;
+  bottom: -1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  li {
+    border-radius: 2.5rem;
+    font-size: 0;
+    color: transparent;
+    margin: .2rem;
+    padding: .1rem;
+    border: 2px solid $blue;
+  }
+
+  .slick-active {
+    background-color: $blue-light;
+    border-radius: 2.5rem;
+    padding: .3rem;
+    border: 2px solid $blue-light;
+    font-size: 0;
+    color: transparent;
   }
 }

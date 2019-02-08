@@ -1,8 +1,11 @@
 .header-top {
   background-color: transparent;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   z-index: 999;
-  font-family: $RubikMedium;
 
   &__logo {
     background-color: $w;
@@ -12,19 +15,6 @@
     justify-content: center;
     padding: .5rem 0 1rem 0;
     max-width: 10rem;
-
-    img {
-      width: 4.7rem;
-      height: 2.7rem;
-    }
-  }
-
-  &__link {
-    font-size: $menuLinksFont;
-
-    &:hover {
-      color: $blue-light;
-    }
   }
 
   &__auth {
@@ -109,5 +99,9 @@
     }
 
   }
+}
+.header-menu {
+  justify-content: space-around;
+  display: flex;
 }
 
