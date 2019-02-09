@@ -2,6 +2,12 @@
 .padding-y {
   padding: 2rem 0;
 }
+.margin-text-y {
+  margin-bottom: 1rem;
+}
+.margin-text {
+  margin: .5rem 0;
+}
 
 // ----- logo -----
 .logo {
@@ -10,7 +16,6 @@
 }
 
 // ----- menu ------
-
 .menu {
   font-family: $RubikMedium;
   display: flex;
@@ -78,5 +83,26 @@
 }
 // ---- lang-menu ----
 .lang-menu {
+  background-color: transparent;
+  font-size: $menuLittleFont;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+    &:before {
+      content: '\f425';
+      font-size: 1rem;
+      padding-right: .4rem;
+      @extend .fontAwesomeBrands;
+      cursor: pointer;
+    }
+
+    &:hover:before {
+      transform: translateY(-2px);
+    }
+
+    button {
+      background-color: transparent;
+      cursor: pointer;
+    }
 }

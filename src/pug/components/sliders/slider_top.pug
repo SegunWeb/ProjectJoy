@@ -3,7 +3,7 @@ mixin top-slider(link_bg, title_text, desc_text, link_circle)
         img.top-slider-wrap__bg(src=link_bg)
         div.top-slider-box.container
             div.top-slider-box__content
-                h1.title-text.title-text__lg= title_text
+                h1.title-text= title_text
                 p.desc-text= desc_text
                 div
                 include ../../elements/buttons/button_try-free

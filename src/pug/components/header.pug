@@ -29,7 +29,7 @@ html(lang="ru")
             div.row
                 <!---logo_home-link--->
                 a(href='#').header-top__logo.col-2
-                   img(src='/img/icons/logo.png').logo
+                   img(src='/img/icons/header-logo.png').logo
                 mixin header-menu(href, name_link)
                     li
                       a.menu__link(href=href)= name_link
@@ -40,11 +40,11 @@ html(lang="ru")
                          +header-menu("#", "Взрослым")
                          +header-menu("#", "Отзывы")
                          +header-menu("#", "Блог")
-                button.offset-1.header-top__auth.text-center.d-flex.align-self-center.btn-text.btn-text--sm Личный кабинет
+                button.offset-1.btn__auth.text-center.d-flex.align-self-center.btn-text.btn-text--sm Личный кабинет
                 mixin header-lang(href, name_lang)
                     a.dropdown-item.header-lang__item(href='#')= name_lang
                 <!---lang--->
-                div.header-top__lang.d-flex.justify-content-center.align-self-center.dropdown.col-2
+                div.lang-menu.dropdown.col-2
                     button.dropdown-toggle.text-white(data-toggle="dropdown" id='dropdownMenuButton' aria-haspopup="true" aria-expanded="false") Рус
                     div.dropdown-menu.header-lang(aria-labelledby="dropdownMenuButton")
                         +header-lang("#", "Рус")

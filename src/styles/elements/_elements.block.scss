@@ -61,7 +61,6 @@
     border: 2px solid $blue;
     padding: .24rem 1rem .1rem 1rem;
 
-
     &:hover {
       background-color: $red;
       border: 2px solid $red;
@@ -69,4 +68,21 @@
     }
   }
 
+  &__auth {
+    font-size: $menuLittleFont;
+    background-color: transparent;
+    cursor: pointer;
+    align-items: center;
+
+    &:before {
+      content: '\f007';
+      font-size: 1rem;
+      padding-right: .4rem;
+      @extend .fontAwesomeFree
+    }
+
+    &:hover {
+      color: $blue-light;
+    }
+  }
 }

@@ -17,14 +17,10 @@
   }
 }
 
-// ----- elements -----
+// ----- elements title -----
 .title-text {
-  color: $w;
+  font-size: $titleLgFont;
 
-  &__lg {
-    font-size: $titleLgFont;
-
-  }
   &__md {
     font-size: $titleMdFont;
     text-transform: uppercase;
@@ -37,37 +33,40 @@
     }
   }
   &__sm {
+    font-size: $lgFont;
+    color: $blue;
+  }
 
+  &__xs {
+    font-size: $baseFont;
+
+    &--black {
+      color: $b;
+    }
   }
 }
 
-// ----- text title-video ----
-.title-video-text {
-  color: $b;
-  font-family: $RubikBold;
-  margin: 1rem 0;
+// ----- price text ----
+.price-text {
+  position: relative;
+  color: $blue;
+  text-transform: uppercase;
 
-  &__price {
-    position: relative;
-    color: $blue;
-    text-transform: uppercase;
+  &--red {
+    color: $red;
+  }
 
-    &--red {
-      color: $red;
-    }
-
-    &--discount {
-      &:before {
-        content: '';
-        position: absolute;
-        @extend .elemCentre;
-        width: 100%;
-        height: 2px;
-        background-color: $red;
-
-      }
+  &__discount {
+    &:before {
+      content: '';
+      position: absolute;
+      @extend .elemCentre;
+      width: 100%;
+      height: 2px;
+      background-color: $red;
     }
   }
+
   &__currency {
     color: $blue;
     padding: 0 .25rem;
@@ -78,21 +77,21 @@
     }
   }
 
-  &__testimonials {
-    font-size: $lgFont;
-    color: $blue;
-  }
 }
-
 
 // ----- common text -----
-.white-text {
-  color: $w;
-}
 
 .desc-text {
-  font-size: $mdFont;
+  font-size: $descFont;
   font-family: $RubikRegular;
+
+  &--black {
+    color: $b;
+  }
+
+  &__md {
+    font-size: $descMdFont;
+  }
 
   &__name {
     font-style: italic;
@@ -106,13 +105,6 @@
     font-size: $baseFont;
   }
 
-  &--black {
-    color: $b;
-  }
-
-  &--down {
-    margin-bottom: 2rem;
-  }
 }
 
 

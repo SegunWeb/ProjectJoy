@@ -7,12 +7,12 @@ div.recommended.padding-y
                 <!----content-block----->
                 div.col-4.recommended-content
                     include ../../elements/video/video_xs
-                    p.title-video-text= title
+                    p.title-text__xs.title-text__xs--black.margin-text= title
                     div.col-12.d-flex.recommended-price.justify-content-around
-                        p.title-video-text__price.title-video-text__price--discount= price
-                            span.title-video-text__currency= currency
-                        p.title-video-text__price.title-video-text__price--red= new_price
-                            span.title-video-text__currency.title-video-text__currency--red= new_currency
+                        p.price-text.price-text__discount= price
+                            span.price-text__currency= currency
+                        p.price-text.price-text--red= new_price
+                            span.price-text__currency.price-text__currency--red= new_currency
                         include ../../elements/buttons/button_more
             div.col-12.d-flex.justify-content-between.recommended-content.flex-wrap
                 +recommendet-box('Для дня рождения', '320', 'грн', '210', 'грн')
