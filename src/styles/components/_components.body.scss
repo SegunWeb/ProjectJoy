@@ -1,74 +1,22 @@
-// ---- how we do it ---
-.how-info {
-  padding: 4rem auto;
-
-  &__box {
-    position: relative;
-    z-index: 999;
-  }
-
-  &__content {
-    margin: 2rem auto;
-    div {
-      a {
-        margin: 1.5rem 0;
-      }
-
-    }
-
-  }
+// -------- POP-UP ---------
+.aunt {
+  padding: 2rem;
+  border: 2px solid $blue-light;
+  position: fixed;
+  @extend .elemCenter;
+  background-color: $w;
+  border-radius: .3rem;
+  z-index: 99999;
+  background-color: $w;
+  max-width: 30rem;
+  max-height: 20rem;
+  display: none;
+  margin: 0 1rem;
 }
-.how-info-box {
-  &__img {
-    position: absolute;
-    left: 7%;
-    top: 10%;
-  }
-}
-
-// ---- recommended video ---
-.recommended {
-  background-color: #f0f0f0;
-}
-
-.recommended-content {
-  margin: 1rem auto;
+.aunt-box {
 
 }
-.recommended-price {
-  padding: 0;
-  align-items: center;
-}
-
-// ---- advantages block ---
-.advantages {
-  background-color: $blue;
-}
-
-.advantages-wrap {
-  margin-bottom: 3rem;
-
-  &__content {
-    margin-bottom: 1rem;
-  }
-
-  &__img {
-    max-width: 4.5rem;
-    max-height: 4.5rem;
-    margin-right: 1rem;
-  }
-}
-// ----- testimonials video ----
-.video-testimonials {
-  background-color: #f0f0f0;
-}
-
-// ----- testimonials block -----
-.testimonials {
-  &__avatar {
-    width: 5rem;
-    height: 5rem;
-    border-radius: 5rem;
-    margin-right: 1rem;
-  }
+// ----- forms ----
+.form-group {
+  margin-bottom: .5rem;
 }

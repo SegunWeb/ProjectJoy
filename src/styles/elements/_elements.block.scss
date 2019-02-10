@@ -56,6 +56,20 @@
     }
   }
   //----------
+  &__come-in {
+    background-color: $red;
+    padding: .4rem 2.5rem .3rem 2.5rem;
+    color: $w;
+    margin: .5rem auto;
+    display: block;
+
+    &:hover {
+      background-color: $blue-light;
+      color: $w;
+    }
+  }
+
+  //----------
   &__more {
     background-color: $w;
     border: 2px solid $blue;
@@ -67,7 +81,7 @@
       color: $w;
     }
   }
-
+  //----------
   &__auth {
     font-size: $menuLittleFont;
     background-color: transparent;
@@ -85,4 +99,20 @@
       color: $blue-light;
     }
   }
+  //---------
+  &__forgot-pass {
+    font-size: $menuLittleFont;
+    background-color: transparent;
+    cursor: pointer;
+    text-align: center;
+    color: $blue-light;
+    margin: 0 auto;
+    display: block;
+    padding: .2rem;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+
 }

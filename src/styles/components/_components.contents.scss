@@ -8,6 +8,28 @@
 .margin-text {
   margin: .5rem 0;
 }
+.bg-img {
+  position: relative;
+  left: 0;
+  bottom: -2rem;
+  z-index: 1;
+}
+.close {
+
+  &:before {
+    content: '\f410';
+    @extend .fontAwesomeFree;
+    color: $blue-light;
+    position: absolute;
+    right: .3rem;
+    top: .3rem;
+    font-size: $baseFont;
+  }
+
+  &:hover:before {
+    color: $red;
+  }
+}
 
 // ----- logo -----
 .logo {

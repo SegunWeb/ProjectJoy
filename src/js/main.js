@@ -19,3 +19,11 @@ $('.testimonials-slider').slick({
     dots: true,
     autoPlay: true
 });
+
+//--------pop-up------
+$('.btn__auth').click( function () {
+    $('.aunt').show()
+});
+$('.close').click( function () {
+    $('.aunt').hide()
+});

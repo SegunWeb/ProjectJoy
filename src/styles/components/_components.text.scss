@@ -60,7 +60,7 @@
     &:before {
       content: '';
       position: absolute;
-      @extend .elemCentre;
+      @extend .elemCenter;
       width: 100%;
       height: 2px;
       background-color: $red;
@@ -87,6 +87,12 @@
 
   &--black {
     color: $b;
+  }
+  &--red {
+    color: $red;
+  }
+  &--blue {
+    color: $blue;
   }
 
   &__md {
