@@ -28,6 +28,7 @@
 // ---- recommended video ---
 .recommended {
   background-color: $bgGray;
+  position: relative;
 }
 
 .recommended-content {
@@ -42,6 +43,7 @@
 // ---- advantages block ---
 .advantages {
   background-color: $bgBlue;
+  position: relative;
 }
 
 .advantages-wrap {
@@ -61,11 +63,12 @@
 // ----- testimonials video ----
 .video-testimonials {
   background-color: $bgGray;
+  position: relative;
 }
 
 // ----- testimonials block -----
 .testimonials {
-
+  position: relative;
   &__avatar {
     width: 5rem;
     height: 5rem;

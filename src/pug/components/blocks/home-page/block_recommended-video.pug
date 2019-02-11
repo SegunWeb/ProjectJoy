@@ -6,14 +6,15 @@ div.recommended.padding-y
             mixin recommendet-box(title, price, currency, new_price, new_currency)
                 <!----content-block----->
                 div.col-4.recommended-content
-                    include ../../elements/video/video_xs
+                    div.rec-video.video-box
+                        include ../../../elements/video/video
                     p.title-text__xs.title-text__xs--black.margin-text= title
                     div.col-12.d-flex.recommended-price.justify-content-around
                         p.price-text.price-text__discount= price
                             span.price-text__currency= currency
                         p.price-text.price-text--red= new_price
                             span.price-text__currency.price-text__currency--red= new_currency
-                        include ../../elements/buttons/button_more
+                        include ../../../elements/buttons/button_more
             div.col-12.d-flex.justify-content-between.recommended-content.flex-wrap
                 +recommendet-box('Для дня рождения', '320', 'грн', '210', 'грн')
                 +recommendet-box('Для дня рождения', '320', 'грн', '210', 'грн')
@@ -21,5 +22,5 @@ div.recommended.padding-y
                 +recommendet-box('Для дня рождения', '320', 'грн', '210', 'грн')
                 +recommendet-box('Для дня рождения', '320', 'грн', '210', 'грн')
                 +recommendet-box('Для дня рождения', '320', 'грн', '210', 'грн')
-            include ../../elements/buttons/button_try-free_red
-    img.bg-img(src="img/bg/elem/base2.png")
+            include ../../../elements/buttons/button_try-free_red
+    img.bg-img(src="img/bg/elem/base1.png")

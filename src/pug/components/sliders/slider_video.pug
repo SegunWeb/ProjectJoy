@@ -1,7 +1,8 @@
 mixin video-testi-box(title, desc)
     <!----video-testimonials-box----->
     div.video-testimonials__box.justify-content-between.col-6
-        include ../../elements/video/video_sm
+        div.testimonials-video.video-box
+            include ../../elements/video/video
         p.title-text__sm.margin-text= title
         p.desc-text.desc-text--black.desc-text__md.margin-text-y= desc
 div.video-testimonials-wrap.multiple-items.col-12

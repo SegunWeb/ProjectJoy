@@ -51,14 +51,29 @@
   justify-content: space-between;
 
   &__img {
-    display: flex;
+    position: relative;
     justify-content: flex-end;
     align-items: center;
+    @include mq(xs){
+      display: none;
+    }
+    @include mq(md){
+      display: flex;
+
+      max-width: 25rem;
+    }
+    @include mq(lg) {
+      max-width: 29rem;
+    }
+    @include mq(xl) {
+      max-width: 36rem;
+      margin-top: -12%;
+    }
 
     img {
-      width: 100%;
-      max-width: 35rem;
-      margin-top: -17%;
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
     }
 
   }

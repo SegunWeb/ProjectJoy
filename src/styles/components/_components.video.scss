@@ -1,3 +1,57 @@
+// ------- common - elem ---------
+.video-box {
+  position: relative;
+
+  &:hover .img-video {
+  filter: opacity(1);
+  }
+  &:hover .play-video {
+    width: 4rem;
+    height: 4rem;
+
+    &:before {
+      background-image: url("../img/icons/arrow-2.png");
+
+    }
+  }
+}
+
+.img-video {
+  position: absolute;
+  display: block;
+  @extend .elemCenter;
+  filter: opacity(.8);
+  transition: .2s;
+  z-index: 1;
+}
+
+.play-video {
+  z-index: 2;
+  @extend .elemCenter;
+  position: absolute;
+  background-color: transparent;
+  width: 3.5rem;
+  height: 3.5rem;
+  transition: .5s;
+
+
+  &:before {
+    content: '';
+    position: absolute;
+    background-image: url("../img/icons/arrow-1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 0;
+    transition: .3s;
+  }
+}
+
 // ------- how we do it video ----
 .how-video {
   position: relative;

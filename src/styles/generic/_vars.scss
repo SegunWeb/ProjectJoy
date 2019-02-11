@@ -1,21 +1,21 @@
 // Font size
 $baseFont: 20px;
 
-$menuLinksFont: .7rem;
-$menuLittleFont: .6rem;
+$menuLinksFont: calc(14px + (14 - 12) * (100vw - 1920px) / (1920 - 480));
+$menuLittleFont: calc(12px + (12 - 11) * (100vw - 1920px) / (1920 - 480));
 
-$smFont: .6rem;
-$mdFont: .8rem;
-$lgFont: 1.25rem;
+$smFont: calc(12px + (12 - 11) * (100vw - 1920px) / (1920 - 480));
+$mdFont: calc(16px + (16 - 14) * (100vw - 1920px) / (1920 - 480));
+$lgFont: calc(25px + (25 - 20) * (100vw - 1920px) / (1920 - 480));
 
-$descFont: .8rem;
-$descMdFont: .75rem;
+$descFont: calc(16px + (16 - 14) * (100vw - 1920px) / (1920 - 480));
+$descMdFont: calc(15px + (15 - 12) * (100vw - 1920px) / (1920 - 480));
 
-$titleLgFont: 2.5rem;
-$titleMdFont: 1.75rem;
-$titleSmFont: 1rem;
+$titleLgFont: calc(50px + (50 - 28) * (100vw - 1920px) / (1920 - 480));
+$titleMdFont: calc(35px + (35 - 24) * (100vw - 1920px) / (1920 - 480));
+$titleSmFont: calc(20px + (20 - 15) * (100vw - 1920px) / (1920 - 480));
 
-$holderFont: .7rem;
+$holderFont: calc(14px + (14 - 12) * (100vw - 1920px) / (1920 - 480));
 
 // Font family
 $RubikBlack: "Rubik-Black";
