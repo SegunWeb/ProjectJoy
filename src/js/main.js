@@ -13,6 +13,15 @@ $('.multiple-items').slick({
     slidesToShow: 2,
     slidesToScroll: 1,
     dots: true,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        },
+    ]
 });
 $('.testimonials-slider').slick({
     infinite: true,

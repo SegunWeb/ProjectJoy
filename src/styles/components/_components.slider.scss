@@ -59,15 +59,15 @@
     }
     @include mq(md){
       display: flex;
-
-      max-width: 25rem;
+      margin-top: -7%;
+      max-width: 22rem;
     }
     @include mq(lg) {
-      max-width: 29rem;
+      max-width: 25rem;
     }
     @include mq(xl) {
       max-width: 36rem;
-      margin-top: -12%;
+      margin-top: -10%;
     }
 
     img {
