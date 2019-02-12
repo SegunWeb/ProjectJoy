@@ -87,6 +87,11 @@
     background-color: transparent;
     cursor: pointer;
     align-items: center;
+    color: $blue !important;
+
+    @include mq(md) {
+      color: $w !important;
+    }
 
     &:before {
       content: '\f007';
@@ -114,5 +119,92 @@
       color: $blue;
     }
   }
+  // -----------
+  &__hamburger {
+    display: block;
 
+    @include mq(md) {
+      display: none;
+    }
+  }
+}
+
+// ----- button burger ---
+.toggle-hamburger {
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background 0.3s;
+  max-width: 2.2rem;
+
+}
+// ------ span burger --------
+.toggle-hamburger span {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: .2rem;
+  background: $w;
+  border-radius: .2rem;
+}
+.toggle-hamburger span::before, .toggle-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: .2rem;
+  background-color: $w;
+  content: "";
+  border-radius: .2rem;
+}
+.toggle-hamburger span::before {
+  top: -.4rem;
+}
+.toggle-hamburger span::after {
+  bottom: -.4rem;;
+}
+.toggle-hamburger:focus {
+  outline: none;
+}
+.toggle-hamburger.toggle-hamburger__animx span {
+  -webkit-transition: background 0s 0.3s;
+  transition: background 0s 0.3s;
+}
+.toggle-hamburger.toggle-hamburger__animx span::before, .toggle-hamburger.toggle-hamburger__animx span::after {
+  -webkit-transition-duration: 0.3s, 0.3s;
+  transition-duration: 0.3s, 0.3s;
+  -webkit-transition-delay: 0.3s, 0s;
+  transition-delay: 0.3s, 0s;
+}
+.toggle-hamburger.toggle-hamburger__animx span::before {
+  -webkit-transition-property: top, transform;
+  transition-property: top, transform;
+}
+.toggle-hamburger.toggle-hamburger__animx span::after {
+  -webkit-transition-property: bottom, transform;
+  transition-property: bottom, transform;
+}
+// ------- когда открыли ----
+.toggle-hamburger.toggle-hamburger__animx.is-active span {
+  background: none;
+}
+.toggle-hamburger.toggle-hamburger__animx.is-active span::before, .toggle-hamburger.toggle-hamburger__animx.is-active span::after {
+  background-color: $w;
+  -webkit-transition-delay: 0s, 0.3s;
+  transition-delay: 0s, 0.3s;
+}
+.toggle-hamburger.toggle-hamburger__animx.is-active span::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.toggle-hamburger.toggle-hamburger__animx.is-active span::after {
+  bottom: 0;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }

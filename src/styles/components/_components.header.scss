@@ -5,7 +5,7 @@
   left: 0;
   right: 0;
   margin: 0 auto;
-  z-index: 999;
+  z-index: 1000;
 
   &__logo {
     background-color: $w;
@@ -13,8 +13,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: .5rem 0 1rem 0;
-    max-width: 10rem;
+    max-width: 7rem;
+    max-height: 5rem;
+    padding: .3rem .3rem .5rem .3rem;
+
+    @include mq(md) {
+      padding: .5rem 1rem 1rem 1rem;
+    }
   }
 }
 .header-lang {
@@ -31,7 +36,59 @@
   }
 }
 .header-menu {
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   display: flex;
+
+  li {
+    a {
+      color: $blue;
+    }
+  }
+
+  @include mq(md) {
+    justify-content: space-around;
+    flex-direction: initial;
+    align-items: initial;
+
+    li {
+      a {
+        color: $w;
+      }
+    }
+  }
+}
+.header-nav-box {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: $w;
+  border-radius: .5rem;
+  border: 1px solid $blue;
+  margin-top: .3rem;
+  width: 100%;
+  padding: 1rem 0;
+  @include mq(sm){
+    margin-top: 1rem;
+  }
+  @include mq(md){
+    display: flex;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  &__cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    @include mq(md){
+      flex-direction: row;
+    }
+  }
 }
 

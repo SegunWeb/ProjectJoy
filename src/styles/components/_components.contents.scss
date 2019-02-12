@@ -1,6 +1,9 @@
 // ---- common -----
 .padding-y {
-  padding: 2rem 0;
+  padding: 1rem 0;
+  @include mq(lg) {
+    padding: 2rem 0;
+  }
 }
 .margin-text-y {
   margin-bottom: 1rem;
@@ -19,22 +22,43 @@
   &:before {
     content: '\f410';
     @extend .fontAwesomeFree;
-    color: $blue-light;
+    color: $red;
     position: absolute;
     right: .3rem;
     top: .3rem;
     font-size: $baseFont;
   }
-
+  @include mq(md){
+     &:before {
+       color: $blue-light;
+     }
+  }
   &:hover:before {
     color: $red;
   }
 }
+.filter {
+  background-color: rgba(0,0,0, .3);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  display: none;
+}
 
 // ----- logo -----
 .logo {
-  width: 4.7rem;
-  height: 2.7rem;
+  max-height: 100%;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+
+  &__footer {
+    max-width: 4.5rem;
+    max-height: 2.7rem;
+  }
 }
 
 // ----- menu ------
@@ -61,32 +85,76 @@
     font-family: $RubikRegular;
     font-size: $menuLinksFont;
     text-transform: none;
-    border-left: 1px solid $blue-light;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      margin: .3rem auto;
+    }
+
+    @include mq(sm) {
+      border-left: 1px solid $blue-light;
+      flex-direction: initial;
+      justify-content: initial;
+      align-items: initial;
+      flex-wrap: wrap;
+    }
+
   }
 
   &__info {
     font-family: $RubikRegular;
     font-size: $menuLinksFont;
     text-transform: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+    a {
+      display: block;
+      margin: .3rem auto;
+      text-align: center;
+    }
+    @include mq(sm) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      a {
+        display: initial;
+        text-align: left;
+        margin: 0;
+      }
+    }
   }
 }
 // ---- socials ----
 .socials {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 
   a {
     padding: 0 .4rem;
+    color: $blue;
+    &:hover {
+      color: $blue-light;
+    }
+
     &:before {
       @extend .fontAwesomeBrands
     }
+    @include mq(md) {
+      color: $w;
+      justify-content: space-between;
+    }
   }
+
+  &__footer {
+    a {
+      color: $w;
+    }
+  }
+
   &__fb {
     &:before {
       content: "\f082";
@@ -117,6 +185,11 @@
       padding-right: .4rem;
       @extend .fontAwesomeBrands;
       cursor: pointer;
+      color: $blue;
+
+      @include mq(md) {
+        color: $w;
+      }
     }
 
     &:hover:before {
@@ -126,5 +199,10 @@
     button {
       background-color: transparent;
       cursor: pointer;
+      color: $blue;
+
+      @include mq(md) {
+        color: $w;
+      }
     }
 }

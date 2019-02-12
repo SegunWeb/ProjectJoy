@@ -1,5 +1,4 @@
 //---------slider----------
-
 $('.top-slider').slick({
     dots: true,
     infinite: true,
@@ -32,11 +31,15 @@ $('.testimonials-slider').slick({
 //--------pop-up------
 
 $('.btn__auth').click( function () {
-    $('.aunt').show()
+    $('.filter').show()
 });
 $('.close').click( function () {
-    $('.aunt').hide()
+    $('.filter').hide()
 });
+$('.btn__hamburger').click( function () {
+    $('.header-nav-box').toggleClass("d-flex");
+});
+
 
 // ----- bg img video -----
 $(document).on('click', '.img-video', function() {
@@ -71,4 +74,21 @@ $(document).on('click', '.play-video', function() {
             ($video.attr('src', src + '&autoplay=0'))
         })
     }
-})
+});
+
+// ---- button burger -----
+(function() {
+    var toggles = document.querySelectorAll(".toggle-hamburger");
+
+    for (var i = toggles.length - 1; i >= 0; i--) {
+        var toggle = toggles[i];
+        toggleHandler(toggle);
+    };
+
+    function toggleHandler(toggle) {
+        toggle.addEventListener( "click", function(e) {
+            e.preventDefault();
+            (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+        });
+    }
+})();

@@ -1,6 +1,5 @@
 // ---- buttons text -----
 .btn-text {
-  color: $w;
   text-transform: uppercase;
   font-size: $mdFont;
   font-family: $RubikMedium;
@@ -26,7 +25,10 @@
     text-transform: uppercase;
     color: $blue;
     text-align: center;
-    padding: 2rem 0;
+    padding: 1rem 0;
+    @include mq(md){
+      padding: 2rem 0;
+    }
 
     &--white {
       color: $w;
@@ -35,10 +37,19 @@
   &__sm {
     font-size: $lgFont;
     color: $blue;
+    line-height: 1.1;
+
+    @include mq(md) {
+      line-height: initial;
+    }
   }
 
   &__xs {
     font-size: $baseFont;
+    line-height: 1.1;
+    @include mq(md) {
+      line-height: initial;
+    }
 
     &--black {
       color: $b;
