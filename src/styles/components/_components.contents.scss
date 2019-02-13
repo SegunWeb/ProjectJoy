@@ -136,6 +136,11 @@
   a {
     padding: 0 .4rem;
     color: $blue;
+    font-size: 1.5rem;
+
+    @include mq(md) {
+      font-size: 1rem;
+    }
     &:hover {
       color: $blue-light;
     }
@@ -182,7 +187,7 @@
     &:before {
       content: '\f425';
       font-size: 1rem;
-      padding-right: .4rem;
+      padding-right: .1rem;
       @extend .fontAwesomeBrands;
       cursor: pointer;
       color: $blue;

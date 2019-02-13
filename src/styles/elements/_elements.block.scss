@@ -4,13 +4,18 @@
   padding: .5rem 2rem .4rem 2rem;
   margin: 0 .5em;
 
-  @include mq(sm) {
+  @include mq(xs) {
     padding: .6rem 1rem .5rem 1rem;
   }
 
   //----------
   &__free {
     background-color: $blue;
+    width: 13rem;
+
+    @include mq(xs){
+      width: auto;
+    }
 
     &:hover {
       background-color: $blue-light;
@@ -30,6 +35,11 @@
   //----------
   &__example {
     background-color: $w;
+    width: 13rem;
+
+    @include mq(xs){
+      width: auto;
+    }
 
     &:hover {
       background-color: $blue-light;
@@ -42,6 +52,11 @@
     padding: .24rem 1rem .1rem 1rem;
     margin: 0 auto;
     background-color: $blue-light;
+    margin-top: 1rem;
+
+    @include mq(sm){
+      margin-top: 0;
+    }
 
     &:hover {
       background-color: $blue;
@@ -54,6 +69,14 @@
     background-color: $red;
     padding: .6rem 2rem .5rem 2rem;
     color: $w;
+    width: 13rem;
+    display: block;
+    margin: 1rem auto;
+
+    @include mq(sm){
+      width: initial;
+      display: inline-block;
+    }
 
     &:hover {
       background-color: $blue-light;

@@ -5,12 +5,15 @@ $('.top-slider').slick({
     speed: 500,
     fade: true,
     cssEase: 'linear',
-    autoPlay: true
+    autoplay: true,
+    autoplaySpeed: 10000,
 });
 $('.multiple-items').slick({
     infinite: true,
     slidesToShow: 2,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 8000,
     dots: true,
     responsive: [
         {
@@ -25,13 +28,18 @@ $('.multiple-items').slick({
 $('.testimonials-slider').slick({
     infinite: true,
     dots: true,
-    autoPlay: true
+    autoplay: true,
+    autoplaySpeed: 7000,
+    fade: true,
+    cssEase: 'linear',
 });
 
 //--------pop-up------
 
 $('.btn__auth').click( function () {
-    $('.filter').show()
+    $('.filter').show(),
+    $('.header-nav-box').removeClass("d-flex"),
+    $('.btn__hamburger').removeClass("is-active")
 });
 $('.close').click( function () {
     $('.filter').hide()

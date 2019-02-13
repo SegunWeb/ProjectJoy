@@ -11,12 +11,17 @@
 
     div {
       a {
-        margin: .5rem 0;
+
       }
     }
 
     @include mq(sm){
       margin: 2rem auto;
+
+      @include mq(sm) {
+        margin: .5rem auto;
+      }
+
       div {
         a {
           margin: 1.5rem 0;

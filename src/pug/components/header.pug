@@ -1,7 +1,7 @@
 doctype html
 html(lang="ru")
     head
-        meta(charset="utf-8")
+        meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible" content="IE=edge")
         title VideoJoy
         meta(name="theme-color" content="#c9e0e04d")
@@ -17,9 +17,10 @@ html(lang="ru")
         link(rel="apple-touch-icon" sizes="144x144" href="../img/favicons/apple-touch-icon-144x144.png")
         link(rel="apple-touch-icon" sizes="152x152" href="../img/favicons/apple-touch-icon-152x152.png")
         link(rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-touch-icon-180x180.png")
-        link(rel="stylesheet" href="../styles/_librarys/bootstrap.css")
-        link(rel="stylesheet" href="../styles/_librarys/animate.css")
-        link(rel="stylesheet" href="../styles/_librarys/slick.css")
+        link(rel="shortcut icon" href="../img/favicons/favicon-32x32.png" type="image/png")
+        link(rel="stylesheet" href="../styles/librarys/bootstrap.css")
+        link(rel="stylesheet" href="../styles/librarys/animate.css")
+        link(rel="stylesheet" href="../styles/librarys/slick.css")
         link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous")
         link(rel="stylesheet" href="../styles/styles.css")
     body
@@ -42,16 +43,13 @@ html(lang="ru")
                             +header-menu("#", "Взрослым")
                             +header-menu("#", "Отзывы")
                             +header-menu("#", "Блог")
-                    div.col-lg-6.header-nav-box__cont.offset-lg-1.col-md-3.col-7
+                    div.col-lg-6.header-nav-box__cont.offset-lg-1.col-md-4.col-7
                         button.btn__auth.text-center.d-flex.align-self-center.btn-text.btn-text--sm Личный кабинет
-                        mixin header-lang(href, name_lang)
-                            a.dropdown-item.header-lang__item(href='#')= name_lang
                         <!---lang--->
                         div.lang-menu.dropdown.col-lg-3
-                            button.dropdown-toggle(data-toggle="dropdown" id='dropdownMenuButton' aria-haspopup="true" aria-expanded="false") Рус
-                            div.dropdown-menu.header-lang(aria-labelledby="dropdownMenuButton")
-                                +header-lang("#", "Рус")
-                                +header-lang("#", "Eng")
+                            select.header-lang
+                                option.header-lang__item(selected value="English" name="Eng") Русcкий
+                                option.header-lang__item(value="English" name="Eng") English
                         <!---social-links--->
                         div.socials.col-lg-1.socials__header
                             a(href="#").socials__fb

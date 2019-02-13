@@ -55,6 +55,13 @@
       color: $b;
     }
   }
+
+  &__header{
+    text-align: center;
+    @include mq(xs){
+      text-align: left;
+    }
+  }
 }
 
 // ----- price text ----
@@ -122,6 +129,12 @@
     font-size: $baseFont;
   }
 
+  &__header{
+    text-align: center;
+    @include mq(xs){
+      text-align: left;
+    }
+  }
 }
 
 

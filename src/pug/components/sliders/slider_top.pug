@@ -5,8 +5,8 @@ mixin top-slider(link_bg, link_bg_tablet, link_bg_mobile, title_text, desc_text,
         img.top-slider-wrap__bg--mob(src=link_bg_mobile)
         div.top-slider-box.container
             div.top-slider-box__content
-                h1.title-text= title_text
-                p.desc-text= desc_text
+                h1.title-text.title-text__header= title_text
+                p.desc-text.desc-text__header= desc_text
                 div.top-slider-btn
                     include ../../elements/buttons/button_try-free
                     include ../../elements/buttons/button_example

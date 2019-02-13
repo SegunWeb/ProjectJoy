@@ -43,9 +43,9 @@ const paths = {
 			"./src/styles/styles.scss",
 			"./src/styles/**/*.scss",
 		],
-		styles_libs: "./src/styles/_librarys/**",
+		styles_libs: "./src/styles/librarys/**",
 		scripts: "./src/js/*.js",
-		scripts_libs: "./src/js/_librarys/**",
+		scripts_libs: "./src/js/librarys/**",
 		favicons: "./src/img/icons/favicon.{jpg,jpeg,png,gif}",
 		images: [
 			"./src/img/**/*.{jpg,jpeg,png,gif,svg}",
@@ -60,9 +60,9 @@ const paths = {
 		clean: ["./dist/*", "./dist/.*"],
 		general: "./dist/",
 		styles: "./dist/styles",
-		styles_libs: "./dist/styles/_librarys",
+		styles_libs: "./dist/styles/librarys",
 		scripts: "./dist/js",
-		scripts_libs: "./dist/js/_librarys",
+		scripts_libs: "./dist/js/librarys",
 		favicons: "./dist/img/favicons",
 		images: "./dist/img",
 		sprites: "./dist/img/sprites",
@@ -177,7 +177,7 @@ export const styles_libs = () => src(paths.src.styles_libs)
 	.pipe(gulpif(!production, sourcemaps.write("./maps/")))
 	.pipe(dest(paths.build.styles_libs))
 	.pipe(debug({
-		"title": "CSS _librarys files"
+		"title": "CSS librarys files"
 	}))
 	.on("end", browsersync.reload);
 
@@ -204,7 +204,7 @@ export const scripts = () => browserify({
 export const scripts_libs = () => src(paths.src.scripts_libs)
 	.pipe(dest(paths.build.scripts_libs))
 	.pipe(debug({
-		"title": "JS _librarys files"
+		"title": "JS librarys files"
 	}))
 	.on("end", browsersync.reload);
 
