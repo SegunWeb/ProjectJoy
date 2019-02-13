@@ -7,9 +7,9 @@ mixin top-slider(link_bg, link_bg_tablet, link_bg_mobile, title_text, desc_text,
             div.top-slider-box__content
                 h1.title-text= title_text
                 p.desc-text= desc_text
-                div
-                include ../../elements/buttons/button_try-free
-                include ../../elements/buttons/button_example
+                div.top-slider-btn
+                    include ../../elements/buttons/button_try-free
+                    include ../../elements/buttons/button_example
             div.top-slider-box__img
                 img(src=link_circle)
 div.top-slider
