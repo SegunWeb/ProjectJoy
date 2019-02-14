@@ -49,13 +49,17 @@
   //----------
   &__all {
     color: $w;
-    padding: .24rem 1rem .1rem 1rem;
+    padding: .5rem 3rem;
     margin: 0 auto;
     background-color: $blue-light;
     margin-top: 1rem;
 
+    @include mq(xs){
+    }
     @include mq(sm){
       margin-top: 0;
+      padding: .24rem 1rem .1rem 1rem;
+
     }
 
     &:hover {
@@ -86,7 +90,7 @@
   //----------
   &__come-in {
     background-color: $red;
-    padding: .4rem 2.5rem .3rem 2.5rem;
+    padding: .4rem 2.5rem;
     color: $w;
     margin: .5rem auto;
     display: block;
@@ -129,7 +133,7 @@
     }
 
     &:hover {
-      color: $blue-light;
+      color: $blue-light !important;
     }
   }
   //---------
@@ -157,7 +161,7 @@
   }
 }
 
-// ----- button burger ---
+// ----- toogle burger ---
 .toggle-hamburger {
   position: relative;
   overflow: hidden;

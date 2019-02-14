@@ -9,7 +9,7 @@
 //@import "settings/settings.backgrounds";
 //@import "settings/settings.colors";
 //@import "settings/settings.fonts";
-@import "settings/settings.globals";
+//@import "settings/settings.globals";
 
 // generic
 @import "generic/generic.fonts";
@@ -33,6 +33,7 @@
 // components
 @import "components/components.body";
 @import "components/components.home-page";
+@import "components/components.store-page";
 @import "components/components.header";
 @import "components/components.footer";
 @import 'components/components.slider';

@@ -73,14 +73,20 @@
   &--red {
     color: $red;
   }
+  &--lg {
+    font-size: $priceFontLg;
+  }
+
 
   &__discount {
+    font-family: $RubikRegular;
+
     &:before {
       content: '';
       position: absolute;
       @extend .elemCenter;
       width: 100%;
-      height: 2px;
+      height: 3px;
       background-color: $red;
     }
   }
@@ -90,11 +96,14 @@
     padding: 0 .25rem;
     font-size: $smFont;
 
+    &--lg {
+      font-size: $currencyFontLg;
+    }
+
     &--red {
       color: $red;
     }
   }
-
 }
 
 // ----- common text -----

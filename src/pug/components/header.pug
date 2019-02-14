@@ -1,62 +1,43 @@
-doctype html
-html(lang="ru")
-    head
-        meta(charset="UTF-8")
-        meta(http-equiv="X-UA-Compatible" content="IE=edge")
-        title VideoJoy
-        meta(name="theme-color" content="#c9e0e04d")
-        meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
-        meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
-        link(rel="shortcut icon" href="../img/favicons/favicon.ico" type="image/x-icon")
-        link(rel="apple-touch-icon" href="../img/favicons/apple-touch-icon.png")
-        link(rel="apple-touch-icon" sizes="57x57" href="../img/favicons/apple-touch-icon-57x57.png")
-        link(rel="apple-touch-icon" sizes="72x72" href="../img/favicons/apple-touch-icon-72x72.png")
-        link(rel="apple-touch-icon" sizes="76x76" href="../img/favicons/apple-touch-icon-76x76.png")
-        link(rel="apple-touch-icon" sizes="114x114" href="../img/favicons/apple-touch-icon-114x114.png")
-        link(rel="apple-touch-icon" sizes="120x120" href="../img/favicons/apple-touch-icon-120x120.png")
-        link(rel="apple-touch-icon" sizes="144x144" href="../img/favicons/apple-touch-icon-144x144.png")
-        link(rel="apple-touch-icon" sizes="152x152" href="../img/favicons/apple-touch-icon-152x152.png")
-        link(rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-touch-icon-180x180.png")
-        link(rel="shortcut icon" href="../img/favicons/favicon-32x32.png" type="image/png")
-        link(rel="stylesheet" href="../styles/librarys/bootstrap.css")
-        link(rel="stylesheet" href="../styles/librarys/animate.css")
-        link(rel="stylesheet" href="../styles/librarys/slick.css")
-        link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous")
-        link(rel="stylesheet" href="../styles/styles.css")
-    body
-        <!---header--->
-        header.container.header-top
-            <!---header-nav--->
-            div.row
-                <!---logo_home-link--->
-                a(href='#').header-top__logo.col-2.offset-1.offset-sm-0
-                   img(src='/img/icons/header-logo.png').logo
-                mixin header-menu(href, name_link)
-                    li
-                      a.menu__link(href=href)= name_link
-                <!---navbar-link--->
-                include ../elements/buttons/button_mobile-menu
-                div.col-lg-10.header-nav-box
-                    nav.col-lg-5.col-md-3.col-5
-                        ul.menu.header-menu.col
-                            +header-menu("#", "Детям")
-                            +header-menu("#", "Взрослым")
-                            +header-menu("#", "Отзывы")
-                            +header-menu("#", "Блог")
-                    div.col-lg-6.header-nav-box__cont.offset-lg-1.col-md-4.col-7
-                        button.btn__auth.text-center.d-flex.align-self-center.btn-text.btn-text--sm Личный кабинет
-                        <!---lang--->
-                        div.lang-menu.dropdown.col-lg-3
-                            select.header-lang
-                                option.header-lang__item(selected value="English" name="Eng") Русcкий
-                                option.header-lang__item(value="English" name="Eng") English
-                        <!---social-links--->
-                        div.socials.col-lg-1.socials__header
-                            a(href="#").socials__fb
-                            a(href="#").socials__yt
-                            a(href="#").socials__inst
-                <!---end-nav--->
-        <!---header-end--->
+<!---header--->
+header.container.header-top
+    <!---header-nav--->
+    div.row
+        <!---logo_home-link--->
+        a(href='index.html').header-top__logo.col-2.offset-1.offset-sm-0
+            img(src='/img/icons/header-logo.png').logo
+        mixin header-menu(href, name_link)
+            li
+                a.menu__link(href=href)= name_link
+        <!---navbar-link--->
+        include ../elements/buttons/button_mobile-menu
+        div.col-lg-10.header-nav-box
+            nav.col-lg-5.col-md-3.col-5
+                ul.menu.header-menu.col
+                    +header-menu("#", "Детям")
+                    +header-menu("#", "Взрослым")
+                    +header-menu("#", "Отзывы")
+                    +header-menu("#", "Блог")
+            div.col-lg-6.header-nav-box__cont.offset-lg-1.col-md-4.col-7
+                button.btn__auth.text-center.d-flex.align-self-center.btn-text.btn-text--sm Личный кабинет
+                <!---lang--->
+                ul.nav.lang-menu
+                    mixin header-lang(href, name_lang)
+                        li.header-lang__item
+                            a(href=href)= name_lang
+                    li.dropdown
+                        a.dropdown-toggle.lang-menu__button(href="#" data-toggle="dropdown" role="button" aria-expanded="false") Русский
+                            span.caret
+                        ul.dropdown-menu.header-lang(role="menu")
+                            +header-lang('#', "Русский")
+                            +header-lang('#', "English")
+                            +header-lang('#', "Portuguese")
+                            <!---social-links--->
+                div.socials.col-lg-1.socials__header
+                    a(href="#").socials__fb
+                    a(href="#").socials__yt
+                    a(href="#").socials__inst
+        <!---end-nav--->
+<!---header-end--->
 
 
 

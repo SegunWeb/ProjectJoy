@@ -28,6 +28,15 @@
 
   p {
     margin-top: .5rem;
+    justify-content: center;
+
+    @include mq(sm){
+      justify-content: flex-start !important;
+      margin-top: 0rem;
+    }
+    @include mq(md){
+      justify-content: center !important;
+    }
   }
 }
 .footer-menu {

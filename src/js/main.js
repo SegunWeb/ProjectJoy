@@ -12,8 +12,6 @@ $('.multiple-items').slick({
     infinite: true,
     slidesToShow: 2,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 8000,
     dots: true,
     responsive: [
         {
@@ -100,3 +98,10 @@ $(document).on('click', '.play-video', function() {
         });
     }
 })();
+
+// ----- price ------
+$( document ).ready( function () {
+   if($(".price-box__discount").hasClass("d-none")) {
+       $(".price-box__main p").toggleClass("price-text__discount")
+   }
+});

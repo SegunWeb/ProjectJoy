@@ -9,11 +9,14 @@ div.recommended.padding-y
                     div.rec-video.video-box
                         include ../../../elements/video/video
                     p.title-text__xs.title-text__xs--black.margin-text= title
-                    div.col-12.d-flex.recommended-price.justify-content-around
-                        p.price-text.price-text__discount= price
-                            span.price-text__currency= currency
-                        p.price-text.price-text--red= new_price
-                            span.price-text__currency.price-text__currency--red= new_currency
+                    div.price
+                        div.price-box
+                            div.price-box__main
+                                p.price-text.price-text__discount= price
+                                span.price-text__currency= currency
+                            div.price-box__discount
+                                p.price-text.price-text--red= new_price
+                                span.price-text__currency.price-text__currency--red= new_currency
                         include ../../../elements/buttons/button_more
             div.col-12.d-flex.justify-content-between.recommended-content.flex-wrap
                 +recommendet-box('Для дня рождения', '320', 'грн', '210', 'грн')

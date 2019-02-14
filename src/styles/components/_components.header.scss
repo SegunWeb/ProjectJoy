@@ -24,18 +24,20 @@
 }
 .header-lang {
   min-width: 3.6rem;
-  background-color: transparent;
   color: $blue;
-  @include mq(md){
-    color: $w;
-  }
 
   &__item {
     padding: 5px;
     font-size: $menuLittleFont;
-    color: $blue-light;
+      a {
+        color: $blue;
+      }
+
     &:hover {
-      color: $blue;
+      a {
+        color: $w;
+      }
+      background-color: $blue-light;
     }
 
   }
@@ -96,3 +98,17 @@
   }
 }
 
+.header-store {
+  height: 2.8rem;
+  background-image: url("../img/bg/elem/bg-header.png");
+
+  @include mq(xs){
+    height: 3.4rem;
+  }
+  @include mq(sm){
+    height: 4rem;
+  }
+  @include mq(md){
+    height: 5.8rem;
+  }
+}

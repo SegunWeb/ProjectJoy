@@ -25,5 +25,33 @@
 }
 // ----- forms ----
 .form-group {
-  margin-bottom: .5rem;
+  margin: .5rem auto;
+
+  input {
+    color: $b !important;
+  }
+  input[placeholder] {
+    font-family: $RubikRegular;
+  }
+}
+
+// ----- price -----
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  div {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__main {
+    margin-right: 5%;
+  }
 }
