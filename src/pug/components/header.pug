@@ -20,24 +20,27 @@ header.container.header-top
             div.col-lg-6.header-nav-box__cont.offset-lg-1.col-md-4.col-7
                 button.btn__auth.text-center.d-flex.align-self-center.btn-text.btn-text--sm Личный кабинет
                 <!---lang--->
-                ul.nav.lang-menu
+                div.nav.lang-menu
                     mixin header-lang(href, name_lang)
                         li.header-lang__item
                             a(href=href)= name_lang
-                    li.dropdown
+                    div.dropdown
                         a.dropdown-toggle.lang-menu__button(href="#" data-toggle="dropdown" role="button" aria-expanded="false") Русский
                             span.caret
                         ul.dropdown-menu.header-lang(role="menu")
                             +header-lang('#', "Русский")
                             +header-lang('#', "English")
                             +header-lang('#', "Portuguese")
-                            <!---social-links--->
+                <!---social-links--->
                 div.socials.col-lg-1.socials__header
                     a(href="#").socials__fb
                     a(href="#").socials__yt
                     a(href="#").socials__inst
         <!---end-nav--->
 <!---header-end--->
+<!----pop-up---->
+include pop-up/auth_pop-up
+<!----pop-up-end---->
 
 
 

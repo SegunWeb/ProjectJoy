@@ -105,3 +105,6 @@ $( document ).ready( function () {
        $(".price-box__main p").toggleClass("price-text__discount")
    }
 });
+
+
+

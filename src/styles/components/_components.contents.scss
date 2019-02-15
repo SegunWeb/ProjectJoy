@@ -211,3 +211,115 @@
       }
     }
 }
+
+// ----- input radio ------
+input[type=radio] {
+  display: none;
+}
+.radio-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  li {
+    margin: .5rem auto;
+    min-width: 9rem;
+    @include mq(xs){
+      min-width: 10rem;
+    }
+    @include mq(sm){
+      margin: 1rem auto;
+    }
+  }
+}
+.checkbox+label {
+  color: $w;
+  font-family: $RubikRegular;
+  background-color: $blue-light;
+  width: 100%;
+  text-align: center;
+  border-radius: .3rem;
+  padding: .4rem 0;
+  -webkit-box-shadow: 0px 6px 15px -8px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 6px 15px -8px rgba(0,0,0,0.5);
+  box-shadow: 0px 6px 15px -8px rgba(0, 0, 0, 0.5);
+  &:hover {
+    color: $blue;
+    background-color: $w;
+    font-family: $RubikMedium;
+  }
+}
+.checkbox:checked+label {
+  font-family: $RubikMedium;
+  -webkit-box-shadow: 0px 6px 15px -8px rgba(0,0,0,0);
+  -moz-box-shadow: 0px 6px 15px -8px rgba(0,0,0,0);
+  box-shadow: 0px 6px 15px -8px rgba(0, 0, 0, 0);
+  color: $blue;
+  background-color: $w;
+  width: 100%;
+  text-align: center;
+  &:before {
+    content: "\f058";
+    @extend .fontAwesomeFree;
+    padding-right: .1rem;
+    margin-top: -.2rem;
+  }
+}
+
+.list {
+  width: 100%;
+  @include mq(md){
+    width: 49%;
+  }
+
+
+  &__title {
+    font-family: $RubikMedium;
+    border-radius: .3rem;
+    padding: .4rem 1rem;
+    background-color: $w;
+    color: $blue;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    cursor: pointer;
+    min-width: 14rem;
+    @include mq(md){
+      width: 100%;
+      margin: 0;
+    }
+
+    &::after {
+      right: 1rem;
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      margin: auto 0;
+    }
+  }
+
+  &__wrap {
+    width: 90%;
+    color: $blue;
+    cursor: pointer;
+    margin: .3rem auto;
+
+    @include mq(md) {
+      width: 100%;
+    }
+
+    li {
+      font-family: $RubikMedium;
+      padding: .2rem 1rem;
+      &:hover {
+        background-color: $blue-light;
+        color: $w;
+
+      }
+    }
+
+
+  }
+}
+

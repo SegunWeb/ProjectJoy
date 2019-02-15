@@ -62,6 +62,15 @@
       text-align: left;
     }
   }
+  &__filter {
+    font-size: $baseFont;
+    font-family: $RubikMedium;
+    text-transform: uppercase;
+    line-height: 1.1;
+    @include mq(md) {
+      line-height: initial;
+    }
+  }
 }
 
 // ----- price text ----
