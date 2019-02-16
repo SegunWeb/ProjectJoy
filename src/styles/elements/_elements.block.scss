@@ -159,6 +159,61 @@
       display: none;
     }
   }
+  // -----------
+  &__next {
+    background-color: $red;
+    margin: 1rem auto;
+    padding: .6rem 3rem .5rem 3rem;
+    color: $w;
+    display: block;
+
+
+    &:hover {
+      background-color: $blue-light;
+    }
+  }
+  // --------------
+  &__prev {
+    background-color: $w;
+    margin: 1rem auto 0 auto;
+    padding: .6rem 3rem .5rem 3rem;
+    color: $blue;
+    display: block;
+    border: 2px solid $blue;
+    @include mq(xs){
+      margin: 1rem auto;
+    }
+
+    &:hover {
+      background-color: $blue-light;
+      color: $w;
+      border: 2px solid $blue-light;
+    }
+  }
+
+
+  // --------------
+  &__load {
+    background-color: rgba(255,255,255, .1);
+    margin: 0 auto;
+    padding: .5rem 4rem .4rem 4rem;
+    color: $w;
+    border-radius: .3rem;
+    display: block;
+
+    &:before {
+      content: '\f019';
+      font-size: 1rem;
+      padding-right: .4rem;
+      margin-top: -.15rem;
+      @extend .fontAwesomeFree
+    }
+
+    &:hover {
+      background-color: $blue-light;
+    }
+  }
+
 }
 
 // ----- toogle burger ---

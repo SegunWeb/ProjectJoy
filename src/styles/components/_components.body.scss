@@ -20,9 +20,7 @@
     max-height: 20rem;
   }
 }
-.aunt-box {
 
-}
 // ----- forms ----
 .form-group {
   margin: .5rem auto;
@@ -55,3 +53,61 @@
     margin-right: 5%;
   }
 }
+
+// ---- filter - store -----
+.filter-store  {
+  background-color: $bgBlue;
+  padding-bottom: .5rem;
+  @include mq(sm){
+    padding-bottom: 2rem;
+  }
+
+  &__bg {
+    display: none;
+    @include mq(sm){
+      margin-bottom: -1.3rem;
+      display: block;
+    }
+  }
+
+  &__box {
+    padding: .3rem;
+    background-color: transparent;
+    max-width: 40rem;
+    border-radius: .5rem;
+    margin: 0 auto;
+
+    @include mq(sm){
+      padding: 2rem;
+      background-color: rgba(255,255,255, .1);
+    }
+  }
+}
+
+.filter-store-lang {
+  margin-bottom: .5rem;
+}
+
+.filter-store-age,
+.filter-store-gender {
+  margin-bottom: 1rem;
+  @include mq(sm){
+    margin-bottom: 0;
+  }
+}
+
+.filter-store-box {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @include mq(sm){
+    margin-bottom: 0;
+  }
+}
+
+.filter-store-words {
+  width: 100%;
+  position: relative;
+}
+

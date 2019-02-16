@@ -2,6 +2,22 @@ div.filter-store
     img.filter-store__bg(src='img/bg/elem/base2.png')
     h2.text-center.title-text__md.title-text__md--white Выберете ролик
     div.filter-store__box
+        div.filter-store-lang
+            p.text-center.title-text__filter Язык
+            ul.lang-group.radio-group
+                li
+                    input.checkbox( type="checkbox" name="lang"  id="rus" value="Русский" checked)
+                    label(for="rus") Русский
+                li
+                    input.checkbox( type="checkbox" name="lang" id="eng" value="English")
+                    label(for="eng") English
+                li
+                    input.checkbox( type="checkbox" name="lang" id="pld" value="Polish")
+                    label(for="pld") Polish
+                li
+                    input.checkbox( type="checkbox" name="lang" id="prt" value="Portuguese")
+                    label(for="prt") Portuguese
+
         div.filter-store-age
             p.text-center.title-text__filter Кому
             ul.age-group.radio-group
@@ -28,7 +44,7 @@ div.filter-store
             div.filter-store-event.list
                 p.text-center.title-text__filter Мероприятие
                 div.event-list
-                    p.list__title.dropdown-toggle(href="#" data-toggle="dropdown" role="button" aria-expanded="false") День рождение
+                    p.list__title.dropdown-toggle( data-toggle="dropdown" role="button" aria-expanded="false") День рождение
                     mixin event-list(name_event)
                         li
                             span= name_event
@@ -39,7 +55,7 @@ div.filter-store
             div.filter-store-people.list
                 p.text-center.title-text__filter Количество человек
                 div.people-list
-                    p.list__title.dropdown-toggle(href="#" data-toggle="dropdown" role="button" aria-expanded="false") Видео для 1 человека
+                    p.list__title.dropdown-toggle( data-toggle="dropdown" role="button" aria-expanded="false") Видео для 1 человека
                     mixin people-list(num)
                         li
                             span= num
