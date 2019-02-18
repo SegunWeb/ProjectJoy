@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>VideoJoy</title>
+    <meta name="theme-color" content="#c9e0e04d">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="shortcut icon" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="stylesheet" href="styles/librarys/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/librarys/animate.min.css">
+    <link rel="stylesheet" href="styles/librarys/slick.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.min.css">
+  </head>
+  <body></body>
+</html>
+<div class="header-red"><!---header--->
+  <header class="container header-top"><!---header-nav--->
+    <div class="row"><!---logo_home-link---><a class="header-top__logo col-2 offset-1 offset-sm-0" href="index.html"><img class="logo" src="img/icons/header-logo.png"></a><!---navbar-link--->
+      <button class="toggle-hamburger toggle-hamburger__animx btn__hamburger col-1 offset-sm-9 offset-7"><span></span></button>
+      <div class="col-lg-10 header-nav-box">
+        <nav class="col-lg-5 col-md-3 col-5">
+          <ul class="menu header-menu col">
+                  <li><a class="menu__link" href="video_store.html">Детям</a></li>
+                  <li><a class="menu__link" href="video_store.html">Взрослым</a></li>
+                  <li><a class="menu__link" href="#">Отзывы</a></li>
+                  <li><a class="menu__link" href="#">Блог</a></li>
+          </ul>
+        </nav>
+        <div class="col-lg-6 header-nav-box__cont offset-lg-1 col-md-4 col-7">
+          <button class="btn__auth text-center d-flex align-self-center btn-text btn-text--sm">Личный кабинет</button><!---lang--->
+          <div class="nav lang-menu">
+            <div class="dropdown"><a class="dropdown-toggle lang-menu__button" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Русский<span class="caret"></span></a>
+              <ul class="dropdown-menu header-lang" role="menu">
+                            <li class="header-lang__item"><a href="#">Русский</a></li>
+                            <li class="header-lang__item"><a href="#">English</a></li>
+                            <li class="header-lang__item"><a href="#">Polish</a></li>
+                            <li class="header-lang__item"><a href="#">Portuguese</a></li>
+              </ul>
+            </div>
+          </div><!---social-links--->
+          <div class="socials col-lg-1 socials__header"><a class="socials__fb" href="#"></a><a class="socials__yt" href="#"></a><a class="socials__inst" href="#"></a></div>
+        </div>
+      </div><!---end-nav--->
+    </div>
+  </header><!---header-end--->
+<!----pop-up---->
+  <div class="filter">
+    <div class="aunt mx-auto">
+      <p class="close"></p>
+      <div class="aut-box">
+        <form>
+          <p class="title-text__sm text-center">Авторизация</p>
+          <div class="form-group">
+            <input class="form-control" type="email" placeholder="Логин" required="required">
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="password" placeholder="Пароль">
+          </div>
+          <p class="desc-text__md desc-text--red text-center">Неверный логин или пароль</p>
+          <button class="btn btn__come-in" type="submit">Войти</button>
+        </form>
+        <button class="btn btn__forgot-pass m-auto">Забыли пароль?</button>
+        <p class="desc-text__md desc-text--blue text-center m-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ea fugit itaque perspiciatis tempore, voluptate?</p>
+      </div>
+    </div>
+  </div><!----pop-up-end---->
+</div>
+<main>
+  <div class="example-store create-movie">
+    <h2 class="text-center title-text__md">Создание ролика</h2>
+    <div class="example-store-video video-box create-movie-video"><img class="img-video" src="img/family-s.jpg" alt="img">
+      <iframe class="d-flex justify-content-center" data-src="https://www.youtube.com/embed/dcMRHF0Wt3I?rel=0&amp;amp;controls=0&amp;amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <button class="play-video"></button>
+    </div>
+  </div>
+  <div class="filter-store step-one">
+    <h2 class="text-center title-text__md title-text__step">Этап 1</h2>
+    <div class="filter-store__box step-one__box">
+      <div class="filter-store-gender">
+        <p class="text-center title-text__filter">Пол</p>
+        <ul class="gender-group-step radio-group">
+          <li>
+            <input class="checkbox" type="radio" name="gender" id="girl" value="Девочка">
+            <label for="girl">Девочка</label>
+          </li>
+          <li>
+            <input class="checkbox" type="radio" name="gender" id="boy" value="Мальчик">
+            <label for="boy">Мальчик</label>
+          </li>
+        </ul>
+      </div>
+      <div class="filter-store-box">
+        <div class="filter-store-name list-name">
+          <p class="text-center title-text__filter">Выбор имени</p>
+          <div class="name-list">
+            <p class="list__title name-list__title dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Имя не выбрано</p>
+            <ul class="list__wrap dropdown-menu">
+                          <li><span>Леша</span></li>
+                          <li><span>Саша</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-text btn__next">далее</button>
+  <div class="step-two">
+    <h2 class="text-center title-text__md title-text__step">Этап 2</h2>
+    <div class="photo">
+      <button class="btn btn-text btn__load">загрузить фото</button>
+      <div class="photo-editor">
+        <div class="photo-editor__photo photo-editor__photo--gor"><img src="img/family-s.jpg"></div>
+        <div class="photo-editor__editor">
+          <ul class="editor-position">
+            <li>
+              <input class="edit" type="radio" name="positions" id="ver" value="Вертикально" checked>
+              <label class="edit__ver" for="ver">Вертикально</label>
+            </li>
+            <li>
+              <input class="edit edit__ver" type="radio" name="positions" id="gor" value="Горизонтально">
+              <label class="edit__ver" for="gor">Горизонтально</label>
+            </li>
+          </ul>
+          <div class="editor-size">
+            <p class="editor-size__line"><span></span></p>
+          </div>
+          <div class="editor-deg">
+            <button class="editor-deg__line--left editor-deg__line"></button>
+            <button class="editor-deg__line--right editor-deg__line"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="filter-store-box words">
+      <div class="filter-store-words">
+        <p class="text-center title-text__filter">Выберите фразу</p>
+        <div class="words-list">
+          <p class="list__title words-list__title dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Фраза не выбрана</p>
+          <ul class="list__wrap dropdown-menu">
+                      <li><span>Ого как классно!</span></li>
+                      <li><span>Как круто, просто огонь!</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="step__btn">
+      <button class="btn btn-text btn__prev">назад</button>
+      <button class="btn btn-text btn__next">далее</button>
+    </div>
+  </div>
+  <div class="step-three">
+    <h2 class="text-center title-text__md title-text__step">Этап 3</h2>
+    <div class="step-box step-box__form">
+      <form>
+        <div class="form-group">
+          <input class="form-control" type="text" placeholder="ФИО" required="required">
+        </div>
+        <div class="form-group">
+          <input class="form-control" type="phone" placeholder="Телефон" required="required">
+        </div>
+        <div class="form-group">
+          <input class="form-control" type="email" placeholder="Email" required="required">
+        </div>
+        <div class="form-group">
+          <input class="form-control" type="text" placeholder="Город" required="required">
+        </div>
+      </form>
+    </div>
+    <div class="step__btn">
+      <button class="btn btn-text btn__prev">назад</button>
+      <button class="btn btn-text btn__next">далее</button>
+    </div>
+  </div>
+</main><!---footer--->
+<footer class="footer"><!---footer-nav--->
+  <div class="container">
+    <div class="row">
+      <div class="d-md-flex justify-content-between align-self-center col"><!---logo_home-link---><a class="col-md-2 justify-content-center d-flex" href="#"><img class="logo logo__footer" src="img/icons/footer-logo.png"></a><!---navbar-link--->
+        <nav class="col-6 offset-lg-1 d-flex align-self-center footer-nav">
+          <ul class="menu footer-menu flex-wrap">
+                    <li class="col-md-4"><a class="menu__link" href="video_store.html">Детям</a></li>
+                    <li class="col-md-4"><a class="menu__link" href="#">Отзывы</a></li>
+                    <li class="col-md-4"><a class="menu__link" href="#">Помощь</a></li>
+                    <li class="col-md-4"><a class="menu__link" href="video_store.html">Взрослым</a></li>
+                    <li class="col-md-4"><a class="menu__link" href="#">Блог</a></li>
+                    <li class="col-md-4"><a class="menu__link" href="#">О нас</a></li>
+          </ul>
+        </nav><!---end-nav--->
+<!---mobile-nav--->
+        <nav class="footer-nav-mobile">
+          <ul class="footer-nav-mobile__menu col-6 footer-nav-mobile__menu--right">
+                    <li class="col-md-4"><a class="menu__link" href="video_store.html">Детям</a></li>
+                    <li class="col-md-4"><a class="menu__link" href="video_store.html">Взрослым</a></li>
+                    <li class="col-md-4"><a class="menu__link" href="#">Отзывы</a></li>
+          </ul>
+          <ul class="footer-nav-mobile__menu col-6">
+                    <li class="col-md-4"><a class="menu__link" href="#">Блог</a></li>
+                    <li class="col-md-4"><a class="menu__link" href="#">Помощь</a></li>
+                    <li class="col-md-4"><a class="menu__link" href="#">О нас</a></li>
+          </ul>
+        </nav><!---mobile-nav-end--->
+        <div class="col-md-3 offset-lg-1 col-lg-2 menu__contacts"><a href="mailto:videojoy@gmail.com">videojoy@gmail.com</a><a href="tel:+380934484433">+38(093)654-32-11</a></div>
+      </div>
+    </div><!---footer-box---->
+  </div>
+  <div class="footer__box">
+    <div class="container">
+      <div class="row">
+        <div class="footer-box col">
+          <p class="col-md-3 col-lg-2 justify-content-center order-1 order-md-0">JoyVideo 2019</p><!---info-link---->
+          <div class="col-md-7 col-lg-6 menu__info"><a class="col-md-7" href="#">Пользовательское  соглашение</a><a class="col-md-5" href="#">Возврат средств</a></div><!---social-links--->
+          <div class="socials col-md-2 justify-content-center socials__footer"><a class="socials__fb" href="#"></a><a class="socials__yt" href="#"></a><a class="socials__inst" href="#"></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer><!---footer-end--->
+<script src="js/librarys/jquery.min.js"></script>
+<script src="js/librarys/bootstrap.min.js"></script>
+<script src="js/librarys/slick.min.js"></script>
+<script src="js/librarys/wow.min.js"></script>
+<script src="js/main.min.js"></script>
