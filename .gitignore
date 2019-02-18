@@ -1,5 +1,0 @@
-# .gitignore file
-
-.idea/*
-node_modules/*
-dist/*
