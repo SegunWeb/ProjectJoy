@@ -1,15 +1,21 @@
 div.step-three
     h2.text-center.title-text__md.title-text__step Этап 3
+    <!----form box----->
     div.step-box.step-box__form
-        form
+        <!----form----->
+        form.step-form
             div.form-group
-                input( type="text" class="form-control" placeholder="ФИО" required='required')
+                label(for="name") Фио
+                input( type="text" class="form-control" id='name' placeholder="" required='required')
             div.form-group
-                input( type="phone" class="form-control" placeholder="Телефон" required='required')
+                label(for="phone") Телефон
+                input( type="phone" class="form-control" id='phone' placeholder="" required='required')
             div.form-group
-                input( type="email" class="form-control" placeholder="Email" required='required')
+                label(for="mail") Email
+                input( type="email" class="form-control" id='mail' placeholder="" required='required')
             div.form-group
-                input( type="text" class="form-control" placeholder="Город" required='required')
+                label(for="text") Город
+                input( type="text" class="form-control" id='text' placeholder="" required='required')
 
 
     div.step__btn

@@ -10,6 +10,7 @@ div.all-video
                         include ../../../elements/video/video
                     p.title-text__xs.title-text__xs--black.margin-text= title
                     p.desc-text.desc-text--black= desc
+                    <!----price---->
                     div.price
                         div.price-box
                             div.price-box__main
@@ -19,6 +20,7 @@ div.all-video
                                 p.price-text.price-text--lg.price-text--red= new_price
                                 span.price-text__currency.price-text__currency--red.price-text__currency--lg= new_currency
                         include ../../../elements/buttons/button_create-video_br
+            <!----video box---->
             div.all-video__box.col
                 +all-video-box(
                     'Для дня рождения',

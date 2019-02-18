@@ -55,52 +55,175 @@
   }
 }
 
-// ----- photo -----
+// ----- words -----
 
-.photo,
-.words {
-  padding: .3rem;
-  max-width: 40rem;
-  margin: 0 auto;
-  background-color: rgba(0, 93, 186, 0.9);
-
-  @include mq(sm) {
-    border-radius: .5rem;
-    padding: 1rem 2rem 1rem 2rem;
-  }
-}
-.photo {
-  padding: 1rem .5rem;
-}
-
-.words {
-  margin-top: 1rem;
-  padding: 1rem;
-}
 .words-list {
   margin-top: 1rem;
 }
 
-// ---- step-box -----
-.step-box {
-  padding: .5rem;
-  max-width: 40rem;
+// --- cropit -----
+
+.image-editor {
+  &__box {
+    display: block;
+  }
+}
+.cropit-preview {
+  background-color: rgba(255, 255, 255, 0.1);
+  background-size: cover;
+  border-radius: .5rem;
+  width: 100%;
+  height: 20rem;
+  display: none;
+  margin: .5rem auto 0 auto;
+}
+.cropit-preview-image-container {
+  cursor: move;
+}
+
+// ------- editor -----
+
+.editor-box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: column;
+  margin: 1rem auto 0 auto;
+  @include mq(sm){
+    flex-direction: row;
+    margin: 0;
+  }
+}
+
+.editor-position {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 15rem;
   margin: 0 auto;
-  background-color: rgba(0, 93, 186, 0.9);
+
+  @include mq(xs) {
+    max-width: 16rem;
+  }
   @include mq(sm) {
-    border-radius: .5rem;
-    padding: 1rem 2rem 1rem 2rem;
+    margin: 0;
   }
 
-  &__form {
-    padding: 1rem;
-    @include mq(xs){
-      padding: 1rem 1.5rem;
-    }
-    @include mq(sm) {
-      padding: 1rem 6rem 1rem 6rem;
+  li {
+    margin: 0 .5rem;
+    label {
+      font-family: $RubikRegular;
+      font-size: $mdFont;
+      cursor: pointer;
+      &:hover:before {
+        color: $green;
+      }
     }
   }
 }
 
+.editor-zoom {
+  width: 90%;
+  max-width: 13rem;
+  display: flex;justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 1.5rem auto;
+  @include mq(sm) {
+    margin: 0 auto;
+    max-width: 10rem;
+  }
 
+  &:before {
+    content:'\f056';
+    @extend .fontAwesomeFree;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 0;
+  }
+
+  &::after {
+    content:'\f055';
+    @extend .fontAwesomeFree;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 0;
+  }
+}
+
+
+.editor-deg {
+  display: flex;
+  margin: 0 auto;
+  @include mq(sm) {
+    margin: 0;
+  }
+
+  &__line {
+    display: block;
+    background-color: transparent;
+    color: $w;
+    padding: .3rem;
+    margin: 0 .6rem;
+    font-size: $degFont;
+    @include mq(sm) {
+      margin: 0 .3rem;
+    }
+    &:hover {
+      color: $green;
+    }
+
+    &--left {
+
+      &:before {
+        content:'\f2f9';
+        @extend .fontAwesomeFree;
+        transform: rotateY(180deg);
+      }
+    }
+
+    &--right {
+
+      &:before {
+        content:'\f2f9';
+        @extend .fontAwesomeFree;
+      }
+    }
+  }
+}
+
+// --- step form ----
+.step-form {
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    @include mq(xs) {
+      max-width: 23rem;
+      flex-direction: row;
+    }
+
+    @include mq(sm) {
+      max-width: 35rem;
+    }
+
+    label {
+      width: 100%;
+      font-family: $RubikMedium;
+      text-align: center;
+      @include mq(xs){
+        text-align: right;
+        width: 19%;
+      }
+    }
+    input {
+      width: 95%;
+      @include mq(xs){
+        width: 78%;
+      }
+    }
+  }
+}

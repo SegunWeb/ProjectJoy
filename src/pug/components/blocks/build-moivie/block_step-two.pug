@@ -1,30 +1,37 @@
 div.step-two
     h2.text-center.title-text__md.title-text__step Этап 2
-    div.photo
-        include ../../../elements/buttons/button_load
-        div.photo-editor
-            div.photo-editor__photo.photo-editor__photo--gor
-                img(src='img/family-s.jpg')
-            div.photo-editor__editor
-                ul.editor-position
-                    li
-                        input.edit( type="radio" name="positions" id="ver" value="Вертикально" checked)
-                        label.edit__ver(for="ver") Вертикально
-                    li
-                        input.edit.edit__ver( type="radio" name="positions" id="gor" value="Горизонтально")
-                        label.edit__ver(for="gor") Горизонтально
-                div.editor-size
-                    p.editor-size__line
-                        span
-                div.editor-deg
-                    button.editor-deg__line--left.editor-deg__line
-                    button.editor-deg__line--right.editor-deg__line
+    div.step-box__photo.step-box
+        <!----photo editor----->
+        div.image-editor
+            <!----photo loader----->
+            include ../../../elements/buttons/button_load
+            <!----photo----->
+            div.cropit-preview
+            <!----photo position----->
+            div.image-editor__box
+                div.editor-box
+                    ul.editor-position
+                        li.vertical
+                            input.edit( type="radio" name="positions" id="ver" value="Вертикально" )
+                            label.edit__ver(for="ver") Вертикально
+                        li.horizontal
+                            input.edit.edit__ver( type="radio" name="positions" id="gor" value="Горизонтально" checked)
+                            label.edit__ver(for="gor") Горизонтально
+                    <!----photo range----->
+                    div.editor-zoom
+                        input.cropit-image-zoom-input.editor-zoom__range(type="range")
+                    <!----photo deg----->
+                    div.editor-deg
+                        button.editor-deg__line--left.editor-deg__line.rotate-ccw
+                        button.editor-deg__line--right.editor-deg__line.rotate-cwRotate
 
 
 
-    div.filter-store-box.words
+    <!----words----->
+    div.filter-store-box.step-box__words.step-box
         div.filter-store-words
             p.text-center.title-text__filter Выберите фразу
+            <!----words list----->
             div.words-list
                 p.list__title.words-list__title.dropdown-toggle(data-toggle="dropdown" role="button" aria-expanded="false") Фраза не выбрана
                 mixin event-list(name_event)
@@ -33,9 +40,13 @@ div.step-two
                 ul.list__wrap.dropdown-menu
                     +event-list("Ого как классно!")
                     +event-list('Как круто, просто огонь!')
+    <!----buttons box----->
     div.step__btn
         include ../../../elements/buttons/button_prev
         include ../../../elements/buttons/button_next
+
+
+
 
 
 

@@ -107,4 +107,32 @@ $( document ).ready( function () {
 });
 
 
+// ----- cropit -------
 
+$(function() {
+    $('.rotate-cw').click(function() {
+        $('.image-editor').cropit('rotateCW');
+    });
+    $('.rotate-ccw').click(function() {
+        $('.image-editor').cropit('rotateCCW');
+    });
+
+    $('.export').click(function() {
+        var imageData = $('.image-editor').cropit('export');
+        window.open(imageData);
+    });
+});
+
+$("input:file").change(function (){
+    if ($(this).val()){
+        $('.cropit-preview').slideDown();
+        $('.image-editor__box').css('display','flex');
+    }
+});
+
+$('.horizontal').click(function () {
+   $(".cropit-preview").css({"width":"100%", "height":"20rem"})
+});
+$('.vertical').click(function () {
+    $(".cropit-preview").css({"width":"80%","height":"25rem"})
+});

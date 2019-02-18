@@ -2,6 +2,7 @@ div.filter-store
     img.filter-store__bg(src='img/bg/elem/base2.png')
     h2.text-center.title-text__md.title-text__md--white Выберете ролик
     div.filter-store__box
+        <!----filter lang---->
         div.filter-store-lang
             p.text-center.title-text__filter Язык
             ul.lang-group.radio-group
@@ -17,7 +18,7 @@ div.filter-store
                 li
                     input.checkbox( type="checkbox" name="lang" id="prt" value="Portuguese")
                     label(for="prt") Portuguese
-
+        <!----filter age---->
         div.filter-store-age
             p.text-center.title-text__filter Кому
             ul.age-group.radio-group
@@ -27,7 +28,7 @@ div.filter-store
               li
                 input.checkbox( type="radio" name="age" id="adult" value="Взрослый")
                 label(for="adult") Взрослый
-
+        <!----filter gender---->
         div.filter-store-gender
             p.text-center.title-text__filter Пол
             ul.gender-group.radio-group
@@ -40,7 +41,9 @@ div.filter-store
                 li
                     input.checkbox( type="radio" name="gender" id="boy" value="Мальчик")
                     label(for="boy") Мальчик
+        <!----filter box---->
         div.filter-store-box
+            <!----list event---->
             div.filter-store-event.list
                 p.text-center.title-text__filter Мероприятие
                 div.event-list
@@ -51,7 +54,7 @@ div.filter-store
                     ul.list__wrap.dropdown-menu
                         +event-list('День рождение')
                         +event-list('Новый год')
-
+            <!----list people---->
             div.filter-store-people.list
                 p.text-center.title-text__filter Количество человек
                 div.people-list

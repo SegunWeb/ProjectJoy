@@ -196,10 +196,12 @@
   &__load {
     background-color: rgba(255,255,255, .1);
     margin: 0 auto;
-    padding: .5rem 4rem .4rem 4rem;
+    line-height: 1.3;
     color: $w;
     border-radius: .3rem;
     display: block;
+    max-width: 15rem;
+    text-align: center;
 
     &:before {
       content: '\f019';
