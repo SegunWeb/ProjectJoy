@@ -26,10 +26,15 @@
   margin: .5rem auto;
 
   input {
-    color: $b !important;
+    color: $blue !important;
   }
   input[placeholder] {
     font-family: $RubikRegular;
+  }
+
+  textarea {
+    font-family: $RubikRegular !important;
+    color: $blue !important;
   }
 }
 

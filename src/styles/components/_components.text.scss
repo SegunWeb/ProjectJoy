@@ -75,6 +75,29 @@
   &__step {
     padding: 1rem 0;
   }
+
+  &__info {
+    font-size: $info_t;
+    font-family: $RubikMedium;
+    color: $blue;
+  }
+
+  &__user {
+    color: $dark-blue;
+    font-family: $RubikRegular;
+    font-size: $info_d;
+  }
+
+  &__account {
+    font-size: $titleAccount;
+    text-transform: uppercase;
+    color: $blue;
+    text-align: center;
+    padding: 1rem 0;
+    @include mq(md){
+      padding: 2rem 0;
+    }
+  }
 }
 
 // ----- price text ----
@@ -155,6 +178,29 @@
     text-align: center;
     @include mq(xs){
       text-align: left;
+    }
+  }
+  &__info {
+    font-size: $info_d;
+    color: $dark-blue;
+  }
+
+  &__user {
+    font-size: $info_d;
+    color: $blue;
+    font-family: $RubikRegular;
+    position: relative;
+    cursor: pointer;
+    opacity: .8;
+    &:hover {
+      font-family: $RubikMedium;
+      opacity: 1;
+    }
+    &:before {
+      content: "\f058";
+      @extend .fontAwesomeFree;
+      padding-right: .1rem;
+      margin-top: -.2rem;
     }
   }
 }

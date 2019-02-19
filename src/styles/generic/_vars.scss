@@ -25,6 +25,12 @@ $holderFont: calc(14px + (14 - 12) * (100vw - 1920px) / (1920 - 480));
 $degFont: calc(30px + (30 - 25) * (100vw - 1920px) / (1920 - 480));
 $positionFont: calc(25px + (25 - 25) * (100vw - 1920px) / (1920 - 480));
 
+$info_t: calc(18px + (18 - 14) * (100vw - 1920px) / (1920 - 480));
+$info_d: calc(16px + (16 - 14) * (100vw - 1920px) / (1920 - 480));
+
+$titleAccount: calc(30px + (30 - 21) * (100vw - 1920px) / (1920 - 480));
+$tabs: calc(18px + (18 - 14) * (100vw - 1920px) / (1920 - 480));
+
 // Font family
 $RubikBlack: "Rubik-Black";
 $RubikBold: 'Rubik-Bold';
@@ -56,4 +62,5 @@ $bgGray: #f8f8f8;
 $bgBlue: #1244b7;
 $holder: #c8c8c8;
 $green: #46ff00;
+$dark-blue: #081d4d;
 

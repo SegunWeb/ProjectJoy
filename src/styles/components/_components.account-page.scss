@@ -1,0 +1,163 @@
+// ---- accuont page ----
+
+.account-radio {
+  margin: 0 auto;
+  max-width: 50rem;
+
+  li {
+    min-width: 7rem !important;
+    @include mq(md){
+      min-width: 10rem !important;
+    }
+
+    label {
+      color: $blue;
+      background-color: transparent;
+      box-shadow: initial;
+      font-size: $tabs;
+      @include mq(sm){
+        padding: .4rem 1rem !important;
+      }
+      @include mq(md){
+        padding: .4rem 0 !important;
+      }
+    }
+  }
+}
+.account-box {
+  padding-bottom: 2rem;
+}
+
+.account-info {
+  margin: 0 auto;
+  max-width: 40rem;
+}
+.user-data {
+  position: relative;
+  margin: 1rem auto 0 auto!important;
+
+  @include mq(sm){
+    margin: 0 0 0 1rem !important;
+  }
+  @include mq(md){
+    margin: 0 0 0 3rem !important;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -1rem;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $blue;
+    @include mq(sm){
+      display: none;
+    }
+    @include mq(md){
+      left: -24%;
+      width: 1px;
+      height: 90%;
+      bottom: 0;
+      margin: auto 0;
+      top: 0;
+      display: block;
+    }
+  }
+}
+.account-check:checked + label {
+  color: $w!important;
+  background-color: $blue!important;
+}
+.info-box {
+  margin-bottom: 1rem !important;
+}
+
+.info-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: .5rem auto;
+  color: $blue;
+  font-family: $RubikRegular;
+  background-color: $bgGray;
+  border-radius: .3rem;
+  padding: .5rem 1rem;
+
+  a {
+    display: block;
+    color: $blue;
+  }
+
+  p {
+    span {
+      margin-left: .3rem;
+    }
+  }
+
+  &__for {
+    width: 73%;
+    word-break: break-all;
+    @include mq(sm){
+      word-break: normal;
+      width: auto;
+    }
+  }
+}
+.save-list {
+  &__wrap {
+    background-color: transparent;
+    border: none;
+  }
+}
+// ---- users data
+.user-form {
+  margin-top: 1.5rem;
+}
+
+#users-data {
+  width: 35rem;
+  margin: 0 auto;
+}
+.form-user {
+  display: flex;
+  align-items: center;
+
+  input {
+    padding: .15rem .5rem;
+    max-width: 18rem;
+    border: 1px solid $blue-light;
+    margin: 0 1rem 0 2.3rem;
+  }
+
+  label {
+    width: 6rem;
+    text-align: right;
+  }
+}
+.user-photo {
+
+  &__img {
+    width: 6rem;
+    height: 6rem;
+    border: 1px solid $dark-blue;
+    border-radius: 5rem;
+    background-color: $bgGray;
+    margin: 0 auto;
+    display: block;
+    overflow: hidden;
+  }
+
+  p {
+    text-align: center;
+    margin: .5rem auto;
+    cursor: pointer;
+    max-width: 7.5rem;
+  }
+}
+.change-pass-box {
+  margin: 2rem auto 0 auto;
+  display: none;
+}

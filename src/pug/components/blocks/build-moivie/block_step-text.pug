@@ -1,0 +1,23 @@
+div.step-text
+    h2.text-center.title-text__md.title-text__step Введите текст
+    <!----form box----->
+    div.step-box.step-box__form
+        <!----form----->
+        form.step-form
+            div.form-group
+                label(for="text-name") Фамилия
+                input( type="text" class="form-control" id='text-name' placeholder="" required='required')
+            div.form-group
+                label(for="text-city") Город
+                input( type="text" class="form-control" id='text-city' placeholder="" required='required')
+            div.form-group
+                label(for="text-words") Пожелание
+                textarea( type="text" class="form-control" id='text-words' placeholder="" required='required')
+
+
+    div.step__btn
+        include ../../../elements/buttons/button_prev
+        include ../../../elements/buttons/button_next
+
+
+

@@ -123,16 +123,58 @@ $(function() {
     });
 });
 
-$("input:file").change(function (){
+$("#load").change(function (){
     if ($(this).val()){
         $('.cropit-preview').slideDown();
         $('.image-editor__box').css('display','flex');
     }
 });
+$("#load-video").change(function (){
+    if ($(this).val()){
+        $('.cropit-video').slideDown();
+    }
+});
 
 $('.horizontal').click(function () {
-   $(".cropit-preview").css({"width":"100%", "height":"20rem"})
+   $(".cropit-preview").addClass('cropit-preview__hor');
+    if($(".cropit-preview").hasClass('cropit-preview__ver')){
+        $(".cropit-preview").removeClass('cropit-preview__ver')
+    }
 });
 $('.vertical').click(function () {
-    $(".cropit-preview").css({"width":"80%","height":"25rem"})
+    $(".cropit-preview").addClass('cropit-preview__ver');
+    if($(".cropit-preview").hasClass('cropit-preview__hor')){
+        $(".cropit-preview").removeClass('cropit-preview__hor')
+    }
+});
+
+// ---- user account ----
+
+$('#all-movie').click(function () {
+    $('#paids, #not-paids').show();
+    $('#users-data').hide();
+    $('#names').text("Все ролики");
+
+});
+$('#paid').click(function () {
+    $('#paids').show();
+    $('#not-paids, #users-data').hide();
+    $('#names').text("Оплаченные");
+});
+$('#not-paid').click(function () {
+    $('#not-paids').show();
+    $('#paids, #users-data').hide();
+    $('#names').text("Не оплаченные");
+});
+$('#user-data').click(function () {
+    $('#users-data').show();
+    $('#not-paids, #paids').hide();
+    $('#names').text("Личные данные");
+});
+
+$(".change-pass").click(function () {
+    $(".change-pass-box").slideDown()
+});
+$(".form-user input").focus(function () {
+    $(this).next().css("opacity","1")
 });

@@ -215,6 +215,35 @@
       background-color: $blue-light;
     }
   }
+  // ----------------
+  &__save {
+    background-color: $red;
+    margin: 1rem auto 2.5rem auto;
+    padding: .6rem 3rem .5rem 3rem;
+    color: $w;
+    display: block;
+    max-width: 10rem;
+    position: relative;
+
+    &:hover {
+      background-color: $blue-light;
+    }
+  }
+  // -------------
+  &__pay {
+    background-color: $red;
+    margin: 1rem auto 2.5rem auto;
+    padding: .6rem 3rem .5rem 3rem;
+    color: $w;
+    display: block;
+    max-width: 10rem;
+    position: relative;
+
+    &:hover {
+      background-color: $blue-light;
+    }
+  }
+  // -------------
 
 }
 

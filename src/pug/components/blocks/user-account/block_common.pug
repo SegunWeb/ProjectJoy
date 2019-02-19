@@ -1,0 +1,95 @@
+div.account
+    h2.text-center.title-text__md Личный кабинет
+    div.container
+        div.row
+            ul.col-12.account-radio.radio-group
+                li
+                    input.checkbox.account-check( type="radio" name="account"  id="all-movie" value="Все ролики")
+                    label(for="all-movie") Все ролики
+                li
+                    input.checkbox.account-check( type="radio" name="account" id="paid" value="Оплаченные")
+                    label(for="paid") Оплаченные
+                li
+                    input.checkbox.account-check( type="radio" name="account" id="not-paid" value="Не оплаченные")
+                    label(for="not-paid") Не оплаченные
+                li.user-data
+                    input.checkbox.account-check( type="radio" name="account" id="user-data" value="Личные данные" checked)
+                    label(for="user-data") Личные данные
+            div.col-12.account-box
+                h2#names.text-center.title-text__account Все ролики
+                #paids
+                    div.example-store-video.example-store-video__account.video-box
+                        include ../../../elements/video/video
+                    mixin info-box(title_info, desc_info)
+                        div.info-box
+                            p.title-text__info= title_info
+                            p.desc-text__info= desc_info
+                    div.account-info
+                        p.text-center.title-text__info.text-uppercase День рождение
+                        +info-box('Номер заказа', 'edec2121')
+                        +info-box('Статус', 'готов')
+                        +info-box('Дата', '01.02.2018')
+                        div.info-box
+                            p.title-text__info Для кого
+                            p.desc-text__info.info-box__for
+                                span Александра,
+                                span Александра,
+                                span Александра,
+                                span Александра,
+                                span Жан-Поль-Сталоне
+                        div.info-box
+                            p.title-text__info Ссылка на YouTube
+                            a.desc-text__info(href="#") ссылка
+                    include ../../../elements/buttons/button_save
+                #not-paids
+                    div.example-store-video.example-store-video__account.video-box
+                        include ../../../elements/video/video
+                    div.account-info
+                        p.text-center.title-text__info.text-uppercase Новый год
+                        +info-box('Номер заказа', 'edec2121')
+                        +info-box('Статус', 'не оплачен')
+                        +info-box('Дата', '01.02.2018')
+                        div.info-box
+                            p.title-text__info Для кого
+                            p.desc-text__info
+                                span Александра,
+                                span Александра,
+                                span Александра,
+                                span Александра,
+                                span Жан-Поль-Сталоне
+                    include ../../../elements/buttons/button_pay
+                #users-data
+                    div.user-photo
+                        div.user-photo__img
+                            img(src="../../../../img/family-s.jpg")
+                        p.desc-text__user Загрузить фото
+                    form.user-form
+                        div.form-group.form-user
+                            label.title-text__user(for="u-name") ФИО
+                            input( type="text" class="form-control" id='u-name' placeholder="" required='required')
+                            p.desc-text__user Сохранить
+                        div.form-group.form-user
+                            label.title-text__user(for="u-phone") Телефон
+                            input( type="phone" class="form-control" id='u-phone' placeholder="" required='required')
+                            p.desc-text__user Сохранить
+                        div.form-group.form-user
+                            label.title-text__user(for="u-mail") Email
+                            input( type="email" class="form-control" id='u-mail' placeholder="" required='required')
+                            p.desc-text__user Сохранить
+                        div.form-group.form-user
+                            label.title-text__user(for="u-text") Город
+                            input( type="text" class="form-control" id='u-text' placeholder="" required='required')
+                            p.desc-text__user Сохранить
+                        div.form-group.form-user
+                            label.title-text__user(for="u-pass") Пароль
+                            input( type="password" class="form-control" id='u-pass' placeholder="" required='required')
+                            p.desc-text__user.change-pass Изменть пароль
+
+                        div.change-pass-box
+                            div.form-group.form-user
+                                label.title-text__user(for="u-old") Старый пароль
+                                input( type="password" class="form-control" id='u-old' placeholder="" required='required')
+                            div.form-group.form-user
+                                label.title-text__user(for="u-new") Новый пароль
+                                input( type="password" class="form-control" id='u-new' placeholder="" required='required')
+                                p.desc-text__user Сохранить

@@ -237,6 +237,9 @@ input[type=file]{
     @include mq(sm){
       margin: 1rem .25rem;
     }
+    label {
+      cursor: pointer;
+    }
   }
 }
 .checkbox+label {
@@ -315,11 +318,6 @@ input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   margin: -6px 0;
 }
-
-
-
-
-
 
 
 // ---- lists ------

@@ -65,7 +65,7 @@
 
 .image-editor {
   &__box {
-    display: block;
+    display: none;
   }
 }
 .cropit-preview {
@@ -76,9 +76,54 @@
   height: 20rem;
   display: none;
   margin: .5rem auto 0 auto;
+
+  &__ver {
+    width: 12rem;
+    height: 17rem;
+    @include mq(xs){
+      height: 23rem;
+      width: 15rem;
+    }
+    @include mq(sm){
+      height: 25rem;
+      width: 55%;
+    }
+  }
+
+  &__hor {
+    width: 15rem;
+    height: 10rem;
+    @include mq(xs){
+      height: 15rem;
+      width: 25rem;
+    }
+    @include mq(sm){
+      height: 17rem;
+      width: 80%;
+    }
+  }
 }
 .cropit-preview-image-container {
   cursor: move;
+}
+
+// ----- video box ----
+.cropit-video {
+  background-color: rgba(255, 255, 255, 0.1);
+  background-size: cover;
+  border-radius: .5rem;
+  display: none;
+  margin: .5rem auto 0 auto;
+  width: 15rem;
+  height: 10rem;
+  @include mq(xs){
+    height: 15rem;
+    width: 25rem;
+  }
+  @include mq(sm){
+    height: 17rem;
+    width: 80%;
+  }
 }
 
 // ------- editor -----
@@ -91,7 +136,6 @@
   margin: 1rem auto 0 auto;
   @include mq(sm){
     flex-direction: row;
-    margin: 0;
   }
 }
 
@@ -216,13 +260,20 @@
       text-align: center;
       @include mq(xs){
         text-align: right;
-        width: 19%;
+        width: 22%;
       }
     }
     input {
       width: 95%;
       @include mq(xs){
-        width: 78%;
+        width: 74%;
+      }
+    }
+
+    textarea {
+      width: 95%;
+      @include mq(xs){
+        width: 74%;
       }
     }
   }
