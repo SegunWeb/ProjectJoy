@@ -173,7 +173,8 @@
     }
   }
   // --------------
-  &__prev {
+  &__prev,
+  &__redact {
     background-color: $w;
     margin: 1rem auto 0 auto;
     padding: .6rem 3rem .5rem 3rem;
@@ -190,6 +191,8 @@
       border: 2px solid $blue-light;
     }
   }
+
+
 
 
   // --------------

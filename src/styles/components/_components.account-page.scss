@@ -94,15 +94,12 @@
   p {
     span {
       margin-left: .3rem;
-    }
-  }
+      display: block;
+      text-align: right;
 
-  &__for {
-    width: 73%;
-    word-break: break-all;
-    @include mq(sm){
-      word-break: normal;
-      width: auto;
+      @include mq(sm){
+        display: inline-block;
+      }
     }
   }
 }
@@ -118,23 +115,48 @@
 }
 
 #users-data {
-  width: 35rem;
+  width: 100%;
   margin: 0 auto;
+  @include mq(sm){
+    width: 35rem;
+  }
 }
 .form-user {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto .6rem auto;
+
+  @include mq(xs){
+    flex-direction: row;
+    justify-content: initial;
+    margin: .5rem auto;
+  }
+
 
   input {
     padding: .15rem .5rem;
-    max-width: 18rem;
     border: 1px solid $blue-light;
-    margin: 0 1rem 0 2.3rem;
+    margin: .3rem;
+    width: 14rem;
+    @include mq(xs){
+      width: 46%;
+      margin: 0 .3rem 0 .9rem;
+    }
+    @include mq(sm){
+      margin: 0 1rem 0 2.3rem;
+      max-width: 18rem;
+      width: 100%;
+    }
   }
 
   label {
     width: 6rem;
-    text-align: right;
+    text-align: center;
+    @include mq(xs){
+      text-align: right;
+    }
   }
 }
 .user-photo {

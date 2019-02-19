@@ -1,6 +1,5 @@
 body,html {
-  margin: 0;
-  padding: 0;
+  height: 100%;
   font-size: $baseFont;
   position: relative;
   font-family: $RubikBold;
@@ -19,7 +18,6 @@ body,html {
     cursor: default;
   }
 }
-
 // Media
 img, embed,
 object, audio, video {
@@ -29,6 +27,7 @@ object, audio, video {
 .mobile-only{
   display: none !important;
 }
+
 .container {
 
   @include mq(xl) {
