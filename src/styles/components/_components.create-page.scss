@@ -50,7 +50,7 @@
     margin: 0 auto;
     flex-direction: column;
     @include mq(xs){
-      flex-direction: row;
+      flex-direction: row !important;
     }
   }
 }
@@ -256,7 +256,7 @@
 
     label {
       width: 100%;
-      font-family: $RubikMedium;
+      font-family: $RubikRegular;
       text-align: center;
       @include mq(xs){
         text-align: right;
@@ -270,11 +270,139 @@
       }
     }
 
-    textarea {
-      width: 95%;
+  }
+}
+
+// ----
+.step-text {
+  width: 100%;
+
+  div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+
+    label {
+      width: 85%;
+      font-family: $RubikRegular;
+      text-align: center;
       @include mq(xs){
-        width: 74%;
+        text-align: left;
       }
+    }
+    input {
+      width: 85%;
+    }
+  }
+}
+
+// --- step creating video -----
+.creating-video {
+  padding-bottom: 2rem;
+
+  &__box {
+    img {
+      display: block;
+    }
+  }
+
+  p {
+    font-family: $RubikRegular;
+    text-align: center;
+    max-width: 35rem;
+    margin: 1rem auto 2rem auto;
+    padding: 0 1rem;
+  }
+}
+.creating-img {
+  width: 3rem;
+  margin: 0 auto;
+  @include mq(xs){
+    width: 5rem;
+  }
+}
+.creating-loader {
+  width: 6rem;
+  margin: 1rem auto;
+  @include mq(xs){
+    width: 11rem;
+  }
+}
+// --- step video ready-----
+.video-ready{
+  &__box {
+    max-width: 35rem;
+    margin: 0 auto;
+  }
+
+  &__pay {
+    background-color: $bgGray;
+    padding: 2rem 1rem;
+
+    p {
+      text-align: center;
+      font-family: $RubikRegular;
+      max-width: 35rem;
+      margin: 0 auto 1rem auto;
+    }
+  }
+}
+
+.ready-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0rem auto 1rem auto;
+  @include mq(xs){
+    width: 75%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: .5rem auto;
+  }
+  @include mq(md){
+    width: 90%;
+  }
+
+  div {
+    button {
+      margin-top: 0;
+      @include mq(xs){
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+.pay-box {
+  max-width: 35rem;
+  margin: 0 auto;
+
+  form {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-direction: column;
+    @include mq(xs) {
+      flex-direction: row;
+      width: 17rem;
+    }
+
+    label {
+      color: $blue;
+      margin: 0 auto .5rem auto;
+
+      @include mq(xs){
+        margin: 0 1rem 0 0;
+      }
+    }
+
+    input {
+      font-family: $RubikRegular;
     }
   }
 }

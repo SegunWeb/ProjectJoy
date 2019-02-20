@@ -2,7 +2,6 @@
 .btn {
   border-radius: 2.5rem;
   padding: .5rem 2rem .4rem 2rem;
-  margin: 0 .5em;
 
   @include mq(xs) {
     padding: .6rem 1rem .5rem 1rem;
@@ -12,6 +11,7 @@
   &__free {
     background-color: $blue;
     width: 13rem;
+    margin-right: .5rem;
 
     @include mq(xs){
       width: auto;

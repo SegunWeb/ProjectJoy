@@ -1,0 +1,17 @@
+include components/head
+<!----header-box---->
+include components/header-red
+main
+    div.creating-video
+        h2.text-center.title-text__md Ролик готовится...
+        div.creating-video__box
+            img.creating-img(src="../img/icons/camera.png")
+            img.creating-loader(src="../img/745.gif")
+
+            p.desc-text--blue Отлично! Ваш ролик готовиться. В течении нескольки минут вы увидете бесплатную демо версию ролика.
+
+        <!----movie------>
+        div.example-store-video.video-box.create-movie-video
+            include elements/video/video
+        include elements/buttons/button_redaction
+include components/footer

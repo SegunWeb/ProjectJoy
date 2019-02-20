@@ -1,3 +1,10 @@
+// ---- preloader ----
+$(window).on('load', function () {
+    var preloader = $('.loaderArea')
+    var loader = preloader.find('.loader');
+    loader.fadeOut();
+    preloader.delay(10).fadeOut('slow');
+});
 //---------slider----------
 $('.top-slider').slick({
     dots: true,
@@ -177,4 +184,17 @@ $(".change-pass").click(function () {
 });
 $(".form-user input").focus(function () {
     $(this).next().css("opacity","1")
+});
+
+// --- lists ----
+
+
+$(".elem").click(function (e) {
+    e.preventDefault();
+
+    var data = $(this).attr("id");
+    var elem = $(this);
+
+    elem.parent(" ul ").prev(" input ").val(elem.text()).attr("data-id", data);
+    elem.parent(" ul ").prev(" p ").text(elem.text()).attr("data-id", data);
 });

@@ -1,5 +1,5 @@
 div.step-two
-    h2.text-center.title-text__md.title-text__step Этап 2
+    h2.text-center.title-text__md.title-text__step Загрузите фото
     div.step-box__photo.step-box
         <!----photo editor----->
         div.image-editor
@@ -33,13 +33,13 @@ div.step-two
             p.text-center.title-text__filter Выберите фразу
             <!----words list----->
             div.words-list
-                p.list__title.words-list__title.dropdown-toggle(data-toggle="dropdown" role="button" aria-expanded="false") Фраза не выбрана
-                mixin event-list(name_event)
-                    li
+                p.list__title.words-list__title.dropdown-toggle(data-toggle="dropdown" data-id="" role="button" aria-expanded="false") Фраза не выбрана
+                mixin event-list(name_id,name_event)
+                    li.elem(id=name_id)
                         span= name_event
                 ul.list__wrap.dropdown-menu
-                    +event-list("Ого как классно!")
-                    +event-list('Как круто, просто огонь!')
+                    +event-list("name1","Ого как классно!")
+                    +event-list("name2",'Как круто, просто огонь!')
     <!----buttons box----->
     div.step__btn
         include ../../../elements/buttons/button_prev

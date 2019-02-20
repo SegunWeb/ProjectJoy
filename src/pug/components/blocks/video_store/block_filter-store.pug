@@ -47,26 +47,26 @@ div.filter-store
             div.filter-store-event.list
                 p.text-center.title-text__filter Мероприятие
                 div.event-list
-                    p.list__title.dropdown-toggle( data-toggle="dropdown" role="button" aria-expanded="false") День рождение
-                    mixin event-list(name_event)
-                        li
+                    p.list__title.dropdown-toggle( data-toggle="dropdown" data-id="" role="button" aria-expanded="false") День рождение
+                    mixin event-list(name_id, name_event)
+                        li.elem(id=name_id)
                             span= name_event
                     ul.list__wrap.dropdown-menu
-                        +event-list('День рождение')
-                        +event-list('Новый год')
+                        +event-list('12','День рождение')
+                        +event-list('14','Новый год')
             <!----list people---->
             div.filter-store-people.list
                 p.text-center.title-text__filter Количество человек
                 div.people-list
                     p.list__title.dropdown-toggle( data-toggle="dropdown" role="button" aria-expanded="false") Видео для 1 человека
-                    mixin people-list(num)
-                        li
+                    mixin people-list(name_id, num)
+                        li.elem(id=name_id)
                             span= num
                     ul.list__wrap.dropdown-menu
-                        +people-list('Видео для 1 человека')
-                        +people-list('Видео для 2 человек')
-                        +people-list('Видео для 3 человек')
-                        +people-list('Видео для 4 человек')
-                        +people-list('Видео для 5 человек')
+                        +people-list('1','Видео для 1 человека')
+                        +people-list('2','Видео для 2 человек')
+                        +people-list('3','Видео для 3 человек')
+                        +people-list('4','Видео для 4 человек')
+                        +people-list('5','Видео для 5 человек')
 
 

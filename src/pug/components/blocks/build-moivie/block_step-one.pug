@@ -18,13 +18,13 @@ div.filter-store.step-one
                 p.text-center.title-text__filter Выбор имени
                 <!----name list----->
                 div.name-list
-                    p.list__title.name-list__title.dropdown-toggle(data-toggle="dropdown" role="button" aria-expanded="false") Имя не выбрано
-                    mixin event-list(name_event)
-                        li
+                    input#name-box.list__title.name-list__title.dropdown-toggle(data-toggle="dropdown" data-id="" value="" role="button" placeholder="Имя не выбрано" aria-expanded="false")
+                    mixin event-list(name_id, name_event)
+                        li.elem(id=name_id)
                             span= name_event
                     ul.list__wrap.dropdown-menu
-                        +event-list("Леша")
-                        +event-list('Саша')
+                        +event-list("one", "Леша")
+                        +event-list("two", "Саша")
 include ../../../elements/buttons/button_next
 
 

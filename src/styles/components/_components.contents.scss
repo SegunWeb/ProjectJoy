@@ -9,7 +9,7 @@
   margin-bottom: 1rem;
 }
 .margin-text {
-  margin: .5rem 0;
+  margin-top: 1rem;
 }
 .bg-img {
   position: absolute;
@@ -364,7 +364,7 @@ input[type=range]::-webkit-slider-thumb {
     }
 
     li {
-      font-family: $RubikMedium;
+      font-family: $RubikRegular;
       padding: .2rem 1rem;
       &:hover {
         background-color: $blue-light;
@@ -393,6 +393,16 @@ input[type=range]::-webkit-slider-thumb {
     }
     @include mq(sm) {
       padding: 1rem 8rem 1rem 6rem;
+    }
+  }
+
+  &__text {
+    padding: 1rem;
+    @include mq(xs){
+      padding: 1rem 1.5rem;
+    }
+    @include mq(sm) {
+      padding: 1rem 6rem 1rem 6rem;
     }
   }
 

@@ -30,6 +30,7 @@
   }
   input[placeholder] {
     font-family: $RubikRegular;
+    font-size: $mdFont;
   }
 
   textarea {
@@ -43,6 +44,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-height: 3rem;
 }
 .price-box {
   display: flex;

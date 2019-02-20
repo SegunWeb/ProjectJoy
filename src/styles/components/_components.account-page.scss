@@ -154,8 +154,10 @@
   label {
     width: 6rem;
     text-align: center;
+    display: none;
     @include mq(xs){
       text-align: right;
+      display: block;
     }
   }
 }

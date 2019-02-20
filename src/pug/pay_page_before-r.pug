@@ -1,0 +1,20 @@
+include components/head
+<!----header-box---->
+include components/header-red
+main
+    div.video-ready
+        h2.text-center.title-text__md Готово
+        div.video-ready__box
+            <!----movie------>
+            div.example-store-video.video-box.video-ready-box
+                include elements/video/video
+            <!----price---->
+            div.ready-cont
+
+                div
+                    include elements/buttons/button_redaction-sm
+
+        div.video-ready__pay
+            p.desc-text--blue Ели у вас есть промокод вы можете воспользоваться им!
+
+include components/footer
