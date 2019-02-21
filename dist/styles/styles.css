@@ -533,7 +533,8 @@ a {
 .testimonials {
   position: relative; }
   .testimonials__avatar {
-    display: none !important; }
+    display: none !important;
+    border: none !important; }
     @media (min-width: 768px) {
       .testimonials__avatar {
         display: block !important; } }
@@ -1039,8 +1040,8 @@ a {
 
 .user-photo__img {
   position: relative;
-  width: 6rem;
-  height: 6rem;
+  width: 5rem;
+  height: 5rem;
   border: 1px solid #081d4d;
   border-radius: 5rem;
   background-color: #f8f8f8;
@@ -1074,6 +1075,35 @@ a {
 .change-pass-box {
   margin: 2rem auto 0 auto;
   display: none; }
+
+.testim {
+  padding: 2rem 0; }
+
+.testim-radio {
+  margin: 0 auto;
+  max-width: 30rem; }
+  .testim-radio li {
+    min-width: 7rem !important; }
+    @media (min-width: 992px) {
+      .testim-radio li {
+        min-width: 10rem !important; } }
+    .testim-radio li label {
+      color: #005dba;
+      background-color: transparent;
+      box-shadow: initial;
+      font-size: calc(18px + (18 - 14) * (100vw - 1920px) / (1920 - 480)); }
+      @media (min-width: 768px) {
+        .testim-radio li label {
+          padding: .4rem 1rem !important; } }
+      @media (min-width: 992px) {
+        .testim-radio li label {
+          padding: .4rem 0 !important; } }
+
+.admin-box {
+  margin: 1rem auto; }
+
+.testi-box {
+  margin: 0 auto 2rem auto; }
 
 .header-top {
   background-color: transparent;
@@ -1668,6 +1698,10 @@ a {
     padding-right: .5rem; }
   .desc-text__city {
     color: #005dba;
+    font-style: italic;
+    font-size: 20px; }
+  .desc-text__admin {
+    color: #eb2201;
     font-style: italic;
     font-size: 20px; }
   .desc-text__header {

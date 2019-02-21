@@ -102,6 +102,7 @@
   position: relative;
   &__avatar {
     display: none !important;
+    border: none!important;
 
     @include mq(sm) {
       display: block !important;

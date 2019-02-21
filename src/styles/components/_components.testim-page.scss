@@ -1,0 +1,35 @@
+// ---- testimonials ----
+.testim {
+  padding: 2rem 0;
+}
+.testim-radio {
+  margin: 0 auto;
+  max-width: 30rem;
+
+  li {
+    min-width: 7rem !important;
+    @include mq(md){
+      min-width: 10rem !important;
+    }
+
+    label {
+      color: $blue;
+      background-color: transparent;
+      box-shadow: initial;
+      font-size: $tabs;
+      @include mq(sm){
+        padding: .4rem 1rem !important;
+      }
+      @include mq(md){
+        padding: .4rem 0 !important;
+      }
+    }
+  }
+}
+.admin-box {
+  margin: 1rem auto;
+}
+.testi-box {
+  margin: 0 auto 2rem auto;
+
+}

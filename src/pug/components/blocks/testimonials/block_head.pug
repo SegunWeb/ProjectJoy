@@ -3,8 +3,73 @@ div.testim
         div.row
             ul.col-12.testim-radio.radio-group
                 li
-                    input.checkbox.account-check( type="radio" name="testim"  id="testi" value="Отзывы")
+                    input.checkbox.account-check( type="radio" name="testi"  id="testi" value="Отзывы" checked)
                     label(for="testi") Отзывы
                 li
-                    input.checkbox.account-check( type="radio" name="testi" id="testi-m" value="Видео отзывы")
-                    label(for="testi-m") Видео отзывы
+                    input.checkbox.account-check( type="radio" name="testi" id="testi-v" value="Видео отзывы")
+                    label(for="testi-v") Видео отзывы
+            #testim-text.col-12
+                h2.text-center.title-text__md Отзывы
+                mixin testi-box-user(src, name_user, city, desc)
+                    <!----testimonials-box----->
+                    div.col-11
+                        div.testimonials__box.justify-content-between.d-flex.col-12.mx-auto
+                            div.user-photo__img.testimonials__avatar
+                                img(src=src)
+                            div.user-photo__text
+                                div.d-flex
+                                    p.desc-text.desc-text__name= name_user
+                                    p.desc-text.desc-text__city= city
+                                p.desc-text.desc-text--black.desc-text__md.margin-text-y= desc
+                <!----------------------------------------------->
+
+                mixin testi-box-admin(src, name_user, city, desc)
+                    <!----testimonials-box----->
+                    div.col-10.offset-1
+                        div.testimonials__box.justify-content-between.d-flex.col-12
+                            div.user-photo__img.testimonials__avatar
+                                img(src=src)
+                            div.user-photo__text
+                                div.d-flex
+                                    p.desc-text.desc-text__name= name_user
+                                    p.desc-text.desc-text__admin= city
+                                p.desc-text.desc-text--black.desc-text__md.margin-text-y= desc
+                <!----------------------------------------------->
+
+                div.testimonials-wrap.col-md-10.testi-box
+                    <!----testimonials-block----->
+                    +testi-box-user(
+                    'img/common/circle-chl.png',
+                    'Вася',
+                    'Одесса',
+                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in '
+                    )
+                    div.admin-box.col-12
+                        +testi-box-admin(
+                        'img/common/circle-chl.png',
+                        'Ольга',
+                        'Администратор',
+                        'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in '
+                        )
+                div.testimonials-wrap.col-md-10.testi-box
+                    <!----testimonials-block----->
+                    +testi-box-user(
+                    'img/common/circle-chl.png',
+                    'Вася',
+                    'Одесса',
+                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in '
+                    )
+                div.testimonials-wrap.col-md-10.testi-box
+                    <!----testimonials-block----->
+                    +testi-box-user(
+                    'img/common/circle-chl.png',
+                    'Вася',
+                    'Одесса',
+                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in '
+                    )
+
+
+
+
+
+            #testim-video.col-12
