@@ -1,4 +1,4 @@
-div.filter-store.step-one
+div.filter-store.step-one.steps
     h2.text-center.title-text__md.title-text__step Этап 1
     div.filter-store__box.step-one__box.step-box
         <!----filter gender----->
@@ -25,7 +25,8 @@ div.filter-store.step-one
                     ul.list__wrap.dropdown-menu
                         +event-list("one", "Леша")
                         +event-list("two", "Саша")
-include ../../../elements/buttons/button_next
+    div.step__btn
+        include ../../../elements/buttons/button_next
 
 
 

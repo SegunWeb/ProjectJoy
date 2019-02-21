@@ -1,9 +1,10 @@
 mixin video-testi-box(src, name_user, city, desc)
     <!----testimonials-box----->
     div.row
-     div.testimonials__box.justify-content-between.d-flex.col-md-8.mx-auto
-        img.testimonials__avatar(src=src)
-        div
+     div.testimonials__box.justify-content-between.d-flex.col-lg-8.col-md-10.mx-auto
+        div.user-photo__img.testimonials__avatar
+            img(src=src)
+        div.user-photo__text
             div.d-flex
                 p.desc-text.desc-text__name= name_user
                 p.desc-text.desc-text__city= city

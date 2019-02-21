@@ -1,26 +1,123 @@
+<!----step video----->
 div.step-three
-    h2.text-center.title-text__md.title-text__step Введите данные
-    <!----form box----->
-    div.step-box.step-box__form
-        <!----form----->
-        form.step-form
-            div.form-group
-                label(for="name") ФИО
-                input( type="text" class="form-control" id='name' placeholder="" required='required')
-            div.form-group
-                label(for="phone") Телефон
-                input( type="phone" class="form-control" id='phone' placeholder="" required='required')
-            div.form-group
-                label(for="mail") Email
-                input( type="email" class="form-control" id='mail' placeholder="" required='required')
-            div.form-group
-                label(for="text") Город
-                input( type="text" class="form-control" id='text' placeholder="" required='required')
+    h2.text-center.title-text__md.title-text__step Вставте видео
+    div.step-box__photo.step-box
+        <!----video editor----->
+        div.image-editor
+            <!----video loader----->
+            include ../../../elements/buttons/button_load-video
+            <!----video----->
+            div.cropit-video
+        <!----words----->
+        div.filter-store-box.step-box__words.words-in
+            div.filter-store-words
+                p.text-center.title-text__filter Выберите фразу
+                <!----words list----->
+                div.words-list
+                    p.list__title.words-list__title.dropdown-toggle(data-toggle="dropdown" data-id="" role="button" aria-expanded="false") Фраза не выбрана
+                    mixin event-list(name_id,name_event)
+                        li.elem(id=name_id)
+                            span= name_event
+                    ul.list__wrap.dropdown-menu
+                        +event-list("name3","Ого как классно!")
+                        +event-list("name4",'Как круто, просто огонь!')
+    <!----buttons box----->
+    div.step__btn
+        include ../../../elements/buttons/button_prev
+        include ../../../elements/buttons/button_next
 
+<!----step video two----->
+div.step-three
+    h2.text-center.title-text__md.title-text__step Вставте видео
+    div.step-box__photo.step-box
+        <!----video editor----->
+        div.image-editor
+            <!----video loader----->
+            include ../../../elements/buttons/button_load-video-t
+            <!----video----->
+            div.cropit-video
+    <!----buttons box----->
+    div.step__btn
+        include ../../../elements/buttons/button_prev
+        include ../../../elements/buttons/button_next
+
+
+<!----step photo ----->
+div.step-two
+    h2.text-center.title-text__md.title-text__step Загрузите фото
+    div.step-box__photo.step-box
+        <!----photo editor----->
+        div.image-editor
+            <!----photo loader----->
+            include ../../../elements/buttons/button_load-t
+            <!----photo----->
+            div.cropit-preview.cropit-preview__hor
+            <!----photo position----->
+            div.image-editor__box
+                div.editor-box
+                    ul.editor-position
+                        li.vertical
+                            input.edit( type="radio" name="positions" id="ver-t" value="Вертикально" )
+                            label.edit__ver(for="ver-t") Вертикально
+                        li.horizontal
+                            input.edit.edit-hor( type="radio" name="positions" id="hor-t" value="Горизонтально")
+                            label.edit__hor(for="hor-t") Горизонтально
+                    <!----photo range----->
+                    div.editor-zoom
+                        input.cropit-image-zoom-input.editor-zoom__range(type="range")
+                    <!----photo deg----->
+                    div.editor-deg
+                        button.editor-deg__line--left.editor-deg__line.rotate-ccw
+                        button.editor-deg__line--right.editor-deg__line.rotate-cwRotate
+    <!----buttons box----->
+    div.step__btn
+        include ../../../elements/buttons/button_prev
+        include ../../../elements/buttons/button_next
+
+
+<!----step words----->
+div.step-words
+    h2.text-center.title-text__md.title-text__step Фраза
+    div.filter-store-box.step-box__words.step-box
+        div.filter-store-words
+            p.text-center.title-text__filter Выберите фразу
+            <!----words list----->
+            div.words-list
+                p.list__title.words-list__title.dropdown-toggle(data-toggle="dropdown" data-id="" role="button" aria-expanded="false") Фраза не выбрана
+                mixin event-list(name_id,name_event)
+                    li.elem(id=name_id)
+                        span= name_event
+                ul.list__wrap.dropdown-menu
+                    +event-list("name1","Ого как классно!")
+                    +event-list("name2",'Как круто, просто огонь!')
+    <!----buttons box----->
+    div.step__btn
+        include ../../../elements/buttons/button_prev
+        include ../../../elements/buttons/button_next
+
+
+<!----step text----->
+div.step-text
+    h2.text-center.title-text__md.title-text__step Введите текст
+    <!----form box----->
+    div.step-box.step-box__text
+        <!----form----->
+        form#words.step-text-box.word
+            div.form-group
+                label(for="text-name") Фамилия
+                input( type="text" class="form-control" maxlength="150" id='text-name' placeholder="" required='required')
+            div.form-group
+                label(for="text-city") Город
+                input( type="text" class="form-control" id='text-city' maxlength="150" placeholder="" required='required')
 
     div.step__btn
         include ../../../elements/buttons/button_prev
         include ../../../elements/buttons/button_next
+
+
+
+
+
 
 
 

@@ -1,0 +1,26 @@
+div.step-form
+    h2.text-center.title-text__md.title-text__step Введите данные
+    <!----form box----->
+    div.step-box.step-box__form
+        <!----form----->
+        form#data.step-form-box
+            div.form-group
+                label(for="name") ФИО
+                input( type="text" class="form-control" id='name' placeholder="" minlength="3" required='required')
+            div.form-group
+                label(for="phone") Телефон
+                input( type="phone" class="form-control" id='phone' placeholder="" minlength="7" required='required')
+            div.form-group
+                label(for="mail") Email
+                input( type="email" class="form-control" id='mail' placeholder="" minlength="8"  required='required')
+            div.form-group
+                label(for="text") Город
+                input( type="text" class="form-control" id='text' placeholder="" minlength="3" required='required')
+
+
+    div.step__btn
+        include ../../../elements/buttons/button_prev
+        include ../../../elements/buttons/button_next-sub
+
+
+

@@ -166,12 +166,27 @@
     padding: .6rem 3rem .5rem 3rem;
     color: $w;
     display: block;
-
+    opacity: .4;
+    pointer-events: none;
+    cursor: default;
 
     &:hover {
       background-color: $blue-light;
     }
   }
+  // -------------
+  &__sub {
+    background-color: $red;
+    margin: 1rem auto;
+    padding: .6rem 3rem .5rem 3rem;
+    color: $w;
+    display: block;
+
+    &:hover {
+      background-color: $blue-light;
+    }
+  }
+
   // --------------
   &__prev,
   &__redact {
@@ -191,9 +206,6 @@
       border: 2px solid $blue-light;
     }
   }
-
-
-
 
   // --------------
   &__load {
@@ -247,8 +259,14 @@
     }
   }
   // -------------
-
 }
+
+.act_btn {
+  opacity: 1;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
 
 // ----- toogle burger ---
 .toggle-hamburger {

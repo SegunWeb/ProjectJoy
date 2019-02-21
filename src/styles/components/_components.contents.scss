@@ -330,6 +330,7 @@ input[type=range]::-webkit-slider-thumb {
 
   &__title {
     font-family: $RubikMedium;
+    display: block;
     border-radius: .3rem;
     padding: .4rem 1rem;
     background-color: $w;

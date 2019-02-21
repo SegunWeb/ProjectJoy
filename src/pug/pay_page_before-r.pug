@@ -3,18 +3,29 @@ include components/head
 include components/header-red
 main
     div.video-ready
-        h2.text-center.title-text__md Готово
+        h2.text-center.title-text__md Демо версия
         div.video-ready__box
             <!----movie------>
             div.example-store-video.video-box.video-ready-box
                 include elements/video/video
             <!----price---->
             div.ready-cont
-
+                div.price
+                    div.price-box
+                        div.price-box__main
+                            p.price-text.price-text--lg.price-text__discount 350
+                            span.price-text__currency.price-text__currency--lg грн
+                        div.price-box__discount
+                            p.price-text.price-text--lg.price-text--red 230
+                            span.price-text__currency.price-text__currency--red.price-text__currency--lg грн
                 div
                     include elements/buttons/button_redaction-sm
 
         div.video-ready__pay
-            p.desc-text--blue Ели у вас есть промокод вы можете воспользоваться им!
-
+            p.desc-text--blue Еcли у вас есть промокод вы можете воспользоваться им!
+            div.pay-box
+                form.pay-box__form
+                    label(for="promo") Промокод
+                    input( type="text" class="form-control" id='promo' placeholder="" required='required')
+                include elements/buttons/button_pay
 include components/footer

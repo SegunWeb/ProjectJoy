@@ -1,0 +1,114 @@
+<!----step video----->
+<div class="step-three">
+  <h2 class="text-center title-text__md title-text__step">Вставте видео</h2>
+  <div class="step-box__photo step-box"><!----video editor----->
+    <div class="image-editor"><!----video loader----->
+      <input class="cropit-image-input" type="file" name="load-video" id="load-video"/>
+      <label class="btn btn-text btn__load" for="load-video">Загрузите видео</label><!----video----->
+      <div class="cropit-video"></div>
+    </div><!----words----->
+    <div class="filter-store-box step-box__words words-in">
+      <div class="filter-store-words">
+        <p class="text-center title-text__filter">Выберите фразу</p><!----words list----->
+        <div class="words-list">
+          <p class="list__title words-list__title dropdown-toggle" data-toggle="dropdown" data-id="" role="button" aria-expanded="false">Фраза не выбрана</p>
+          <ul class="list__wrap dropdown-menu">
+                      <li class="elem" id="name3"><span>Ого как классно!</span></li>
+                      <li class="elem" id="name4"><span>Как круто, просто огонь!</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div><!----buttons box----->
+  <div class="step__btn">
+    <button class="btn btn-text btn__prev">назад</button>
+    <button class="btn btn-text btn__next">далее</button>
+  </div>
+</div><!----step video two----->
+<div class="step-three">
+  <h2 class="text-center title-text__md title-text__step">Вставте видео</h2>
+  <div class="step-box__photo step-box"><!----video editor----->
+    <div class="image-editor"><!----video loader----->
+      <input class="cropit-image-input" type="file" name="load-video-t" id="load-video-t"/>
+      <label class="btn btn-text btn__load" for="load-video-t">Загрузите видео</label><!----video----->
+      <div class="cropit-video"></div>
+    </div>
+  </div><!----buttons box----->
+  <div class="step__btn">
+    <button class="btn btn-text btn__prev">назад</button>
+    <button class="btn btn-text btn__next">далее</button>
+  </div>
+</div><!----step photo ----->
+<div class="step-two">
+  <h2 class="text-center title-text__md title-text__step">Загрузите фото</h2>
+  <div class="step-box__photo step-box"><!----photo editor----->
+    <div class="image-editor"><!----photo loader----->
+      <input class="cropit-image-input loads" type="file" name="load-t" id="load-t"/>
+      <label class="btn btn-text btn__load" for="load-t">Загрузите фото</label><!----photo----->
+      <div class="cropit-preview cropit-preview__hor"></div><!----photo position----->
+      <div class="image-editor__box">
+        <div class="editor-box">
+          <ul class="editor-position">
+            <li class="vertical">
+              <input class="edit" type="radio" name="positions" id="ver-t" value="Вертикально"/>
+              <label class="edit__ver" for="ver-t">Вертикально</label>
+            </li>
+            <li class="horizontal">
+              <input class="edit edit-hor" type="radio" name="positions" id="hor-t" value="Горизонтально"/>
+              <label class="edit__hor" for="hor-t">Горизонтально</label>
+            </li>
+          </ul><!----photo range----->
+          <div class="editor-zoom">
+            <input class="cropit-image-zoom-input editor-zoom__range" type="range"/>
+          </div><!----photo deg----->
+          <div class="editor-deg">
+            <button class="editor-deg__line--left editor-deg__line rotate-ccw"></button>
+            <button class="editor-deg__line--right editor-deg__line rotate-cwRotate"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!----buttons box----->
+  <div class="step__btn">
+    <button class="btn btn-text btn__prev">назад</button>
+    <button class="btn btn-text btn__next">далее</button>
+  </div>
+</div><!----step words----->
+<div class="step-words">
+  <h2 class="text-center title-text__md title-text__step">Фраза</h2>
+  <div class="filter-store-box step-box__words step-box">
+    <div class="filter-store-words">
+      <p class="text-center title-text__filter">Выберите фразу</p><!----words list----->
+      <div class="words-list">
+        <p class="list__title words-list__title dropdown-toggle" data-toggle="dropdown" data-id="" role="button" aria-expanded="false">Фраза не выбрана</p>
+        <ul class="list__wrap dropdown-menu">
+                  <li class="elem" id="name1"><span>Ого как классно!</span></li>
+                  <li class="elem" id="name2"><span>Как круто, просто огонь!</span></li>
+        </ul>
+      </div>
+    </div>
+  </div><!----buttons box----->
+  <div class="step__btn">
+    <button class="btn btn-text btn__prev">назад</button>
+    <button class="btn btn-text btn__next">далее</button>
+  </div>
+</div><!----step text----->
+<div class="step-text">
+  <h2 class="text-center title-text__md title-text__step">Введите текст</h2><!----form box----->
+  <div class="step-box step-box__text"><!----form----->
+    <form class="step-text-box word" id="words">
+      <div class="form-group">
+        <label for="text-name">Фамилия</label>
+        <input class="form-control" type="text" maxlength="150" id="text-name" placeholder="" required="required"/>
+      </div>
+      <div class="form-group">
+        <label for="text-city">Город</label>
+        <input class="form-control" type="text" id="text-city" maxlength="150" placeholder="" required="required"/>
+      </div>
+    </form>
+  </div>
+  <div class="step__btn">
+    <button class="btn btn-text btn__prev">назад</button>
+    <button class="btn btn-text btn__next">далее</button>
+  </div>
+</div>

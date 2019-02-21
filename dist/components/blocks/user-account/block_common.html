@@ -1,0 +1,128 @@
+
+<div class="account">
+  <h2 class="text-center title-text__md">Личный кабинет</h2>
+  <div class="container">
+    <div class="row">
+      <ul class="col-12 account-radio radio-group">
+        <li>
+          <input class="checkbox account-check" type="radio" name="account" id="all-movie" value="Все ролики" checked="checked"/>
+          <label for="all-movie">Все ролики</label>
+        </li>
+        <li>
+          <input class="checkbox account-check" type="radio" name="account" id="paid" value="Оплаченные"/>
+          <label for="paid">Оплаченные</label>
+        </li>
+        <li>
+          <input class="checkbox account-check" type="radio" name="account" id="not-paid" value="Не оплаченные"/>
+          <label for="not-paid">Не оплаченные</label>
+        </li>
+        <li class="user-data">
+          <input class="checkbox account-check" type="radio" name="account" id="user-data" value="Личные данные"/>
+          <label for="user-data">Личные данные</label>
+        </li>
+      </ul>
+      <div class="col-12 account-box">
+        <h2 class="text-center title-text__account" id="names">Все ролики</h2>
+        <div id="paids">
+          <div class="example-store-video example-store-video__account video-box"><img class="img-video" src="img/family-s.jpg" alt="img"/>
+            <iframe class="d-flex justify-content-center" data-src="https://www.youtube.com/embed/dcMRHF0Wt3I?rel=0&amp;amp;controls=0&amp;amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+            <button class="play-video"></button>
+          </div>
+          <div class="account-info">
+            <p class="text-center title-text__info text-uppercase">День рождение</p>
+                      <div class="info-box">
+                        <p class="title-text__info">Номер заказа</p>
+                        <p class="desc-text__info">edec2121</p>
+                      </div>
+                      <div class="info-box">
+                        <p class="title-text__info">Статус</p>
+                        <p class="desc-text__info">готов</p>
+                      </div>
+                      <div class="info-box">
+                        <p class="title-text__info">Дата</p>
+                        <p class="desc-text__info">01.02.2018</p>
+                      </div>
+            <div class="info-box">
+              <p class="title-text__info">Для кого</p>
+              <p class="desc-text__info"><span>Александра,</span><span>Александра,</span><span>Александра,</span><span>Александра,</span><span>Жан-Поль-Сталоне</span></p>
+            </div>
+            <div class="info-box">
+              <p class="title-text__info">Ссылка на YouTube</p><a class="desc-text__info" href="#">ссылка</a>
+            </div>
+          </div>
+          <button class="save__title btn btn-text btn__save">Скачать</button>
+        </div>
+        <div id="not-paids">
+          <div class="example-store-video example-store-video__account video-box"><img class="img-video" src="img/family-s.jpg" alt="img"/>
+            <iframe class="d-flex justify-content-center" data-src="https://www.youtube.com/embed/dcMRHF0Wt3I?rel=0&amp;amp;controls=0&amp;amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+            <button class="play-video"></button>
+          </div>
+          <div class="account-info">
+            <p class="text-center title-text__info text-uppercase">Новый год</p>
+                      <div class="info-box">
+                        <p class="title-text__info">Номер заказа</p>
+                        <p class="desc-text__info">edec2121</p>
+                      </div>
+                      <div class="info-box">
+                        <p class="title-text__info">Статус</p>
+                        <p class="desc-text__info">не оплачен</p>
+                      </div>
+                      <div class="info-box">
+                        <p class="title-text__info">Дата</p>
+                        <p class="desc-text__info">01.02.2018</p>
+                      </div>
+            <div class="info-box">
+              <p class="title-text__info">Для кого</p>
+              <p class="desc-text__info"><span>Александра,</span><span>Александра,</span><span>Александра,</span><span>Александра,</span><span>Жан-Поль-Сталоне</span></p>
+            </div>
+          </div>
+          <button class="save__title btn btn-text btn__pay">Оплатить</button>
+        </div>
+        <div id="users-data">
+          <div class="user-photo">
+            <div class="user-photo__img"><img src="../../../../img/family-s.jpg"/></div>
+            <p class="desc-text__user">Загрузить фото</p>
+          </div>
+          <form class="user-form">
+            <div class="form-group form-user">
+              <label class="title-text__user" for="u-name">ФИО</label>
+              <input class="form-control" type="text" id="u-name" placeholder="ФИО" required="required"/>
+              <p class="desc-text__user">Сохранить</p>
+            </div>
+            <div class="form-group form-user">
+              <label class="title-text__user" for="u-phone">Телефон</label>
+              <input class="form-control" type="phone" id="u-phone" placeholder="Телефон" required="required"/>
+              <p class="desc-text__user">Сохранить</p>
+            </div>
+            <div class="form-group form-user">
+              <label class="title-text__user" for="u-mail">Email</label>
+              <input class="form-control" type="email" id="u-mail" placeholder="Email" required="required"/>
+              <p class="desc-text__user">Сохранить</p>
+            </div>
+            <div class="form-group form-user">
+              <label class="title-text__user" for="u-text">Город</label>
+              <input class="form-control" type="text" id="u-text" placeholder="Город" required="required"/>
+              <p class="desc-text__user">Сохранить</p>
+            </div>
+            <div class="form-group form-user">
+              <label class="title-text__user" for="u-pass">Пароль</label>
+              <input class="form-control" type="password" id="u-pass" placeholder="Пароль" required="required"/>
+              <p class="desc-text__user change-pass">Изменть пароль</p>
+            </div>
+            <div class="change-pass-box">
+              <div class="form-group form-user">
+                <label class="title-text__user" for="u-old">Старый пароль</label>
+                <input class="form-control" type="password" id="u-old" placeholder="Старый пароль" required="required"/>
+              </div>
+              <div class="form-group form-user">
+                <label class="title-text__user" for="u-new">Новый пароль</label>
+                <input class="form-control" type="password" id="u-new" placeholder="Новый пароль" required="required"/>
+                <p class="desc-text__user">Сохранить</p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

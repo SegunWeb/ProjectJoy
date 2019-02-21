@@ -15,8 +15,8 @@ div.step-two
                             input.edit( type="radio" name="positions" id="ver" value="Вертикально" )
                             label.edit__ver(for="ver") Вертикально
                         li.horizontal
-                            input.edit.edit__ver( type="radio" name="positions" id="gor" value="Горизонтально" checked)
-                            label.edit__ver(for="gor") Горизонтально
+                            input.edit.edit-h( type="radio" name="positions" id="hor" value="Горизонтально")
+                            label.edit__hor(for="hor") Горизонтально
                     <!----photo range----->
                     div.editor-zoom
                         input.cropit-image-zoom-input.editor-zoom__range(type="range")
@@ -25,21 +25,19 @@ div.step-two
                         button.editor-deg__line--left.editor-deg__line.rotate-ccw
                         button.editor-deg__line--right.editor-deg__line.rotate-cwRotate
 
-
-
-    <!----words----->
-    div.filter-store-box.step-box__words.step-box
-        div.filter-store-words
-            p.text-center.title-text__filter Выберите фразу
-            <!----words list----->
-            div.words-list
-                p.list__title.words-list__title.dropdown-toggle(data-toggle="dropdown" data-id="" role="button" aria-expanded="false") Фраза не выбрана
-                mixin event-list(name_id,name_event)
-                    li.elem(id=name_id)
-                        span= name_event
-                ul.list__wrap.dropdown-menu
-                    +event-list("name1","Ого как классно!")
-                    +event-list("name2",'Как круто, просто огонь!')
+        <!----words----->
+        div.filter-store-box.step-box__words.words-in
+            div.filter-store-words
+                p.text-center.title-text__filter Выберите фразу
+                <!----words list----->
+                div.words-list
+                    p.list__title.words-list__title.dropdown-toggle(data-toggle="dropdown" data-id="" role="button" aria-expanded="false") Фраза не выбрана
+                    mixin event-list(name_id,name_event)
+                        li.elem(id=name_id)
+                            span= name_event
+                    ul.list__wrap.dropdown-menu
+                        +event-list("name1","Ого как классно!")
+                        +event-list("name2",'Как круто, просто огонь!')
     <!----buttons box----->
     div.step__btn
         include ../../../elements/buttons/button_prev

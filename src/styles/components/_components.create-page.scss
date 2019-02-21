@@ -40,7 +40,12 @@
     margin-top: 1rem !important;
   }
 }
-// ---- step two -----
+// ---- step -----
+.step-two,
+.step-three,
+.step-words{
+  display: none;
+}
 
 .step {
   &__btn {
@@ -56,6 +61,10 @@
 }
 
 // ----- words -----
+.words-in {
+  display: none;
+}
+
 
 .words-list {
   margin-top: 1rem;
@@ -237,9 +246,12 @@
     }
   }
 }
-
-// --- step form ----
 .step-form {
+  display: none;
+}
+// --- step form ----
+.step-form-box {
+
   div {
     display: flex;
     justify-content: space-between;
@@ -275,6 +287,10 @@
 
 // ----
 .step-text {
+  display: none;
+}
+
+.step-text-box {
   width: 100%;
 
   div {

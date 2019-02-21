@@ -130,15 +130,28 @@ $(function() {
     });
 });
 
-$("#load").change(function (){
+$("#load, #load-video").change(function (){
     if ($(this).val()){
-        $('.cropit-preview').slideDown();
-        $('.image-editor__box').css('display','flex');
+        $(this).next().next().slideDown();
+        $(this).next().next().next().css('display','flex');
+        $(".edit-h").attr("checked", "checked");
+        $(this).parent().next().css('display','flex');
     }
 });
-$("#load-video").change(function (){
+
+$("#load-t").change(function (){
     if ($(this).val()){
-        $('.cropit-video').slideDown();
+        $(this).next().next().slideDown();
+        $(this).next().next().next().css('display','flex');
+        $(".edit-hor").attr("checked", "checked");
+        $(this).parents(" div.step-box ").next().children().addClass("act_btn")
+    }
+});
+
+$("#load-video-t").change(function (){
+    if ($(this).val()){
+        $(this).next().next().slideDown();
+        $(this).parents(" div.step-box ").next().children().addClass("act_btn")
     }
 });
 
@@ -188,13 +201,35 @@ $(".form-user input").focus(function () {
 
 // --- lists ----
 
-
-$(".elem").click(function (e) {
-    e.preventDefault();
+$(".elem").click(function () {
 
     var data = $(this).attr("id");
     var elem = $(this);
 
     elem.parent(" ul ").prev(" input ").val(elem.text()).attr("data-id", data);
     elem.parent(" ul ").prev(" p ").text(elem.text()).attr("data-id", data);
+
+    setInterval(function () {
+        if (($("#name-box").attr("data-id")) !== '') {
+            $(elem).parents(" div.step-box ").next().children().addClass("act_btn")
+        }
+        else if (($(".words-list__title").attr("data-id")) !== '') {
+            $(elem).parents(" div.step-box ").next().children().addClass("act_btn")
+        }
+    },10);
+
+});
+
+// ------- steps ----
+$( document ).ready( function () {
+    $(".word").parents(" div.step-box ").next().children().addClass("act_btn")
+});
+
+$(".btn__next").click(function () {
+        $(this).parent().parent().hide();
+        $(this).parents().next().show()
+});
+$(".btn__prev").click(function () {
+    $(this).parent().parent().hide();
+    $(this).parents().prev().show()
 });

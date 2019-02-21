@@ -115,6 +115,7 @@
 }
 
 #users-data {
+  display: none;
   width: 100%;
   margin: 0 auto;
   @include mq(sm){
@@ -164,6 +165,7 @@
 .user-photo {
 
   &__img {
+    position: relative;
     width: 6rem;
     height: 6rem;
     border: 1px solid $dark-blue;
@@ -172,7 +174,30 @@
     margin: 0 auto;
     display: block;
     overflow: hidden;
+
+    img {
+      position: absolute;
+      @extend .elemCenter;
+    }
   }
+
+  &__text {
+    width: 100%;
+    @include mq(sm){
+      width: 68%;
+    }
+    @include mq(md){
+      width: 75%;
+    }
+    @include mq(lg){
+      width: 80%;
+    }
+    @include mq(xl){
+      width: 83%;
+    }
+
+  }
+
 
   p {
     text-align: center;
