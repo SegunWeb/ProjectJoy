@@ -1,0 +1,16 @@
+include components/head
+<!----header-box---->
+include components/header-red
+main
+    div.creating-new-video
+        h2.text-center.title-text__md Создание ролика
+        div.creating-video__box
+            img.creating-img.creating-img--big(src="../img/icons/camera.png")
+            img.creating-loader(src="../img/745.gif")
+
+            p.desc-text--blue Ваш ролик готовиться. Это может занять некоторое время.
+            p.desc-text--blue Ссылка с готовым роликом будет отправлена вам на почту
+        include elements/buttons/button_back
+
+
+include components/footer

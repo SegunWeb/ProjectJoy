@@ -1,0 +1,26 @@
+#testim-video.testim-video
+    h2.text-center.title-text__md Видео отзывы
+    mixin video-testi-box(title, desc)
+        <!----video-testimonials-box----->
+        div.video-testimonials__box.justify-content-between.col-6
+            div.testimonials-video.video-box
+                include ../../../elements/video/video
+            p.title-text__sm.margin-text= title
+            p.desc-text.desc-text--black.desc-text__md.margin-text-y= desc
+    div.video-testimonials-wrap.testim-video-box.col-12
+        +video-testi-box(
+        'Одно из самых важных наших преимуществ',
+        'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in '
+        )
+        +video-testi-box(
+        'Одно из самых важных наших преимуществ',
+        'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in '
+        )
+        +video-testi-box(
+        'Одно из самых важных наших преимуществ',
+        'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in '
+        )
+        +video-testi-box(
+        'Одно из самых важных наших преимуществ',
+        'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in '
+        )

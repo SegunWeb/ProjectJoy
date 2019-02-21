@@ -15,8 +15,6 @@
       border-radius: .5rem;
       padding: 1rem 2rem 2rem;
     }
-
-
   }
 }
 .gender-group-step {
@@ -332,11 +330,31 @@
     padding: 0 1rem;
   }
 }
+.creating-new-video {
+  padding: 3rem 0;
+
+  p {
+    font-family: $RubikMedium;
+    text-align: center;
+    max-width: 35rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+}
+
 .creating-img {
   width: 3rem;
   margin: 0 auto;
   @include mq(xs){
     width: 5rem;
+  }
+
+  &--big {
+    width: 5rem;
+    margin: 0 auto;
+    @include mq(xs){
+      width: 10rem;
+    }
   }
 }
 .creating-loader {

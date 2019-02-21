@@ -184,16 +184,7 @@
   &__text {
     width: 100%;
     @include mq(sm){
-      width: 68%;
-    }
-    @include mq(md){
-      width: 75%;
-    }
-    @include mq(lg){
       width: 80%;
-    }
-    @include mq(xl){
-      width: 83%;
     }
 
   }

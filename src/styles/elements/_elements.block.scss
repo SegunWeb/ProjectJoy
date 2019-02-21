@@ -87,6 +87,21 @@
       color: $w;
     }
   }
+  // ---------
+  &__back {
+    background-color: $red;
+    padding: .6rem 2rem .5rem 2rem;
+    color: $w;
+    width: 13rem;
+    display: block;
+    margin: 1rem auto;
+
+    &:hover {
+      background-color: $blue-light;
+      color: $w;
+    }
+  }
+
   //----------
   &__come-in {
     background-color: $red;
@@ -186,6 +201,22 @@
       background-color: $blue-light;
     }
   }
+  &__testim-sub {
+    margin: 1rem auto 0 auto;
+    padding: .6rem 3rem .5rem 3rem;
+    color: $w;
+    background-color: $blue;
+    display: block;
+    border: 1px solid $blue;
+    @include mq(xs){
+      margin: 1rem auto;
+    }
+    &:hover {
+      background-color: $blue-light;
+      border: 1px solid $blue-light;
+    }
+  }
+
 
   // --------------
   &__prev,

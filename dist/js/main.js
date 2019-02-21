@@ -249,6 +249,25 @@
     $(".btn__prev").click(function () {
       $(this).parent().parent().hide();
       $(this).parents().prev().show();
+    }); // ----- testimonials ------
+
+    $('#testi').click(function () {
+      $('#testim-text').show();
+      $('#testim-video').hide();
+
+      if ($('#testim-text').css('display', 'block')) {
+        $('#testim-textarea').children('.testim-mail').hide();
+        $('#testim-textarea').children('.testim-info, .testim-textarea').show();
+      }
+    });
+    $('#testi-v').click(function () {
+      $('#testim-video').show();
+      $('#testim-text').hide();
+
+      if ($('#testim-video').css('display', 'block')) {
+        $('#testim-textarea').children('.testim-info, .testim-textarea').hide();
+        $('#testim-textarea').children('.testim-mail').css('display', 'flex');
+      }
     });
   }, {}]
 }, {}, [1]);
