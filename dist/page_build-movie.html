@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>VideoJoy</title>
-    <meta name="theme-color" content="#c9e0e04d">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
-    <link rel="shortcut icon" href="img/favicons/favicon-32x32.png" type="image/png">
-    <link rel="stylesheet" href="styles/librarys/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/librarys/animate.min.css">
-    <link rel="stylesheet" href="styles/librarys/slick.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/styles.min.css">
-  </head>
-  <body></body>
-</html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>VideoJoy</title>
+  <meta name="theme-color" content="#c9e0e04d">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+  <link rel="shortcut icon" href="img/favicons/favicon-32x32.png" type="image/png">
+  <link rel="stylesheet" href="styles/librarys/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/librarys/animate.min.css">
+  <link rel="stylesheet" href="styles/librarys/slick.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/styles.min.css">
+</head>
+  <body>
+    <div class="loaderArea">
+      <div class="loader"></div>
+    </div>
+  </body>
+</html><!----header box---->
 <div class="header-red"><!---header--->
   <header class="container header-top"><!---header-nav--->
     <div class="row"><!---logo_home-link---><a class="header-top__logo col-2 offset-1 offset-sm-0" href="index.html"><img class="logo" src="img/icons/header-logo.png"></a><!---navbar-link--->
@@ -35,7 +39,7 @@
           <ul class="menu header-menu col">
                   <li><a class="menu__link" href="video_store.html">Детям</a></li>
                   <li><a class="menu__link" href="video_store.html">Взрослым</a></li>
-                  <li><a class="menu__link" href="#">Отзывы</a></li>
+                  <li><a class="menu__link" href="testimogit nials.html">Отзывы</a></li>
                   <li><a class="menu__link" href="#">Блог</a></li>
           </ul>
         </nav>
@@ -58,9 +62,9 @@
   </header><!---header-end--->
 <!----pop-up---->
   <div class="filter">
-    <div class="aunt mx-auto">
-      <p class="close"></p>
-      <div class="aut-box">
+    <div class="aunt mx-auto"><!----button close---->
+      <p class="close"></p><!----aunt box ------->
+      <div class="aut-box"><!----form------>
         <form>
           <p class="title-text__sm text-center">Авторизация</p>
           <div class="form-group">
@@ -78,19 +82,20 @@
     </div>
   </div><!----pop-up-end---->
 </div>
-<main>
+<main><!----create movie---->
   <div class="example-store create-movie">
-    <h2 class="text-center title-text__md">Создание ролика</h2>
+    <h2 class="text-center title-text__md">Создание ролика</h2><!----movie------>
     <div class="example-store-video video-box create-movie-video"><img class="img-video" src="img/family-s.jpg" alt="img">
       <iframe class="d-flex justify-content-center" data-src="https://www.youtube.com/embed/dcMRHF0Wt3I?rel=0&amp;amp;controls=0&amp;amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <button class="play-video"></button>
     </div>
-  </div>
-  <div class="filter-store step-one">
+  </div><!----create movie end---->
+<!----step one---->
+  <div class="filter-store step-one steps">
     <h2 class="text-center title-text__md title-text__step">Этап 1</h2>
-    <div class="filter-store__box step-one__box">
+    <div class="filter-store__box step-one__box step-box"><!----filter gender----->
       <div class="filter-store-gender">
-        <p class="text-center title-text__filter">Пол</p>
+        <p class="text-center title-text__filter">Пол</p><!----gender----->
         <ul class="gender-group-step radio-group">
           <li>
             <input class="checkbox" type="radio" name="gender" id="girl" value="Девочка">
@@ -101,81 +106,178 @@
             <label for="boy">Мальчик</label>
           </li>
         </ul>
-      </div>
+      </div><!----filter box----->
       <div class="filter-store-box">
         <div class="filter-store-name list-name">
-          <p class="text-center title-text__filter">Выбор имени</p>
+          <p class="text-center title-text__filter">Выбор имени</p><!----name list----->
           <div class="name-list">
-            <p class="list__title name-list__title dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Имя не выбрано</p>
+            <input class="list__title name-list__title dropdown-toggle" id="name-box" data-toggle="dropdown" data-id="" value="" role="button" placeholder="Имя не выбрано" aria-expanded="false">
             <ul class="list__wrap dropdown-menu">
-                          <li><span>Леша</span></li>
-                          <li><span>Саша</span></li>
+                          <li class="elem" id="one"><span>Леша</span></li>
+                          <li class="elem" id="two"><span>Саша</span></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <button class="btn btn-text btn__next">далее</button>
+    <div class="step__btn">
+      <button class="btn btn-text btn__next">далее</button>
+    </div>
+  </div><!----step one end---->
+<!----step two---->
   <div class="step-two">
-    <h2 class="text-center title-text__md title-text__step">Этап 2</h2>
-    <div class="photo">
-      <button class="btn btn-text btn__load">загрузить фото</button>
-      <div class="photo-editor">
-        <div class="photo-editor__photo photo-editor__photo--gor"><img src="img/family-s.jpg"></div>
-        <div class="photo-editor__editor">
-          <ul class="editor-position">
-            <li>
-              <input class="edit" type="radio" name="positions" id="ver" value="Вертикально" checked>
-              <label class="edit__ver" for="ver">Вертикально</label>
-            </li>
-            <li>
-              <input class="edit edit__ver" type="radio" name="positions" id="gor" value="Горизонтально">
-              <label class="edit__ver" for="gor">Горизонтально</label>
-            </li>
-          </ul>
-          <div class="editor-size">
-            <p class="editor-size__line"><span></span></p>
+    <h2 class="text-center title-text__md title-text__step">Загрузите фото</h2>
+    <div class="step-box__photo step-box"><!----photo editor----->
+      <div class="image-editor"><!----photo loader----->
+        <input class="cropit-image-input loads" type="file" name="load" id="load">
+        <label class="btn btn-text btn__load" for="load">Загрузите фото</label><!----photo----->
+        <div class="cropit-preview cropit-preview__hor"></div><!----photo position----->
+        <div class="image-editor__box">
+          <div class="editor-box">
+            <ul class="editor-position">
+              <li class="vertical">
+                <input class="edit" type="radio" name="positions" id="ver" value="Вертикально">
+                <label class="edit__ver" for="ver">Вертикально</label>
+              </li>
+              <li class="horizontal">
+                <input class="edit edit-h" type="radio" name="positions" id="hor" value="Горизонтально">
+                <label class="edit__hor" for="hor">Горизонтально</label>
+              </li>
+            </ul><!----photo range----->
+            <div class="editor-zoom">
+              <input class="cropit-image-zoom-input editor-zoom__range" type="range">
+            </div><!----photo deg----->
+            <div class="editor-deg">
+              <button class="editor-deg__line--left editor-deg__line rotate-ccw"></button>
+              <button class="editor-deg__line--right editor-deg__line rotate-cwRotate"></button>
+            </div>
           </div>
-          <div class="editor-deg">
-            <button class="editor-deg__line--left editor-deg__line"></button>
-            <button class="editor-deg__line--right editor-deg__line"></button>
+        </div>
+      </div><!----words----->
+      <div class="filter-store-box step-box__words words-in">
+        <div class="filter-store-words">
+          <p class="text-center title-text__filter">Выберите фразу</p><!----words list----->
+          <div class="words-list">
+            <p class="list__title words-list__title dropdown-toggle" data-toggle="dropdown" data-id="" role="button" aria-expanded="false">Фраза не выбрана</p>
+            <ul class="list__wrap dropdown-menu">
+                          <li class="elem" id="name1"><span>Ого как классно!</span></li>
+                          <li class="elem" id="name2"><span>Как круто, просто огонь!</span></li>
+            </ul>
           </div>
         </div>
       </div>
-    </div>
-    <div class="filter-store-box words">
-      <div class="filter-store-words">
-        <p class="text-center title-text__filter">Выберите фразу</p>
-        <div class="words-list">
-          <p class="list__title words-list__title dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Фраза не выбрана</p>
-          <ul class="list__wrap dropdown-menu">
-                      <li><span>Ого как классно!</span></li>
-                      <li><span>Как круто, просто огонь!</span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    </div><!----buttons box----->
     <div class="step__btn">
       <button class="btn btn-text btn__prev">назад</button>
       <button class="btn btn-text btn__next">далее</button>
     </div>
-  </div>
+  </div><!----step two end---->
+<!----step three----><!----step video----->
   <div class="step-three">
-    <h2 class="text-center title-text__md title-text__step">Этап 3</h2>
-    <div class="step-box step-box__form">
-      <form>
+    <h2 class="text-center title-text__md title-text__step">Вставте видео</h2>
+    <div class="step-box__photo step-box"><!----video editor----->
+      <div class="image-editor"><!----video loader----->
+        <input class="cropit-image-input" type="file" name="load-video" id="load-video">
+        <label class="btn btn-text btn__load" for="load-video">Загрузите видео</label><!----video----->
+        <div class="cropit-video"></div>
+      </div><!----words----->
+      <div class="filter-store-box step-box__words words-in">
+        <div class="filter-store-words">
+          <p class="text-center title-text__filter">Выберите фразу</p><!----words list----->
+          <div class="words-list">
+            <p class="list__title words-list__title dropdown-toggle" data-toggle="dropdown" data-id="" role="button" aria-expanded="false">Фраза не выбрана</p>
+            <ul class="list__wrap dropdown-menu">
+                          <li class="elem" id="name3"><span>Ого как классно!</span></li>
+                          <li class="elem" id="name4"><span>Как круто, просто огонь!</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div><!----buttons box----->
+    <div class="step__btn">
+      <button class="btn btn-text btn__prev">назад</button>
+      <button class="btn btn-text btn__next">далее</button>
+    </div>
+  </div><!----step video two----->
+  <div class="step-three">
+    <h2 class="text-center title-text__md title-text__step">Вставте видео</h2>
+    <div class="step-box__photo step-box"><!----video editor----->
+      <div class="image-editor"><!----video loader----->
+        <input class="cropit-image-input" type="file" name="load-video-t" id="load-video-t">
+        <label class="btn btn-text btn__load" for="load-video-t">Загрузите видео</label><!----video----->
+        <div class="cropit-video"></div>
+      </div>
+    </div><!----buttons box----->
+    <div class="step__btn">
+      <button class="btn btn-text btn__prev">назад</button>
+      <button class="btn btn-text btn__next">далее</button>
+    </div>
+  </div><!----step photo ----->
+  <div class="step-two">
+    <h2 class="text-center title-text__md title-text__step">Загрузите фото</h2>
+    <div class="step-box__photo step-box"><!----photo editor----->
+      <div class="image-editor"><!----photo loader----->
+        <input class="cropit-image-input loads" type="file" name="load-t" id="load-t">
+        <label class="btn btn-text btn__load" for="load-t">Загрузите фото</label><!----photo----->
+        <div class="cropit-preview cropit-preview__hor"></div><!----photo position----->
+        <div class="image-editor__box">
+          <div class="editor-box">
+            <ul class="editor-position">
+              <li class="vertical">
+                <input class="edit" type="radio" name="positions" id="ver-t" value="Вертикально">
+                <label class="edit__ver" for="ver-t">Вертикально</label>
+              </li>
+              <li class="horizontal">
+                <input class="edit edit-hor" type="radio" name="positions" id="hor-t" value="Горизонтально">
+                <label class="edit__hor" for="hor-t">Горизонтально</label>
+              </li>
+            </ul><!----photo range----->
+            <div class="editor-zoom">
+              <input class="cropit-image-zoom-input editor-zoom__range" type="range">
+            </div><!----photo deg----->
+            <div class="editor-deg">
+              <button class="editor-deg__line--left editor-deg__line rotate-ccw"></button>
+              <button class="editor-deg__line--right editor-deg__line rotate-cwRotate"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!----buttons box----->
+    <div class="step__btn">
+      <button class="btn btn-text btn__prev">назад</button>
+      <button class="btn btn-text btn__next">далее</button>
+    </div>
+  </div><!----step words----->
+  <div class="step-words">
+    <h2 class="text-center title-text__md title-text__step">Фраза</h2>
+    <div class="filter-store-box step-box__words step-box">
+      <div class="filter-store-words">
+        <p class="text-center title-text__filter">Выберите фразу</p><!----words list----->
+        <div class="words-list">
+          <p class="list__title words-list__title dropdown-toggle" data-toggle="dropdown" data-id="" role="button" aria-expanded="false">Фраза не выбрана</p>
+          <ul class="list__wrap dropdown-menu">
+                      <li class="elem" id="name1"><span>Ого как классно!</span></li>
+                      <li class="elem" id="name2"><span>Как круто, просто огонь!</span></li>
+          </ul>
+        </div>
+      </div>
+    </div><!----buttons box----->
+    <div class="step__btn">
+      <button class="btn btn-text btn__prev">назад</button>
+      <button class="btn btn-text btn__next">далее</button>
+    </div>
+  </div><!----step text----->
+  <div class="step-text">
+    <h2 class="text-center title-text__md title-text__step">Введите текст</h2><!----form box----->
+    <div class="step-box step-box__text"><!----form----->
+      <form class="step-text-box word" id="words">
         <div class="form-group">
-          <input class="form-control" type="text" placeholder="ФИО" required="required">
+          <label for="text-name">Фамилия</label>
+          <input class="form-control" type="text" maxlength="150" id="text-name" placeholder="" required="required">
         </div>
         <div class="form-group">
-          <input class="form-control" type="phone" placeholder="Телефон" required="required">
-        </div>
-        <div class="form-group">
-          <input class="form-control" type="email" placeholder="Email" required="required">
-        </div>
-        <div class="form-group">
-          <input class="form-control" type="text" placeholder="Город" required="required">
+          <label for="text-city">Город</label>
+          <input class="form-control" type="text" id="text-city" maxlength="150" placeholder="" required="required">
         </div>
       </form>
     </div>
@@ -183,7 +285,35 @@
       <button class="btn btn-text btn__prev">назад</button>
       <button class="btn btn-text btn__next">далее</button>
     </div>
-  </div>
+  </div><!----step four three---->
+<!----step form---->
+  <div class="step-form">
+    <h2 class="text-center title-text__md title-text__step">Введите данные</h2><!----form box----->
+    <div class="step-box step-box__form"><!----form----->
+      <form class="step-form-box" id="data">
+        <div class="form-group">
+          <label for="name">ФИО</label>
+          <input class="form-control" type="text" id="name" placeholder="" minlength="3" required="required">
+        </div>
+        <div class="form-group">
+          <label for="phone">Телефон</label>
+          <input class="form-control" type="phone" id="phone" placeholder="" minlength="7" required="required">
+        </div>
+        <div class="form-group">
+          <label for="mail">Email</label>
+          <input class="form-control" type="email" id="mail" placeholder="" minlength="8" required="required">
+        </div>
+        <div class="form-group">
+          <label for="text">Город</label>
+          <input class="form-control" type="text" id="text" placeholder="" minlength="3" required="required">
+        </div>
+      </form>
+    </div>
+    <div class="step__btn">
+      <button class="btn btn-text btn__prev">назад</button>
+      <button class="btn btn-text btn__sub" type="submin" form="data">далее</button>
+    </div>
+  </div><!----step form end---->
 </main><!---footer--->
 <footer class="footer"><!---footer-nav--->
   <div class="container">
@@ -232,4 +362,5 @@
 <script src="js/librarys/bootstrap.min.js"></script>
 <script src="js/librarys/slick.min.js"></script>
 <script src="js/librarys/wow.min.js"></script>
+<script src="js/librarys/jquery.cropit.js"></script>
 <script src="js/main.min.js"></script>

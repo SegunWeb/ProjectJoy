@@ -24,7 +24,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.min.css">
   </head>
-  <body></body>
+  <body>
+    <div class="loaderArea">
+      <div class="loader"></div>
+    </div>
+  </body>
 </html><!---header--->
 <header class="container header-top"><!---header-nav--->
   <div class="row"><!---logo_home-link---><a class="header-top__logo col-2 offset-1 offset-sm-0" href="index.html"><img class="logo" src="img/icons/header-logo.png"></a><!---navbar-link--->
@@ -57,9 +61,9 @@
 </header><!---header-end--->
 <!----pop-up---->
 <div class="filter">
-  <div class="aunt mx-auto">
-    <p class="close"></p>
-    <div class="aut-box">
+  <div class="aunt mx-auto"><!----button close---->
+    <p class="close"></p><!----aunt box ------->
+    <div class="aut-box"><!----form------>
       <form>
         <p class="title-text__sm text-center">Авторизация</p>
         <div class="form-group">
@@ -309,8 +313,9 @@
         <h2 class="col-12 title-text__md">Отзывы</h2>
         <div class="testimonials-wrap testimonials-slider col-12"><!----testimonials-block-----><!----testimonials-box----->
                   <div class="row">
-                    <div class="testimonials__box justify-content-between d-flex col-md-8 mx-auto"><img class="testimonials__avatar" src="img/common/circle-chl.png">
-                      <div>
+                    <div class="testimonials__box justify-content-between d-flex col-lg-8 col-md-10 mx-auto">
+                      <div class="user-photo__img testimonials__avatar"><img src="img/common/circle-chl.png"></div>
+                      <div class="user-photo__text">
                         <div class="d-flex">
                           <p class="desc-text desc-text__name">Вася</p>
                           <p class="desc-text desc-text__city">Одесса</p>
@@ -320,8 +325,9 @@
                     </div>
                   </div><!----testimonials-block-----><!----testimonials-box----->
                   <div class="row">
-                    <div class="testimonials__box justify-content-between d-flex col-md-8 mx-auto"><img class="testimonials__avatar" src="img/common/circle-chl.png">
-                      <div>
+                    <div class="testimonials__box justify-content-between d-flex col-lg-8 col-md-10 mx-auto">
+                      <div class="user-photo__img testimonials__avatar"><img src="img/common/circle-chl.png"></div>
+                      <div class="user-photo__text">
                         <div class="d-flex">
                           <p class="desc-text desc-text__name">Вася</p>
                           <p class="desc-text desc-text__city">Одесса</p>
@@ -331,8 +337,9 @@
                     </div>
                   </div><!----testimonials-block-----><!----testimonials-box----->
                   <div class="row">
-                    <div class="testimonials__box justify-content-between d-flex col-md-8 mx-auto"><img class="testimonials__avatar" src="img/common/circle-chl.png">
-                      <div>
+                    <div class="testimonials__box justify-content-between d-flex col-lg-8 col-md-10 mx-auto">
+                      <div class="user-photo__img testimonials__avatar"><img src="img/common/circle-chl.png"></div>
+                      <div class="user-photo__text">
                         <div class="d-flex">
                           <p class="desc-text desc-text__name">Вася</p>
                           <p class="desc-text desc-text__city">Одесса</p>
@@ -393,4 +400,5 @@
 <script src="js/librarys/bootstrap.min.js"></script>
 <script src="js/librarys/slick.min.js"></script>
 <script src="js/librarys/wow.min.js"></script>
+<script src="js/librarys/jquery.cropit.js"></script>
 <script src="js/main.min.js"></script>

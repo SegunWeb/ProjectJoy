@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>VideoJoy</title>
@@ -23,9 +23,13 @@
     <link rel="stylesheet" href="styles/librarys/slick.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.min.css">
-  </head>
-  <body></body>
-</html>
+</head>
+  <body>
+    <div class="loaderArea">
+      <div class="loader"></div>
+    </div>
+  </body>
+</html><!----header-box---->
 <div class="header-red"><!---header--->
   <header class="container header-top"><!---header-nav--->
     <div class="row"><!---logo_home-link---><a class="header-top__logo col-2 offset-1 offset-sm-0" href="index.html"><img class="logo" src="img/icons/header-logo.png"></a><!---navbar-link--->
@@ -58,9 +62,9 @@
   </header><!---header-end--->
 <!----pop-up---->
   <div class="filter">
-    <div class="aunt mx-auto">
-      <p class="close"></p>
-      <div class="aut-box">
+    <div class="aunt mx-auto"><!----button close---->
+      <p class="close"></p><!----aunt box ------->
+      <div class="aut-box"><!----form------>
         <form>
           <p class="title-text__sm text-center">Авторизация</p>
           <div class="form-group">
@@ -78,17 +82,18 @@
     </div>
   </div><!----pop-up-end---->
 </div>
-<main>
-  <div class="example-store">
-    <h2 class="text-center title-text__md">Видео пример</h2>
+<main><!----example-box---->
+  <div class="example-store"><!----example video---->
+    <h2 class="text-center title-text__md">Видео пример</h2><!----video box---->
     <div class="example-store-video video-box"><img class="img-video" src="img/family-s.jpg" alt="img">
       <iframe class="d-flex justify-content-center" data-src="https://www.youtube.com/embed/dcMRHF0Wt3I?rel=0&amp;amp;controls=0&amp;amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <button class="play-video"></button>
     </div>
-  </div>
+  </div><!----example end---->
+<!----filter-box---->
   <div class="filter-store"><img class="filter-store__bg" src="img/bg/elem/base2.png">
     <h2 class="text-center title-text__md title-text__md--white">Выберете ролик</h2>
-    <div class="filter-store__box">
+    <div class="filter-store__box"><!----filter lang---->
       <div class="filter-store-lang">
         <p class="text-center title-text__filter">Язык</p>
         <ul class="lang-group radio-group">
@@ -109,7 +114,7 @@
             <label for="prt">Portuguese</label>
           </li>
         </ul>
-      </div>
+      </div><!----filter age---->
       <div class="filter-store-age">
         <p class="text-center title-text__filter">Кому</p>
         <ul class="age-group radio-group">
@@ -122,7 +127,7 @@
             <label for="adult">Взрослый</label>
           </li>
         </ul>
-      </div>
+      </div><!----filter gender---->
       <div class="filter-store-gender">
         <p class="text-center title-text__filter">Пол</p>
         <ul class="gender-group radio-group">
@@ -139,38 +144,39 @@
             <label for="boy">Мальчик</label>
           </li>
         </ul>
-      </div>
-      <div class="filter-store-box">
+      </div><!----filter box---->
+      <div class="filter-store-box"><!----list event---->
         <div class="filter-store-event list">
           <p class="text-center title-text__filter">Мероприятие</p>
           <div class="event-list">
-            <p class="list__title dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">День рождение</p>
+            <p class="list__title dropdown-toggle" data-toggle="dropdown" data-id="" role="button" aria-expanded="false">День рождение</p>
             <ul class="list__wrap dropdown-menu">
-                          <li><span>День рождение</span></li>
-                          <li><span>Новый год</span></li>
+                          <li class="elem" id="12"><span>День рождение</span></li>
+                          <li class="elem" id="14"><span>Новый год</span></li>
             </ul>
           </div>
-        </div>
+        </div><!----list people---->
         <div class="filter-store-people list">
           <p class="text-center title-text__filter">Количество человек</p>
           <div class="people-list">
             <p class="list__title dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Видео для 1 человека</p>
             <ul class="list__wrap dropdown-menu">
-                          <li><span>Видео для 1 человека</span></li>
-                          <li><span>Видео для 2 человек</span></li>
-                          <li><span>Видео для 3 человек</span></li>
-                          <li><span>Видео для 4 человек</span></li>
-                          <li><span>Видео для 5 человек</span></li>
+                          <li class="elem" id="1"><span>Видео для 1 человека</span></li>
+                          <li class="elem" id="2"><span>Видео для 2 человек</span></li>
+                          <li class="elem" id="3"><span>Видео для 3 человек</span></li>
+                          <li class="elem" id="4"><span>Видео для 4 человек</span></li>
+                          <li class="elem" id="5"><span>Видео для 5 человек</span></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </div><!----filter-end---->
+<!----all video-box---->
   <div class="all-video"><img class="all-video__bg" src="img/bg/elem/base3.png">
     <div class="container">
       <div class="row">
-        <h2 class="text-center title-text__md col-12">Подобранные ролики</h2>
+        <h2 class="text-center title-text__md col-12">Подобранные ролики</h2><!----video box---->
         <div class="all-video__box col"><!----all-video-content----->
                   <div class="all-video-content col-md-6 col">
                     <div class="all-video-box video-box"><img class="img-video" src="img/family-s.jpg" alt="img">
@@ -178,7 +184,7 @@
                       <button class="play-video"></button>
                     </div>
                     <p class="title-text__xs title-text__xs--black margin-text">Для дня рождения</p>
-                    <p class="desc-text desc-text--black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim molestiae nisi tempore unde. Aliquid doloribus error fugit iure natus suscipit!</p>
+                    <p class="desc-text desc-text--black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim molestiae nisi tempore unde. Aliquid doloribus error fugit iure natus suscipit!</p><!----price---->
                     <div class="price">
                       <div class="price-box">
                         <div class="price-box__main">
@@ -196,7 +202,7 @@
                       <button class="play-video"></button>
                     </div>
                     <p class="title-text__xs title-text__xs--black margin-text">Для дня рождения</p>
-                    <p class="desc-text desc-text--black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim molestiae nisi tempore unde. Aliquid doloribus error fugit iure natus suscipit!</p>
+                    <p class="desc-text desc-text--black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim molestiae nisi tempore unde. Aliquid doloribus error fugit iure natus suscipit!</p><!----price---->
                     <div class="price">
                       <div class="price-box">
                         <div class="price-box__main">
@@ -214,7 +220,7 @@
                       <button class="play-video"></button>
                     </div>
                     <p class="title-text__xs title-text__xs--black margin-text">Для дня рождения</p>
-                    <p class="desc-text desc-text--black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim molestiae nisi tempore unde. Aliquid doloribus error fugit iure natus suscipit!</p>
+                    <p class="desc-text desc-text--black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim molestiae nisi tempore unde. Aliquid doloribus error fugit iure natus suscipit!</p><!----price---->
                     <div class="price">
                       <div class="price-box">
                         <div class="price-box__main">
@@ -232,7 +238,7 @@
                       <button class="play-video"></button>
                     </div>
                     <p class="title-text__xs title-text__xs--black margin-text">Для дня рождения</p>
-                    <p class="desc-text desc-text--black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim molestiae nisi tempore unde. Aliquid doloribus error fugit iure natus suscipit!</p>
+                    <p class="desc-text desc-text--black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim molestiae nisi tempore unde. Aliquid doloribus error fugit iure natus suscipit!</p><!----price---->
                     <div class="price">
                       <div class="price-box">
                         <div class="price-box__main">
@@ -247,7 +253,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div><!----all video-end---->
 </main><!---footer--->
 <footer class="footer"><!---footer-nav--->
   <div class="container">
@@ -296,4 +302,5 @@
 <script src="js/librarys/bootstrap.min.js"></script>
 <script src="js/librarys/slick.min.js"></script>
 <script src="js/librarys/wow.min.js"></script>
+<script src="js/librarys/jquery.cropit.js"></script>
 <script src="js/main.min.js"></script>
