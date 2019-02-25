@@ -31,6 +31,9 @@ $info_d: calc(16px + (16 - 14) * (100vw - 1920px) / (1920 - 480));
 $titleAccount: calc(30px + (30 - 21) * (100vw - 1920px) / (1920 - 480));
 $tabs: calc(18px + (18 - 14) * (100vw - 1920px) / (1920 - 480));
 
+$afterSocialFont: calc(45px + (45 - 35) * (100vw - 1920px) / (1920 - 480));
+$dataFont: calc(14px + (14 - 12) * (100vw - 1920px) / (1920 - 480));
+
 // Font family
 $RubikBlack: "Rubik-Black";
 $RubikBold: 'Rubik-Bold';

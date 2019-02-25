@@ -62,7 +62,8 @@ div.account
                     div.user-photo
                         div.user-photo__img
                             img(src="../../../../img/family-s.jpg")
-                        p.desc-text__user Загрузить фото
+                        input(type="file")#load-img
+                        label(for="load-img").desc-text__user  Загрузить фото
                     form.user-form
                         div.form-group.form-user
                             label.title-text__user(for="u-name") ФИО

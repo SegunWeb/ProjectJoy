@@ -1,0 +1,145 @@
+//----- blog ------
+.articles-wrap {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  @include mq(md){
+    flex-direction: row;
+  }
+}
+.articles{
+  order: 1;
+  @include mq(md){
+    order: 0;
+  }
+
+  &__box {
+    padding: 0;
+    @include mq(md){
+      padding: auto;
+    }
+  }
+}
+.articles-box {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0;
+  margin: 0 auto 1rem auto;
+  overflow: hidden;
+
+  @include mq(sm){
+    margin-bottom: 2rem;
+  }
+  @include mq(md) {
+    flex-direction: row;
+    padding: auto;
+  }
+
+  &__img {
+    margin-bottom: 1rem;
+    width: 100%;
+
+    @include mq(md) {
+      margin-bottom: 0;
+      position: relative;
+    }
+
+    img {
+
+      @include mq(md){
+        position: absolute;
+        display: block;
+        height: 100%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+    }
+  }
+
+  &__content {
+
+      div {
+        align-items: flex-end;
+
+        a {
+          display: block;
+        }
+      }
+  }
+}
+// ----- list articles ------
+.list-articles {
+  margin: 0 auto;
+  @include mq(sm){
+    margin: initial;
+  }
+
+  p {
+    padding: 1rem 0;
+    @include mq(md){
+      padding: 2rem 0;
+    }
+  }
+
+  &__box {
+    background-color: $bgGray;
+    border-radius: .5rem;
+    overflow: hidden;
+
+    p {
+      padding: .5rem 1rem;
+
+      &:hover {
+        background-color: $blue-light;
+        color: $w;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.list-act {
+  background-color: $blue !important;
+  color: $w !important;
+}
+
+// ------ blog in -------
+.articles-in {
+
+  &__content {
+    padding-bottom: 1rem;
+    @include mq(sm){
+      margin-bottom: 2rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+
+}
+.articles-in-img {
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+.articles-in-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__data {
+    width: 5rem !important;
+    justify-content: center !important;
+    margin-bottom: 0 !important;
+  }
+
+  &__title {
+    width: 100% !important;
+  }
+}

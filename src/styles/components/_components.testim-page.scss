@@ -1,6 +1,7 @@
 // ---- testimonials ----
 .testim {
-  padding-top: 2rem;
+  padding: 2rem 0;
+
 
   &__textarea {
     padding: 1.5rem;
@@ -33,8 +34,19 @@
 }
 .admin-box {
   margin: .5rem auto 0 auto;
-  padding-left: 1.5rem;
+  padding: 0;
+  @include mq(xs){
+    padding: auto auto auto 1.5rem;
+
+  }
 }
+.admin-testim-box {
+  padding: 0;
+  @include mq(xs) {
+    padding: auto;
+  }
+}
+
 .testim-box {
   display: flex;
   align-items: center;
@@ -49,20 +61,28 @@
     }
   }
   &__text {
-    width: 90%;
+    width: 98%;
+    margin: 0 auto;
+    @include mq(xs){
+      width: 90%;
+    }
 
     &--white {
       background-color: $w;
       border-radius: .5rem;
       padding: 1rem;
+      margin: auto;
     }
   }
 }
 .testim-wrap {
   background-color: $bgGray;
-  padding: 1rem;
+  padding: 1rem 0;
   border-radius: .5rem;
   margin-bottom: 1rem;
+  @include mq(xs) {
+    padding: 1rem;
+  }
 }
 .testim-textarea {
   max-width: 40rem;
@@ -140,6 +160,7 @@
     position: relative;
     z-index: 2;
     width: 13rem;
+    text-align: center;
     margin: 0 auto;
     display: block;
     padding: .5rem;
@@ -148,6 +169,14 @@
 }
 .testim-video {
   display: none;
+
+  &__box {
+    width: 14rem;
+    margin: 0 auto 1rem auto;
+    @include mq(sm){
+      width: 47%;
+    }
+  }
 }
 .testim-video-box {
   padding: 0;

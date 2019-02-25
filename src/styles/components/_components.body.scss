@@ -57,7 +57,10 @@
   }
 
   &__main {
-    margin-right: 5%;
+
+    @include mq(xs) {
+      margin-right: 5%;
+    }
   }
 }
 

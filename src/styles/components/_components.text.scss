@@ -98,6 +98,11 @@
       padding: 2rem 0;
     }
   }
+
+  &__article {
+    text-transform: uppercase;
+    line-height: 1.8;
+  }
 }
 
 // ----- price text ----
@@ -172,6 +177,27 @@
     color: $blue;
     font-style: italic;
     font-size: $baseFont;
+
+  }
+
+  &__data {
+    color: $dark-blue;
+    font-style: italic;
+    font-size: $dataFont;
+
+    &--right {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      align-items: center;
+    }
+  }
+
+  &__article {
+    color: $blue;
+    background-color: transparent;
+    font-size: $tabs;
+    font-family: $RubikMedium;
   }
 
   &__admin {

@@ -101,6 +101,8 @@
 .header-red {
   height: 2.8rem;
   background-image: url("../img/bg/elem/bg-header.png");
+  background-repeat: round;
+  flex: 0 0 auto;
 
   @include mq(xs){
     height: 3.4rem;

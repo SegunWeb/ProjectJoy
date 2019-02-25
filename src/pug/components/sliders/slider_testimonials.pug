@@ -1,4 +1,4 @@
-mixin video-testi-box(src, name_user, city, desc)
+mixin video-testi-box(src, name_user, city, data, desc)
     <!----testimonials-box----->
     div.row
      div.testimonials__box.justify-content-between.d-flex.col-lg-8.col-md-10.mx-auto
@@ -8,6 +8,7 @@ mixin video-testi-box(src, name_user, city, desc)
             div.d-flex
                 p.desc-text.desc-text__name= name_user
                 p.desc-text.desc-text__city= city
+                p.desc-text.desc-text__data.desc-text__data--right= data
             p.desc-text.desc-text--black.desc-text__md.margin-text-y= desc
 div.testimonials-wrap.testimonials-slider.col-12
     <!----testimonials-block----->
@@ -15,6 +16,7 @@ div.testimonials-wrap.testimonials-slider.col-12
         'img/common/circle-chl.png',
         'Вася',
         'Одесса',
+        '12.12.12',
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in '
     )
     <!----testimonials-block----->
@@ -22,6 +24,7 @@ div.testimonials-wrap.testimonials-slider.col-12
     'img/common/circle-chl.png',
     'Вася',
     'Одесса',
+    '12.12.2020',
     'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in '
     )
     <!----testimonials-block----->
@@ -29,5 +32,6 @@ div.testimonials-wrap.testimonials-slider.col-12
     'img/common/circle-chl.png',
     'Вася',
     'Одесса',
+    '12.12.1992',
     'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in '
     )

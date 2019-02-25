@@ -1,0 +1,36 @@
+div.articles.col-12.col-lg-9
+    div.row
+        <!----title-name----->
+        h2.col-12.title-text__md Блог
+        mixin articles-box(src, title, desc, data)
+            <!----content-block----->
+            div.articles-box.col
+                div.articles-box__img.col-lg-5.col-xl-4
+                    img(src=src)
+
+                div.articles-box__content.col-lg-7.col-xl-8.col-12
+                    p.title-text__xs.title-text__xs--black= title
+                    p.desc-text.desc-text--black.desc-text__md.my-2.my-xl-3= desc
+                    div.d-flex.justify-content-between.align-self-center
+                        include ../../../elements/buttons/button_more-blog
+                        p.desc-text.desc-text__data.desc-text__data--right= data
+        div.col-12.articles__box
+            +articles-box(
+                '../../../img/home.jpg',
+                'Первая новость которая будет тут',
+                'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet debitis delectus deleniti, ea est excepturi, harum id itaque, laudantium libero maiores modi nihil provident quam ratione sint temporibus veniam!',
+                '21.12.2019'
+            )
+            +articles-box(
+                '../../../img/wolf.jpg',
+                'Первая новость которая будет тут',
+                'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet debitis delectus deleniti, ea est excepturi, harum id itaque, laudantium libero maiores modi nihil provident quam ratione sint temporibus veniam!',
+                '21.12.2019'
+            )
+            +articles-box(
+                '../../../img/family-s.jpg',
+                'Первая новость которая будет тут',
+                'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet debitis delectus deleniti, ea est excepturi, harum id itaque, laudantium libero maiores modi nihil provident quam ratione sint temporibus veniam!',
+                '21.12.2019'
+            )
+

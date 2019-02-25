@@ -1,0 +1,22 @@
+include components/head
+<!----header-box---->
+include components/header-red
+main
+    div.video-ready
+        h2.text-center.title-text__md Готово!
+        div.video-ready__box
+            <!----movie------>
+            div.example-store-video.video-box.video-ready-box
+                include elements/video/video
+            <!----price---->
+            div.ready-cont
+                include elements/buttons/button_save
+
+        div.video-ready__pay
+            p.desc-text--blue Хотите поделиться вашем видео?
+            div.socials.socials__after
+                a(href="#").socials__fb
+                a(href="#").socials__yt
+                a(href="#").socials__inst
+
+include components/footer

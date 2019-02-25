@@ -237,6 +237,10 @@
           $(elem).parents(" div.step-box ").next().children().addClass("act_btn");
         }
       }, 10);
+    });
+    $('.list-articles__box p').click(function () {
+      $('.list-articles__box p').removeClass("list-act");
+      $(this).addClass("list-act");
     }); // ------- steps ----
 
     $(document).ready(function () {

@@ -1,27 +1,29 @@
 #testim-text.testim__text
     h2.text-center.title-text__md Отзывы
-    mixin testi-box-user(src, name_user, city, desc)
+    mixin testi-box-user(src, name_user, city, data, desc)
         <!----testimonials-box----->
-        div.testim-box.col-10.mx-auto
+        div.testim-box.col-md-10.col-12.mx-auto
             div.user-photo__img.testim-box__avatar
                 img(src=src)
             div.testim-box__text
                 div.d-flex
                     p.desc-text.desc-text__name= name_user
                     p.desc-text.desc-text__city= city
+                    p.desc-text.desc-text__data.desc-text__data--right= data
                 p.desc-text.desc-text--black.desc-text__md= desc
 
     <!----------------------------------------------->
 
-    mixin testi-box-admin(src, name_user, city, desc)
+    mixin testi-box-admin(src, name_user, city, data, desc)
         <!----testimonials-box----->
-        div.testim-box.col-11.offset-1
+        div.testim-box.admin-testim-box.col-12.offset-md-1
             div.user-photo__img.testim-box__avatar
                 img(src=src)
             div.testim-box__text.testim-box__text--white
                 div.d-flex
                     p.desc-text.desc-text__name= name_user
                     p.desc-text.desc-text__admin= city
+                    p.desc-text.desc-text__data.desc-text__data--right= data
                 p.desc-text.desc-text--black.desc-text__md= desc
     <!----------------------------------------------->
 
@@ -31,13 +33,15 @@
         'img/common/circle-chl.png',
         'Вася',
         'Одесса',
+        '12.11.21',
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in '
         )
-        div.admin-box.col-10.offset-1
+        div.admin-box.col-12.col-md-10.offset-md-1
             +testi-box-admin(
             'img/common/circle-chl.png',
             'Ольга',
             'Администратор',
+            '12.12.21',
             'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in '
             )
     div.testimonials-wrap.testim-wrap
@@ -46,6 +50,7 @@
         'img/common/circle-chl.png',
         'Вася',
         'Одесса',
+        '12.12.12',
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in '
         )
 
