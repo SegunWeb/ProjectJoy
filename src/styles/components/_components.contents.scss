@@ -160,6 +160,16 @@
     }
   }
 
+  &__header {
+    a {
+      color: $blue;
+
+      @include mq(md){
+        color: $w;
+      }
+    }
+  }
+
   &__after {
     margin: 0 auto;
     width: 12rem;

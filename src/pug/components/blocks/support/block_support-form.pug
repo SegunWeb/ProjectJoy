@@ -1,0 +1,15 @@
+div.support-form
+    <!----title text---->
+    p.title-text__sm.text-center.title-text__article Часто задаваемые вопросы
+    <!----form box---->
+    div.support-form__box
+        <!----form---->
+        form#supports
+            div.form-group
+                input( type="text" class="form-control" minlength="3" maxlength="50" placeholder="Имя" required='required')
+            div.form-group
+                input( type="email" class="form-control"  placeholder="Email" required='required')
+            div.form-group
+                textarea( type="text" class="form-control" minlength="20" maxlength="1000"  placeholder="Введите текст" required='required')
+            include ../../../elements/buttons/button_sub-s
+

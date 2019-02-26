@@ -28,7 +28,8 @@
   input {
     color: $blue !important;
   }
-  input[placeholder] {
+  input[placeholder],
+  textarea[placeholder]{
     font-family: $RubikRegular;
     font-size: $mdFont;
   }

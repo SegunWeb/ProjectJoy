@@ -257,3 +257,8 @@ $('#testi-v').click(function () {
         $('#testim-textarea').children('.testim-mail').css('display','flex')
     }
 });
+
+$(".questions-box__q").click( function () {
+    $(this).next().slideToggle();
+    $(this).toggleClass("reverse")
+});

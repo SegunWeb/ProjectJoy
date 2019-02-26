@@ -217,7 +217,6 @@
     }
   }
 
-
   // --------------
   &__prev,
   &__redact {
@@ -290,6 +289,62 @@
     }
   }
   // -------------
+
+  &__art {
+    position: relative;
+    font-family: $RubikMedium;
+    color: $blue;
+    background-color: transparent;
+    margin: .5rem 1rem;
+    padding: 0;
+    @include mq(md){
+      margin: 0 1rem;
+    }
+
+    &:focus {
+      box-shadow: none !important;
+    }
+
+    &:hover {
+      color: $blue-light;
+    }
+
+    &:after {
+      content: '\f061';
+      font-size: 1rem;
+      padding-left: .5rem;
+      @extend .fontAwesomeFree
+    }
+
+    &--left {
+
+      &:before {
+        content: '\f060';
+        font-size: 1rem;
+        @extend .fontAwesomeFree;
+        padding-right: .5rem;
+      }
+
+      &:after {
+        content: '';
+        height: 50%;
+        width: 1px;
+        background-color: $dark-blue;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: -1rem;
+        margin: auto 0;
+        padding-left: 0;
+        display: none;
+        @include mq(md) {
+          display: block;
+        }
+
+      }
+
+    }
+  }
 }
 
 .act_btn {
