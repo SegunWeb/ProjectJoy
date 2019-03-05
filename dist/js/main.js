@@ -154,7 +154,7 @@
       $imageEditor.cropit({
         allowDragNDrop: false
       });
-      $('.rotate-cw').click(function () {
+      $('.rotate-cwRotate').click(function () {
         $imageEditor.cropit('rotateCW');
       });
       $('.rotate-ccw').click(function () {
