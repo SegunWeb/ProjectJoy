@@ -26,10 +26,10 @@ main {
   flex: 1 0 auto;
 }
 // Media
-img, embed,
+img:not(.cropit-preview-image), embed,
 object, audio, video {
   height: auto;
-  max-width: 100%;
+  width: 100%;
 }
 .mobile-only{
   display: none !important;

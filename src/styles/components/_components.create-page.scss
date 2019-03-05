@@ -2,441 +2,493 @@
 
 // --- step-one ----
 .step-one {
-  background-color: transparent !important;
-  padding: 0;
+    background-color: transparent !important;
+    padding: 0;
 
-  &__box {
-    background-color: rgba( 0, 93, 186, .9);
-    margin: 0 auto;
-    border-radius: initial;
-    padding: 1rem .5rem;
+    &__box {
+        background-color: rgba(0, 93, 186, .9);
+        margin: 0 auto;
+        border-radius: initial;
+        padding: 1rem .5rem;
 
-    @include mq(sm) {
-      border-radius: .5rem;
-      padding: 1rem 2rem 2rem;
+        @include mq(sm) {
+            border-radius: .5rem;
+            padding: 1rem 2rem 2rem;
+        }
     }
-  }
 }
-.gender-group-step {
-   li {
-     min-width: 14rem !important;
-     margin: 0 .5rem;
-     @include mq(xs) {
-       width: 48%;
-       margin: 0;
-     }
 
-   }
+.gender-group-step {
+    li {
+        min-width: 14rem !important;
+        margin: 0 .5rem;
+        @include mq(xs) {
+            width: 48%;
+            margin: 0;
+        }
+
+    }
 }
+
 .list-name {
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
 }
+
 .name-list {
-  &__title {
-    margin-top: 1rem !important;
-  }
+    &__title {
+        margin-top: 1rem !important;
+    }
 }
+
 // ---- step -----
 .step-two,
 .step-three,
-.step-words{
-  display: none;
+.step-words {
+    display: none;
 }
 
 .step {
-  &__btn {
-    max-width: 20rem;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    flex-direction: column;
-    @include mq(xs){
-      flex-direction: row !important;
+    &__btn {
+        max-width: 20rem;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        flex-direction: column;
+        @include mq(xs) {
+            flex-direction: row !important;
+        }
     }
-  }
 }
 
 // ----- words -----
 .words-in {
-  display: none;
+    display: none;
 }
 
-
 .words-list {
-  margin-top: 1rem;
+    margin-top: 1rem;
 }
 
 // --- cropit -----
 
 .image-editor {
-  &__box {
-    display: none;
-  }
+    &__box {
+        display: none;
+    }
 }
+
 .cropit-preview {
-  background-color: rgba(255, 255, 255, 0.1);
-  background-size: cover;
-  border-radius: .5rem;
-  width: 100%;
-  height: 20rem;
-  display: none;
-  margin: .5rem auto 0 auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    background-size: cover;
+    border-radius: .5rem;
+    width: 250px;
+    height: 250px;
+    display: none;
+    margin: .5rem auto 0 auto;
 
-  &__ver {
-    width: 12rem;
-    height: 17rem;
-    @include mq(xs){
-      height: 23rem;
-      width: 15rem;
-    }
-    @include mq(sm){
-      height: 25rem;
-      width: 55%;
-    }
-  }
+    &__ver {
+        //width: 12rem;
+        //height: 17rem;
+        .cropit-preview__size {
+            position: absolute;
+            top: -99999px;
+            left: -99999px;
+            opacity: 0;
+            visibility: hidden;
+            z-index: -999;
+            width: 240px;
+            height: 340px;
+        }
 
-  &__hor {
-    width: 15rem;
-    height: 10rem;
-    @include mq(xs){
-      height: 15rem;
-      width: 25rem;
+        width: 240px;
+        height: 340px;
+        @include mq(xs) {
+            .cropit-preview__size {
+                width: 300px;
+                height: 460px;
+            }
+            width: 300px;
+            height: 460px;
+        }
+        @include mq(sm) {
+            .cropit-preview__size {
+                width: 396px;
+                height: 500px;
+            }
+            width: 396px;
+            height: 500px;
+        }
     }
-    @include mq(sm){
-      height: 17rem;
-      width: 80%;
+
+    &__hor {
+        .cropit-preview__size {
+            position: absolute;
+            top: -99999px;
+            left: -99999px;
+            opacity: 0;
+            visibility: hidden;
+            z-index: -999;
+            width: 300px;
+            height: 200px;
+        }
+
+        width: 300px;
+        height: 200px;
+        @include mq(xs) {
+            .cropit-preview__size {
+                width: 500px;
+                height: 300px;
+            }
+            width: 500px;
+            height: 300px;
+        }
+        @include mq(sm) {
+
+            .cropit-preview__size {
+                width: 576px;
+                height: 340px;
+            }
+            width: 576px;
+            height: 340px;
+
+        }
     }
-  }
 }
+
 .cropit-preview-image-container {
-  cursor: move;
+    cursor: move;
 }
 
 // ----- video box ----
 .cropit-video {
-  background-color: rgba(255, 255, 255, 0.1);
-  background-size: cover;
-  border-radius: .5rem;
-  display: none;
-  margin: .5rem auto 0 auto;
-  width: 15rem;
-  height: 10rem;
-  @include mq(xs){
-    height: 15rem;
-    width: 25rem;
-  }
-  @include mq(sm){
-    height: 17rem;
-    width: 80%;
-  }
+    background-color: rgba(255, 255, 255, 0.1);
+    background-size: cover;
+    border-radius: .5rem;
+    display: none;
+    margin: .5rem auto 0 auto;
+    width: 15rem;
+    height: 10rem;
+    @include mq(xs) {
+        height: 15rem;
+        width: 25rem;
+    }
+    @include mq(sm) {
+        height: 17rem;
+        width: 80%;
+    }
 }
 
 // ------- editor -----
 
 .editor-box {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  flex-direction: column;
-  margin: 1rem auto 0 auto;
-  @include mq(sm){
-    flex-direction: row;
-  }
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: column;
+    margin: 1rem auto 0 auto;
+    @include mq(sm) {
+        flex-direction: row;
+    }
 }
 
 .editor-position {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 15rem;
-  margin: 0 auto;
-
-  @include mq(xs) {
-    max-width: 16rem;
-  }
-  @include mq(sm) {
-    margin: 0;
-  }
-
-  li {
-    margin: 0 .5rem;
-    label {
-      font-family: $RubikRegular;
-      font-size: $mdFont;
-      cursor: pointer;
-      &:hover:before {
-        color: $green;
-      }
-    }
-  }
-}
-
-.editor-zoom {
-  width: 90%;
-  max-width: 13rem;
-  display: flex;justify-content: center;
-  align-items: center;
-  position: relative;
-  margin: 1.5rem auto;
-  @include mq(sm) {
-    margin: 0 auto;
-    max-width: 10rem;
-  }
-
-  &:before {
-    content:'\f056';
-    @extend .fontAwesomeFree;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    left: 0;
-  }
-
-  &::after {
-    content:'\f055';
-    @extend .fontAwesomeFree;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    right: 0;
-  }
-}
-
-
-.editor-deg {
-  display: flex;
-  margin: 0 auto;
-  @include mq(sm) {
-    margin: 0;
-  }
-
-  &__line {
-    display: block;
-    background-color: transparent;
-    color: $w;
-    padding: .3rem;
-    margin: 0 .6rem;
-    font-size: $degFont;
-    @include mq(sm) {
-      margin: 0 .3rem;
-    }
-    &:hover {
-      color: $green;
-    }
-
-    &--left {
-
-      &:before {
-        content:'\f2f9';
-        @extend .fontAwesomeFree;
-        transform: rotateY(180deg);
-      }
-    }
-
-    &--right {
-
-      &:before {
-        content:'\f2f9';
-        @extend .fontAwesomeFree;
-      }
-    }
-  }
-}
-.step-form {
-  display: none;
-}
-// --- step form ----
-.step-form-box {
-
-  div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: column;
+    max-width: 15rem;
+    margin: 0 auto;
+
     @include mq(xs) {
-      max-width: 23rem;
-      flex-direction: row;
+        max-width: 16rem;
     }
-
     @include mq(sm) {
-      max-width: 35rem;
+        margin: 0;
     }
 
-    label {
-      width: 100%;
-      font-family: $RubikRegular;
-      text-align: center;
-      @include mq(xs){
-        text-align: right;
-        width: 22%;
-      }
+    li {
+        margin: 0 .5rem;
+        label {
+            font-family: $RubikRegular;
+            font-size: $mdFont;
+            cursor: pointer;
+            &:hover:before {
+                color: $green;
+            }
+        }
     }
-    input {
-      width: 95%;
-      @include mq(xs){
-        width: 74%;
-      }
+}
+
+.editor-zoom {
+    width: 90%;
+    max-width: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 1.5rem auto;
+    @include mq(sm) {
+        margin: 0 auto;
+        max-width: 10rem;
     }
 
-  }
+    &:before {
+        content: '\f056';
+        @extend .fontAwesomeFree;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        left: 0;
+    }
+
+    &::after {
+        content: '\f055';
+        @extend .fontAwesomeFree;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        right: 0;
+    }
+}
+
+.editor-deg {
+    display: flex;
+    margin: 0 auto;
+    @include mq(sm) {
+        margin: 0;
+    }
+
+    &__line {
+        display: block;
+        background-color: transparent;
+        color: $w;
+        padding: .3rem;
+        margin: 0 .6rem;
+        font-size: $degFont;
+        @include mq(sm) {
+            margin: 0 .3rem;
+        }
+        &:hover {
+            color: $green;
+        }
+
+        &--left {
+
+            &:before {
+                content: '\f2f9';
+                @extend .fontAwesomeFree;
+                transform: rotateY(180deg);
+            }
+        }
+
+        &--right {
+
+            &:before {
+                content: '\f2f9';
+                @extend .fontAwesomeFree;
+            }
+        }
+    }
+}
+
+.step-form {
+    display: none;
+}
+
+// --- step form ----
+.step-form-box {
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        @include mq(xs) {
+            max-width: 23rem;
+            flex-direction: row;
+        }
+
+        @include mq(sm) {
+            max-width: 35rem;
+        }
+
+        label {
+            width: 100%;
+            font-family: $RubikRegular;
+            text-align: center;
+            @include mq(xs) {
+                text-align: right;
+                width: 22%;
+            }
+        }
+        input {
+            width: 95%;
+            @include mq(xs) {
+                width: 74%;
+            }
+        }
+
+    }
 }
 
 // ----
 .step-text {
-  display: none;
+    display: none;
 }
 
 .step-text-box {
-  width: 100%;
-
-  div {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     width: 100%;
 
+    div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
 
-    label {
-      width: 85%;
-      font-family: $RubikRegular;
-      text-align: center;
-      @include mq(xs){
-        text-align: left;
-      }
+        label {
+            width: 85%;
+            font-family: $RubikRegular;
+            text-align: center;
+            @include mq(xs) {
+                text-align: left;
+            }
+        }
+        input {
+            width: 85%;
+        }
     }
-    input {
-      width: 85%;
-    }
-  }
 }
 
 // --- step creating video -----
 .creating-video {
-  padding-bottom: 2rem;
+    padding-bottom: 2rem;
 
-  &__box {
-    img {
-      display: block;
+    &__box {
+        img {
+            display: block;
+        }
     }
-  }
 
-  p {
-    font-family: $RubikRegular;
-    text-align: center;
-    max-width: 35rem;
-    margin: 1rem auto 2rem auto;
-    padding: 0 1rem;
-  }
+    p {
+        font-family: $RubikRegular;
+        text-align: center;
+        max-width: 35rem;
+        margin: 1rem auto 2rem auto;
+        padding: 0 1rem;
+    }
 }
-.creating-new-video {
-  padding: 3rem 0;
 
-  p {
-    font-family: $RubikMedium;
-    text-align: center;
-    max-width: 35rem;
-    margin: 0 auto;
-    padding: 0 1rem;
-  }
+.creating-new-video {
+    padding: 3rem 0;
+
+    p {
+        font-family: $RubikMedium;
+        text-align: center;
+        max-width: 35rem;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
 }
 
 .creating-img {
-  width: 3rem;
-  margin: 0 auto;
-  @include mq(xs){
-    width: 5rem;
-  }
-
-  &--big {
-    width: 5rem;
+    width: 3rem;
     margin: 0 auto;
-    @include mq(xs){
-      width: 10rem;
+    @include mq(xs) {
+        width: 5rem;
     }
-  }
+
+    &--big {
+        width: 5rem;
+        margin: 0 auto;
+        @include mq(xs) {
+            width: 10rem;
+        }
+    }
 }
+
 .creating-loader {
-  width: 6rem;
-  margin: 1rem auto;
-  @include mq(xs){
-    width: 11rem;
-  }
-}
-// --- step video ready-----
-.video-ready{
-  &__box {
-    max-width: 35rem;
-    margin: 0 auto;
-  }
-
-  &__pay {
-    background-color: $bgGray;
-    padding: 2rem 1rem;
-
-    p {
-      text-align: center;
-      font-family: $RubikRegular;
-      max-width: 35rem;
-      margin: 0 auto 1rem auto;
+    width: 6rem;
+    margin: 1rem auto;
+    @include mq(xs) {
+        width: 11rem;
     }
-  }
+}
+
+// --- step video ready-----
+.video-ready {
+    &__box {
+        max-width: 35rem;
+        margin: 0 auto;
+    }
+
+    &__pay {
+        background-color: $bgGray;
+        padding: 2rem 1rem;
+
+        p {
+            text-align: center;
+            font-family: $RubikRegular;
+            max-width: 35rem;
+            margin: 0 auto 1rem auto;
+        }
+    }
 }
 
 .ready-cont {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 0rem auto 1rem auto;
-  @include mq(xs){
-    width: 75%;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    margin: .5rem auto;
-  }
-  @include mq(md){
-    width: 90%;
-  }
-
-  div {
-    button {
-      margin-top: 0;
-      @include mq(xs){
-        margin-top: 1rem;
-      }
-    }
-  }
-}
-.pay-box {
-  max-width: 35rem;
-  margin: 0 auto;
-
-  form {
-    width: 90%;
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    justify-content: space-between;
     flex-direction: column;
+    margin: 0rem auto 1rem auto;
     @include mq(xs) {
-      flex-direction: row;
-      width: 17rem;
+        width: 75%;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        margin: .5rem auto;
+    }
+    @include mq(md) {
+        width: 90%;
     }
 
-    label {
-      color: $blue;
-      margin: 0 auto .5rem auto;
-
-      @include mq(xs){
-        margin: 0 1rem 0 0;
-      }
+    div {
+        button {
+            margin-top: 0;
+            @include mq(xs) {
+                margin-top: 1rem;
+            }
+        }
     }
+}
 
-    input {
-      font-family: $RubikRegular;
+.pay-box {
+    max-width: 35rem;
+    margin: 0 auto;
+
+    form {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        justify-content: space-between;
+        flex-direction: column;
+        @include mq(xs) {
+            flex-direction: row;
+            width: 17rem;
+        }
+
+        label {
+            color: $blue;
+            margin: 0 auto .5rem auto;
+
+            @include mq(xs) {
+                margin: 0 1rem 0 0;
+            }
+        }
+
+        input {
+            font-family: $RubikRegular;
+        }
     }
-  }
 }

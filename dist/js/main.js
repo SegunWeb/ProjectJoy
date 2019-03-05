@@ -150,15 +150,27 @@
     }); // ----- cropit -------
 
     $(function () {
+      var $imageEditor = $('.image-editor');
+      $imageEditor.cropit({
+        allowDragNDrop: false
+      });
       $('.rotate-cw').click(function () {
-        $('.image-editor').cropit('rotateCW');
+        $imageEditor.cropit('rotateCW');
       });
       $('.rotate-ccw').click(function () {
-        $('.image-editor').cropit('rotateCCW');
+        $imageEditor.cropit('rotateCCW');
       });
       $('.export').click(function () {
-        var imageData = $('.image-editor').cropit('export');
+        var imageData = $imageEditor.cropit('export');
         window.open(imageData);
+      });
+      $('.editor-position').on('click', function () {
+        var getWidth = $('.cropit-preview .cropit-preview__size').width();
+        var getHeight = $('.cropit-preview .cropit-preview__size').height();
+        $imageEditor.cropit('previewSize', {
+          width: getWidth,
+          height: getHeight
+        });
       });
     });
     $("#load, #load-video").change(function () {

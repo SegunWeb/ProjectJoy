@@ -58,10 +58,10 @@ body {
 main {
   flex: 1 0 auto; }
 
-img, embed,
+img:not(.cropit-preview-image), embed,
 object, audio, video {
   height: auto;
-  max-width: 100%; }
+  width: 100%; }
 
 .mobile-only {
   display: none !important; }
@@ -713,32 +713,62 @@ a {
   background-color: rgba(255, 255, 255, 0.1);
   background-size: cover;
   border-radius: .5rem;
-  width: 100%;
-  height: 20rem;
+  width: 250px;
+  height: 250px;
   display: none;
   margin: .5rem auto 0 auto; }
   .cropit-preview__ver {
-    width: 12rem;
-    height: 17rem; }
+    width: 240px;
+    height: 340px; }
+    .cropit-preview__ver .cropit-preview__size {
+      position: absolute;
+      top: -99999px;
+      left: -99999px;
+      opacity: 0;
+      visibility: hidden;
+      z-index: -999;
+      width: 240px;
+      height: 340px; }
     @media (min-width: 576px) {
       .cropit-preview__ver {
-        height: 23rem;
-        width: 15rem; } }
+        width: 300px;
+        height: 460px; }
+        .cropit-preview__ver .cropit-preview__size {
+          width: 300px;
+          height: 460px; } }
     @media (min-width: 768px) {
       .cropit-preview__ver {
-        height: 25rem;
-        width: 55%; } }
+        width: 396px;
+        height: 500px; }
+        .cropit-preview__ver .cropit-preview__size {
+          width: 396px;
+          height: 500px; } }
   .cropit-preview__hor {
-    width: 15rem;
-    height: 10rem; }
+    width: 300px;
+    height: 200px; }
+    .cropit-preview__hor .cropit-preview__size {
+      position: absolute;
+      top: -99999px;
+      left: -99999px;
+      opacity: 0;
+      visibility: hidden;
+      z-index: -999;
+      width: 300px;
+      height: 200px; }
     @media (min-width: 576px) {
       .cropit-preview__hor {
-        height: 15rem;
-        width: 25rem; } }
+        width: 500px;
+        height: 300px; }
+        .cropit-preview__hor .cropit-preview__size {
+          width: 500px;
+          height: 300px; } }
     @media (min-width: 768px) {
       .cropit-preview__hor {
-        height: 17rem;
-        width: 80%; } }
+        width: 576px;
+        height: 340px; }
+        .cropit-preview__hor .cropit-preview__size {
+          width: 576px;
+          height: 340px; } }
 
 .cropit-preview-image-container {
   cursor: move; }
