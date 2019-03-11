@@ -1,1 +1,19 @@
-h2 root hello
+include components/head
+<!----header box---->
+include components/header-red
+main
+    h2.text-center.title-text__md О нас
+    <!----video box---->
+    include components/blocks/about/block_a-video
+    <!----video box end---->
+    <!----advantages----->
+    include components/blocks/about/block_a-advantages
+    <!----advantages-end----->
+    <!-----history---->
+    include components/blocks/about/block_history
+    <!----history-end----->
+    <!-----form---->
+    include components/blocks/about/block_form
+    <!----form-end----->
+
+include components/footer

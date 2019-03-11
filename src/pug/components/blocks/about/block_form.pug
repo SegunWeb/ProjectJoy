@@ -1,0 +1,14 @@
+div.about-form
+    h3.title-text__sm.text-center.title-text__article Форма обратной связи
+    div.about-form__content
+        img(src="../../../img/icons/camera.png")
+        <!---- form ------>
+        form#form-about
+            div.form-group
+                input( type="text" class="form-control" placeholder="Имя" required='required')
+            div.form-group
+                input( type="email" class="form-control"  placeholder="Email" required='required')
+            div.form-group
+                textarea(placeholder="Введите текст" minlength="3" required='required')
+
+        include ../../../elements/buttons/button_sub-f

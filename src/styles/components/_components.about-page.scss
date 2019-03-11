@@ -1,0 +1,52 @@
+// ---- about page -------
+.about {
+    &__text {
+        padding: 1rem 0 2rem 0;
+        width: 40rem;
+    }
+}
+.about-history {
+    padding: 2rem 0;
+    width: 40rem;
+    margin: 0 auto;
+
+    p {
+        padding-top: 1rem;
+    }
+}
+.about-form {
+    background-color: $bgGray;
+    padding: 1rem;
+
+    &__content {
+        position: relative;
+        img {
+            position: absolute;
+            @extend .elemCenter;
+            max-width: 10rem;
+            opacity: .1;
+            z-index: 1;
+        }
+        form {
+            position: relative;
+            z-index: 2;
+            max-width: 30rem;
+            margin: 0 auto;
+
+            div {
+                textarea {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: .2rem;
+                    border: 1px solid #ced4da;
+                    min-height: 4rem;
+                    padding: .3rem .5rem;
+                    font-family: "Rubik-Regular";
+                    color: #081d4d;
+                    font-size: calc(16px + (16 - 14) * (100vw - 1920px) / (1920 - 480));
+                }
+
+            }
+        }
+    }
+}
