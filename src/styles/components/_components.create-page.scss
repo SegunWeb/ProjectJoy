@@ -392,26 +392,26 @@
 }
 
 .creating-img {
-    width: 3rem;
+    width: 3rem !important;
     margin: 0 auto;
     @include mq(xs) {
-        width: 5rem;
+        width: 5rem !important;
     }
 
     &--big {
-        width: 5rem;
+        width: 5rem !important;
         margin: 0 auto;
         @include mq(xs) {
-            width: 10rem;
+            width: 10rem !important;
         }
     }
 }
 
 .creating-loader {
-    width: 6rem;
+    width: 6rem !important;
     margin: 1rem auto;
     @include mq(xs) {
-        width: 11rem;
+        width: 11rem !important;
     }
 }
 

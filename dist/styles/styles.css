@@ -941,24 +941,24 @@ a {
     padding: 0 1rem; }
 
 .creating-img {
-  width: 3rem;
+  width: 3rem !important;
   margin: 0 auto; }
   @media (min-width: 576px) {
     .creating-img {
-      width: 5rem; } }
+      width: 5rem !important; } }
   .creating-img--big {
-    width: 5rem;
+    width: 5rem !important;
     margin: 0 auto; }
     @media (min-width: 576px) {
       .creating-img--big {
-        width: 10rem; } }
+        width: 10rem !important; } }
 
 .creating-loader {
-  width: 6rem;
+  width: 6rem !important;
   margin: 1rem auto; }
   @media (min-width: 576px) {
     .creating-loader {
-      width: 11rem; } }
+      width: 11rem !important; } }
 
 .video-ready__box {
   max-width: 35rem;
