@@ -45,6 +45,7 @@
     display: none;
     @include mq(lg) {
       display: block;
+      width: initial !important;
     }
   }
 }

@@ -1,22 +1,46 @@
 // ---- about page -------
 .about {
+    &__title {
+        padding-bottom: 1rem !important;
+    }
+    &__desc {
+        padding-bottom: 1rem;
+    }
     &__text {
         padding: 1rem 0 2rem 0;
-        width: 40rem;
+        max-width: 40rem;
     }
+
 }
 .about-history {
     padding: 2rem 0;
-    width: 40rem;
-    margin: 0 auto;
+    background-color: $bgGray;
 
-    p {
-        padding-top: 1rem;
+    position: relative;
+
+    &__content {
+        max-width: 40rem;
+        margin: 0 auto;
+        p {
+            padding-top: 1rem;
+        }
+        h3 {
+            position: relative;
+            z-index: 2;
+        }
+
     }
 }
 .about-form {
-    background-color: $bgGray;
+    background-color: $w;
+    position: relative;
     padding: 1rem;
+
+    h3 {
+        position: relative;
+        z-index: 2;
+        padding-bottom: 1rem;
+    }
 
     &__content {
         position: relative;
@@ -44,6 +68,13 @@
                     font-family: "Rubik-Regular";
                     color: #081d4d;
                     font-size: calc(16px + (16 - 14) * (100vw - 1920px) / (1920 - 480));
+
+                    &:focus {
+                        background-color: #fff;
+                        border-color: #80bdff;
+                        outline: 0;
+                        box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+                    }
                 }
 
             }

@@ -9,7 +9,7 @@
   vertical-align: middle;
   font-weight: 900; }
 
-.elemCenter, .aunt, .user-photo__img img, .testim-info img, .testim-mail img, .about-form__content img, .img-video, .play-video, .price-text__discount:before {
+.elemCenter, .aunt, .user-photo__img img, .testim-info img, .testim-mail img, .about-form__content img, .img-video, .play-video, .price-text__discount:before, .user-info img {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%); }
@@ -562,7 +562,8 @@ a {
   display: none; }
   @media (min-width: 1200px) {
     .how-info-box__img {
-      display: block; } }
+      display: block;
+      width: initial !important; } }
 
 .recommended {
   background-color: #f8f8f8;
@@ -1501,20 +1502,37 @@ a {
       .support-form__box {
         width: 25rem; } }
 
+.about__title {
+  padding-bottom: 1rem !important; }
+
+.about__desc {
+  padding-bottom: 1rem; }
+
 .about__text {
   padding: 1rem 0 2rem 0;
-  width: 40rem; }
+  max-width: 40rem; }
 
 .about-history {
   padding: 2rem 0;
-  width: 40rem;
-  margin: 0 auto; }
-  .about-history p {
-    padding-top: 1rem; }
+  background-color: #f8f8f8;
+  position: relative; }
+  .about-history__content {
+    max-width: 40rem;
+    margin: 0 auto; }
+    .about-history__content p {
+      padding-top: 1rem; }
+    .about-history__content h3 {
+      position: relative;
+      z-index: 2; }
 
 .about-form {
-  background-color: #f8f8f8;
+  background-color: #ffffff;
+  position: relative;
   padding: 1rem; }
+  .about-form h3 {
+    position: relative;
+    z-index: 2;
+    padding-bottom: 1rem; }
   .about-form__content {
     position: relative; }
     .about-form__content img {
@@ -1537,6 +1555,11 @@ a {
         font-family: "Rubik-Regular";
         color: #081d4d;
         font-size: calc(16px + (16 - 14) * (100vw - 1920px) / (1920 - 480)); }
+        .about-form__content form div textarea:focus {
+          background-color: #fff;
+          border-color: #80bdff;
+          outline: 0;
+          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
 
 .header-top {
   background-color: transparent;
@@ -2549,5 +2572,77 @@ input[type=range]::-webkit-slider-thumb {
       .step-box__words {
         border-radius: .5rem;
         padding: 1rem 2rem 1rem 2rem; } }
+
+.user-info {
+  padding-bottom: 1rem;
+  position: relative;
+  z-index: 2; }
+  .user-info img {
+    position: absolute;
+    opacity: .1;
+    z-index: 1;
+    width: 70%; }
+    @media (min-width: 992px) {
+      .user-info img {
+        width: 35%; } }
+  .user-info div p {
+    padding-bottom: 1rem; }
+
+.small-wheel, .big-wheel {
+  transform-box: fill-box;
+  -webkit-transform-origin: 52% 50%;
+  -ms-transform-origin: 52% 50%;
+  transform-origin: 52% 50%;
+  display: inline-block;
+  -webkit-animation: rotate-center 1.3s linear 0s normal none infinite running;
+  animation: rotate-center 1.3s linear 0s normal none infinite running; }
+
+.big-wheel {
+  -webkit-transform-origin: 51% 50%;
+  -ms-transform-origin: 51% 50%;
+  transform-origin: 51% 50%;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s; }
+
+.svg-play {
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  display: inline-block;
+  transform-box: fill-box;
+  -webkit-animation: svg-play 1.3s linear infinite alternate backwards;
+  animation: svg-play 1.3s linear infinite alternate backwards; }
+
+@-webkit-keyframes svg-play {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  100% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); } }
+
+@keyframes svg-play {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  100% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); } }
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotete(360deg); } }
 
 /*# sourceMappingURL=maps/styles.css.map */

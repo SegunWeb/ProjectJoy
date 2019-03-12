@@ -446,4 +446,49 @@ input[type=range]::-webkit-slider-thumb {
     }
   }
 }
+// --- user-info page ----
+.user-info {
+  padding-bottom: 1rem;
+  position: relative;
+  z-index: 2;
+  img {
+    position: absolute;
+    opacity: .1;
+    @extend .elemCenter;
+    z-index: 1;
+    width: 70%;
+    @include mq(md) {
+      width: 35%;
+    }
 
+  }
+
+  div {
+
+    p {
+      padding-bottom: 1rem;
+    }
+  }
+}
+// ---- animation camera ---
+.small-wheel, .big-wheel { transform-box: fill-box; -webkit-transform-origin: 52% 50%; -ms-transform-origin: 52% 50%; transform-origin: 52% 50%; display: inline-block; -webkit-animation: rotate-center 1.3s linear 0s normal none infinite running; animation: rotate-center 1.3s linear 0s normal none infinite running; }
+
+.big-wheel { -webkit-transform-origin: 51% 50%; -ms-transform-origin: 51% 50%; transform-origin: 51% 50%; -webkit-animation-duration: 2s; animation-duration: 2s; }
+
+.svg-play { -webkit-transform-origin: 50% 50%; -ms-transform-origin: 50% 50%; transform-origin: 50% 50%; display: inline-block; transform-box: fill-box; -webkit-animation: svg-play 1.3s linear infinite alternate backwards; animation: svg-play 1.3s linear infinite alternate backwards; }
+
+@-webkit-keyframes svg-play { 0% { -webkit-transform: scale(1); transform: scale(1); }
+  100% { -webkit-transform: scale(1.2); transform: scale(1.2); } }
+
+@keyframes svg-play { 0% { -webkit-transform: scale(1); transform: scale(1); }
+  100% { -webkit-transform: scale(1.2); transform: scale(1.2); } }
+
+@-webkit-keyframes rotate-center { 0% { -webkit-transform: rotate(0);
+  transform: rotate(0); }
+  100% { -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes rotate-center { 0% { -webkit-transform: rotate(0);
+  transform: rotate(0); }
+  100% { -webkit-transform: rotate(360deg);
+    transform: rotete(360deg); } }
