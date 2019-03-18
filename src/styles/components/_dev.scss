@@ -1,0 +1,79 @@
+// ----- changes ----- /
+.bg-ih{
+    background: inherit;}
+@media (max-width: 768px) {
+    .logout{
+        color: #005dba; } }
+.creating-video__box img {
+    width: auto;}
+.btn.btn-text.btn__redact{
+    width: fit-content;}
+input:required, textarea:required {
+    box-shadow: none;}
+.desc-text--gray {
+    color: #808080; }
+.fs-15{
+    font-size: 15em;}
+.fs-3{
+    font-size: 3em;}
+.w-8{
+    width: 8rem !important;}
+
+.editor-position li {
+    margin: 0 0.4rem; }
+
+.fontAwesomeBrands, .socials a:before, .lang-menu:before {
+    font-family: "Font Awesome\ 5 Brands";
+    display: inline-block;
+    vertical-align: middle; }
+
+.fontAwesomeFree, .btn__auth:before, .btn__account:before, .btn__load:before, .btn__art:after, .btn__art--left:before, .editor-zoom:before, .editor-zoom::after, .editor-deg__line--left:before, .editor-deg__line--right:before, .questions-box__q:before, .desc-text__user:before, .close:before, .checkbox:checked + label:before, .edit + label:before, .edit:checked + label:before {
+    font-family: "Font Awesome\ 5 Free";
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 900; }
+
+.elemCenter, .aunt, .user-photo__img img, .testim-info img, .testim-mail img, .about-form__content img, .img-video, .play-video, .price-text__discount:before, .user-info img {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+
+
+
+.btn__auth, .btn__account {
+    font-size: calc(12px + (12 - 11) * (100vw - 1920px) / (1920 - 480));
+    background-color: transparent;
+    cursor: pointer;
+    align-items: center;
+    color: #005dba !important; }
+@media (min-width: 992px) {
+    .btn__auth, .btn__account {
+        color: #ffffff !important; } }
+.btn__auth:before, .btn__account:before {
+    content: '\f007';
+    font-size: 1rem;
+    padding-right: .4rem; }
+.btn__auth:hover, .btn__account:hover {
+    color: #1fc0ff !important; }
+
+.elemCenter, .aunt, .user-photo__img img, .testim-info img, .testim-success img, .testim-mail img, .about-form__content img, .img-video, .play-video, .price-text__discount:before, .user-info img {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+.testim-info, .testim-success {
+    padding: 2rem 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+
+.testim-info img, .testim-success img {
+    display: block;
+    position: absolute;
+    opacity: .07;
+    max-width: 7rem;
+    max-height: 7rem;
+    z-index: 1; }
+input[type=range]:disabled{
+    background: white; }
